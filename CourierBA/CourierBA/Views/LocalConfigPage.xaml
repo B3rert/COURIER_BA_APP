@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CourierBA.Views.LocalConfigPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <StackLayout 
+                         Padding="0,20,0,20"
+                         Margin="20"
+                         BackgroundColor="WhiteSmoke">
+
+                <Label Text="SELECCIONE SU CONFIGURACION LOCAL"
+                       FontSize="Subtitle"
+                       FontAttributes="Bold"
+                       HorizontalOptions="CenterAndExpand"/>
+                <StackLayout Orientation="Horizontal"
+                             FlowDirection="LeftToRight"
+                             HorizontalOptions="Center">
+                    <Label Text="Empresa" 
+                           FontAttributes="Bold"
+                           FontSize="16.5"/>
+                    <Label Text="Registro(s)"
+                           FontSize="12"
+                           VerticalOptions="End"/>
+                    <Label 
+                        x:Name="registrosLbl"
+                        Text="0"
+                           FontSize="12"
+                           VerticalOptions="End"/>
+                </StackLayout>
+
+                <ListView x:Name="EmpresaList"
+                          HeightRequest="40"
+                          HorizontalOptions="CenterAndExpand"
+                          VerticalOptions="FillAndExpand"
+                          IsVisible="true"
+                          BackgroundColor="{DynamicResource PageBackgroundColor}"
+                          Margin="4,0,4,0"
+                          ItemTapped="EmpresaList_ItemTapped">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Empresa_Nombre}"
+                                           HorizontalOptions="CenterAndExpand"
+                                           VerticalOptions="CenterAndExpand"
+                                           FontSize="16"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+
+                <StackLayout Orientation="Horizontal"
+                             FlowDirection="LeftToRight"
+                             HorizontalOptions="Center">
+                    <Label Text="Estación de trabajo" 
+                           FontAttributes="Bold"
+                           FontSize="16.5"/>
+                    <Label Text="Registro(s)"
+                           FontSize="12"
+                           VerticalOptions="End"/>
+                    <Label 
+                        x:Name="registrosLbl2"
+                        Text="0"
+                           FontSize="12"
+                           VerticalOptions="End"/>
+                </StackLayout>
+
+                <ListView x:Name="EstacionList"
+                          HeightRequest="40"
+                          HorizontalOptions="CenterAndExpand"
+                          VerticalOptions="FillAndExpand"
+                          IsVisible="true"
+                          BackgroundColor="{DynamicResource PageBackgroundColor}"
+                          Margin="4,0,4,0"
+                          ItemTapped="EstacionList_ItemTapped">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Nombre}"
+                                           HorizontalOptions="CenterAndExpand"
+                                           VerticalOptions="CenterAndExpand"
+                                           FontSize="16"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <ImageButton Source="guardar_icon.png"
+                             HeightRequest="30"
+                             BackgroundColor="Transparent"
+                             Clicked="saveConfigLocal_btn"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
