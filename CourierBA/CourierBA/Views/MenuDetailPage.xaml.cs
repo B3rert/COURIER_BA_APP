@@ -51,7 +51,8 @@ namespace CourierBA.Views
                 Navigation.RemovePage(page);
             }
             
-            //        await Navigation.PopToRootAsync();
+           
+            //await Navigation.PopToRootAsync();
 
         }
     }
