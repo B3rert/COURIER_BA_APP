@@ -32,5 +32,30 @@ namespace CourierBA.Views
         {
             Detail = new NavigationPage(new HomePage());
         }
+
+        private async void btnLogout_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new LoginPage());
+            //await Navigation.PushAsync(new NavigationPage(new LoginPage())); //Push the page you want to push
+
+            /*
+            var existingPages = Navigation.NavigationStack.ToList();
+            //get all the pages in the stack
+            foreach (var page in existingPages)
+            {
+                //Check they type of the page if its not the 
+                //same type as the newly created one remove it
+                if (page.GetType() == typeof(LoginPage))
+
+                    continue;
+
+                
+
+                Navigation.RemovePage(page);
+            }
+            */
+            //        await Navigation.PopToRootAsync();
+
+        }
     }
 }

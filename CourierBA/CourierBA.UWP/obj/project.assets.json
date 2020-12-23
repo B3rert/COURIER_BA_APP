@@ -406,6 +406,19 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "ZXing.Net.Mobile/2.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        }
+      },
       "CourierBA/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -413,7 +426,8 @@
           "Acr.UserDialogs": "7.1.0.470",
           "Newtonsoft.Json": "12.0.3",
           "Xamarin.Essentials": "1.6.0",
-          "Xamarin.Forms": "4.8.0.1821"
+          "Xamarin.Forms": "4.8.0.1821",
+          "ZXing.Net.Mobile": "2.4.1"
         },
         "compile": {
           "bin/placeholder/CourierBA.dll": {}
@@ -996,6 +1010,19 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "ZXing.Net.Mobile/2.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        }
+      },
       "CourierBA/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1003,7 +1030,8 @@
           "Acr.UserDialogs": "7.1.0.470",
           "Newtonsoft.Json": "12.0.3",
           "Xamarin.Essentials": "1.6.0",
-          "Xamarin.Forms": "4.8.0.1821"
+          "Xamarin.Forms": "4.8.0.1821",
+          "ZXing.Net.Mobile": "2.4.1"
         },
         "compile": {
           "bin/placeholder/CourierBA.dll": {}
@@ -1587,6 +1615,19 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "ZXing.Net.Mobile/2.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        }
+      },
       "CourierBA/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1594,7 +1635,8 @@
           "Acr.UserDialogs": "7.1.0.470",
           "Newtonsoft.Json": "12.0.3",
           "Xamarin.Essentials": "1.6.0",
-          "Xamarin.Forms": "4.8.0.1821"
+          "Xamarin.Forms": "4.8.0.1821",
+          "ZXing.Net.Mobile": "2.4.1"
         },
         "compile": {
           "bin/placeholder/CourierBA.dll": {}
@@ -2175,6 +2217,19 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "ZXing.Net.Mobile/2.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        }
+      },
       "CourierBA/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -2182,7 +2237,8 @@
           "Acr.UserDialogs": "7.1.0.470",
           "Newtonsoft.Json": "12.0.3",
           "Xamarin.Essentials": "1.6.0",
-          "Xamarin.Forms": "4.8.0.1821"
+          "Xamarin.Forms": "4.8.0.1821",
+          "ZXing.Net.Mobile": "2.4.1"
         },
         "compile": {
           "bin/placeholder/CourierBA.dll": {}
@@ -2765,6 +2821,19 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "ZXing.Net.Mobile/2.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        }
+      },
       "CourierBA/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -2772,7 +2841,8 @@
           "Acr.UserDialogs": "7.1.0.470",
           "Newtonsoft.Json": "12.0.3",
           "Xamarin.Essentials": "1.6.0",
-          "Xamarin.Forms": "4.8.0.1821"
+          "Xamarin.Forms": "4.8.0.1821",
+          "ZXing.Net.Mobile": "2.4.1"
         },
         "compile": {
           "bin/placeholder/CourierBA.dll": {}
@@ -3356,6 +3426,19 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "ZXing.Net.Mobile/2.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        }
+      },
       "CourierBA/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -3363,7 +3446,8 @@
           "Acr.UserDialogs": "7.1.0.470",
           "Newtonsoft.Json": "12.0.3",
           "Xamarin.Essentials": "1.6.0",
-          "Xamarin.Forms": "4.8.0.1821"
+          "Xamarin.Forms": "4.8.0.1821",
+          "ZXing.Net.Mobile": "2.4.1"
         },
         "compile": {
           "bin/placeholder/CourierBA.dll": {}
@@ -3946,6 +4030,19 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "ZXing.Net.Mobile/2.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        }
+      },
       "CourierBA/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -3953,7 +4050,8 @@
           "Acr.UserDialogs": "7.1.0.470",
           "Newtonsoft.Json": "12.0.3",
           "Xamarin.Essentials": "1.6.0",
-          "Xamarin.Forms": "4.8.0.1821"
+          "Xamarin.Forms": "4.8.0.1821",
+          "ZXing.Net.Mobile": "2.4.1"
         },
         "compile": {
           "bin/placeholder/CourierBA.dll": {}
@@ -4537,6 +4635,19 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "ZXing.Net.Mobile/2.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        }
+      },
       "CourierBA/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -4544,7 +4655,8 @@
           "Acr.UserDialogs": "7.1.0.470",
           "Newtonsoft.Json": "12.0.3",
           "Xamarin.Essentials": "1.6.0",
-          "Xamarin.Forms": "4.8.0.1821"
+          "Xamarin.Forms": "4.8.0.1821",
+          "ZXing.Net.Mobile": "2.4.1"
         },
         "compile": {
           "bin/placeholder/CourierBA.dll": {}
@@ -9517,6 +9629,31 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "ZXing.Net.Mobile/2.4.1": {
+      "sha512": "iCL2WcqOyUnC1iFFdzXijk0EXfoLMDqW88MyhoTZigSyhJZM2C5hKgSZVyfx9E35tgkde/IZwHkk8cVDnbQlYg==",
+      "type": "package",
+      "path": "zxing.net.mobile/2.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid71/ZXing.Net.Mobile.Core.dll",
+        "lib/MonoAndroid71/ZXingNetMobile.dll",
+        "lib/MonoAndroid71/zxing.portable.dll",
+        "lib/UAP10/ZXing.Net.Mobile.Core.dll",
+        "lib/UAP10/ZXingNetMobile.dll",
+        "lib/UAP10/ZXingNetMobile.pri",
+        "lib/UAP10/ZXingNetMobile/ZXingNetMobile.xr.xml",
+        "lib/UAP10/zxing.portable.dll",
+        "lib/Xamarin.iOS10/ZXing.Net.Mobile.Core.dll",
+        "lib/Xamarin.iOS10/ZXingNetMobile.dll",
+        "lib/Xamarin.iOS10/zxing.portable.dll",
+        "lib/netstandard1.0/ZXing.Net.Mobile.Core.dll",
+        "lib/netstandard1.0/ZXingNetMobile.dll",
+        "lib/netstandard1.0/zxing.portable.dll",
+        "zxing.net.mobile.2.4.1.nupkg.sha512",
+        "zxing.net.mobile.nuspec"
+      ]
+    },
     "CourierBA/1.0.0": {
       "type": "project",
       "path": "../CourierBA/CourierBA.csproj",
@@ -9530,7 +9667,8 @@
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.11",
       "Newtonsoft.Json >= 12.0.3",
       "Xamarin.Essentials >= 1.6.0",
-      "Xamarin.Forms >= 4.8.0.1821"
+      "Xamarin.Forms >= 4.8.0.1821",
+      "ZXing.Net.Mobile >= 2.4.1"
     ]
   },
   "packageFolders": {
@@ -9596,6 +9734,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[4.8.0.1821, )"
+          },
+          "ZXing.Net.Mobile": {
+            "target": "Package",
+            "version": "[2.4.1, )"
           }
         },
         "imports": [

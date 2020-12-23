@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "DMETBb3oaONdslIAmDwgjny3rgR98L8g3MSRbNflCGFoTE6crUWOGBDxCBVnd6RwTYGQfHE0bLnezZ7Ak8+o1Q==",
+  "dgSpecHash": "+sK0wBc+PF0EWNfi5QS9vRZmRXhxWec/6vt9BA83c7fwt+LOLBorSeLJs1VQhoznB3RYKUA+EY62zyO06kaqXw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Andres\\Desktop\\DEMOSOFT\\Proyectos\\_CourierBA_app\\CourierBA\\CourierBA\\CourierBA.Android\\CourierBA.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Andres\\.nuget\\packages\\acr.userdialogs\\7.1.0.470\\acr.userdialogs.7.1.0.470.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\andhud\\1.4.2\\andhud.1.4.2.nupkg.sha512",
+    "C:\\Users\\Andres\\.nuget\\packages\\fastandroidcamera\\2.0.0\\fastandroidcamera.2.0.0.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
@@ -46,7 +47,8 @@
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.support.versionedparcelable\\28.0.0.3\\xamarin.android.support.versionedparcelable.28.0.0.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.support.viewpager\\28.0.0.3\\xamarin.android.support.viewpager.28.0.0.3.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\xamarin.essentials\\1.6.0\\xamarin.essentials.1.6.0.nupkg.sha512",
-    "C:\\Users\\Andres\\.nuget\\packages\\xamarin.forms\\4.8.0.1821\\xamarin.forms.4.8.0.1821.nupkg.sha512"
+    "C:\\Users\\Andres\\.nuget\\packages\\xamarin.forms\\4.8.0.1821\\xamarin.forms.4.8.0.1821.nupkg.sha512",
+    "C:\\Users\\Andres\\.nuget\\packages\\zxing.net.mobile\\2.4.1\\zxing.net.mobile.2.4.1.nupkg.sha512"
   ],
   "logs": []
 }

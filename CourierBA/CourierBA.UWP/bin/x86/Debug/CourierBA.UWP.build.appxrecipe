@@ -61,6 +61,15 @@
     <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\xamarin.forms\4.8.0.1821\lib\uap10.0.16299\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\zxing.net.mobile\2.4.1\lib\UAP10\ZXing.Net.Mobile.Core.dll">
+      <PackagePath>ZXing.Net.Mobile.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\zxing.net.mobile\2.4.1\lib\UAP10\ZXingNetMobile.dll">
+      <PackagePath>ZXingNetMobile.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\zxing.net.mobile\2.4.1\lib\UAP10\zxing.portable.dll">
+      <PackagePath>zxing.portable.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA\bin\Debug\netstandard2.0\CourierBA.dll">
       <PackagePath>CourierBA.dll</PackagePath>
     </AppxPackagedFile>
@@ -78,6 +87,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\xamarin.forms\4.8.0.1821\lib\uap10.0.16299\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\zxing.net.mobile\2.4.1\lib\UAP10\ZXingNetMobile\ZXingNetMobile.xr.xml">
+      <PackagePath>ZXingNetMobile\ZXingNetMobile.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\coding4fun.toolkit.controls\2.1.8\lib\netcore451\Coding4Fun.Toolkit.Controls\Themes\Generic.xbf">
       <PackagePath>Coding4Fun.Toolkit.Controls\Themes\Generic.xbf</PackagePath>

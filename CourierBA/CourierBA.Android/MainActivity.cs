@@ -7,6 +7,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Acr.UserDialogs;
+using ZXing.Mobile;
 
 namespace CourierBA.Droid
 {
@@ -22,7 +23,9 @@ namespace CourierBA.Droid
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            //UserDialogs.Init(this);
+            //Scaneer codigos de barra
+            MobileBarcodeScanner.Initialize(this.Application);
+            //Activity indicator
             UserDialogs.Init(this);
             LoadApplication(new App());
         }

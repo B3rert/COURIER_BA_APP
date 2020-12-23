@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "s68jMUn9SKPSqeyJ/v6eklaHcibd8NXySl3wgO+ye8JoB9hNXDeFRGEUSNUW0zX8wOYyefzD8Dm0EuKhhoslqA==",
+  "dgSpecHash": "bqRSxJP419c2R5Y0d5GDqq9JIf9m6Z5msLcTj6eGsK1oLizdknSXsVERjU/bIuKEdAO2vPwLOv85lv7qVWS3ig==",
   "success": true,
   "projectFilePath": "C:\\Users\\Andres\\Desktop\\DEMOSOFT\\Proyectos\\_CourierBA_app\\CourierBA\\CourierBA\\CourierBA.iOS\\CourierBA.iOS.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,8 @@
     "C:\\Users\\Andres\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\xamarin.essentials\\1.6.0\\xamarin.essentials.1.6.0.nupkg.sha512",
-    "C:\\Users\\Andres\\.nuget\\packages\\xamarin.forms\\4.8.0.1821\\xamarin.forms.4.8.0.1821.nupkg.sha512"
+    "C:\\Users\\Andres\\.nuget\\packages\\xamarin.forms\\4.8.0.1821\\xamarin.forms.4.8.0.1821.nupkg.sha512",
+    "C:\\Users\\Andres\\.nuget\\packages\\zxing.net.mobile\\2.4.1\\zxing.net.mobile.2.4.1.nupkg.sha512"
   ],
   "logs": []
 }

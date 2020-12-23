@@ -61,3 +61,6 @@ C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\Co
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.iOS\obj\iPhoneSimulator\Debug\CourierBA.iOS.csproj.CopyComplete
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.iOS\obj\iPhoneSimulator\Debug\CourierBA.iOS.exe
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.iOS\obj\iPhoneSimulator\Debug\CourierBA.iOS.pdb
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.iOS\bin\iPhoneSimulator\Debug\ZXing.Net.Mobile.Core.dll
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.iOS\bin\iPhoneSimulator\Debug\ZXingNetMobile.dll
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.iOS\bin\iPhoneSimulator\Debug\zxing.portable.dll

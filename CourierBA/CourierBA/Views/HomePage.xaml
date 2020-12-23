@@ -2,11 +2,326 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CourierBA.Views.HomePage">
+
+    
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Padding="20,20,20,20">
+
+                <StackLayout Orientation="Horizontal"
+                             FlowDirection="LeftToRight">
+
+                    <ImageButton 
+                        HeightRequest="16"
+                        
+                        x:Name="btnBuscarCodigo"
+                        Source="buscar_icon.png"
+                        BackgroundColor="Transparent"
+                        Clicked="btnBuscarCodigo_Clicked"/>
+                    <Entry x:Name="txtCodigo" 
+                        Placeholder="Código de barras"
+                           HorizontalOptions="FillAndExpand"
+                           ClearButtonVisibility="WhileEditing"
+                           Margin="10,0,10,0"/>
+                    <ImageButton 
+                        VerticalOptions="FillAndExpand"
+                        WidthRequest="18"
+                        x:Name="btnEscanearCodigo"
+                        Source="camara_icon.png"
+                        BackgroundColor="Transparent"
+                        Clicked="btnEscanearCodigo_Clicked"/>
+
+                </StackLayout>
+
+                <BoxView HorizontalOptions="FillAndExpand" 
+                         HeightRequest="1" 
+                         Color="{DynamicResource NavigationBarColor}"/>
+                <StackLayout Padding="0,15,0,15">
+
+                    <Label Text="Guía - Referencia"
+                       FontSize="20"/>
+
+                    <StackLayout Orientation="Horizontal"
+                             FlowDirection="LeftToRight">
+                        <Label Text="Tipo de Ref" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                        <Picker HorizontalOptions="FillAndExpand"
+                            VerticalOptions="End"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal"
+                             FlowDirection="LeftToRight">
+                        <Label Text="Id" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                        <Entry HorizontalOptions="FillAndExpand"
+                            VerticalOptions="End"
+                            ClearButtonVisibility="WhileEditing" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal"
+                             FlowDirection="LeftToRight">
+                        <Label Text="Descripción" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                        <Entry HorizontalOptions="FillAndExpand"
+                            VerticalOptions="End"
+                           ClearButtonVisibility="WhileEditing" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal"
+                             FlowDirection="LeftToRight">
+                        <Label Text="Peso" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                        <Entry HorizontalOptions="FillAndExpand"
+                           VerticalOptions="End"
+                            ClearButtonVisibility="WhileEditing"/>
+
+                        <Label Text="Volumen" 
+                        Style="{DynamicResource SmallLabelStyle}"
+                        Margin="0,15,0,0"/>
+
+                        <Entry HorizontalOptions="FillAndExpand"
+                            VerticalOptions="End"
+                            ClearButtonVisibility="WhileEditing"/>
+                    </StackLayout>
+
+
+
+                    <StackLayout Orientation="Horizontal"
+                             FlowDirection="LeftToRight">
+                        <Label Text="Pieza(s)" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                        <Entry HorizontalOptions="FillAndExpand"
+                            VerticalOptions="End"
+                            ClearButtonVisibility="WhileEditing"/>
+
+                        <Label Text="Dimenciones" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                        <Entry HorizontalOptions="FillAndExpand"
+                            VerticalOptions="End"
+                            ClearButtonVisibility="WhileEditing"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal"
+                             FlowDirection="LeftToRight">
+                        <Label Text="Presentacion" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                        <Entry HorizontalOptions="FillAndExpand"
+                            VerticalOptions="End"
+                            ClearButtonVisibility="WhileEditing"/>
+                    </StackLayout>
+
+
+
+                    <StackLayout Orientation="Horizontal"
+                             FlowDirection="LeftToRight">
+                        <Label Text="Valor(Monto)" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                        <Entry HorizontalOptions="FillAndExpand"
+                            VerticalOptions="End"
+                            ClearButtonVisibility="WhileEditing"/>
+
+                        <Label Text="Moneda" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                        <Picker HorizontalOptions="FillAndExpand"
+                            VerticalOptions="End"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal"
+                             FlowDirection="LeftToRight">
+                        <Label Text="Referencia" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                        <Entry HorizontalOptions="FillAndExpand"
+                            VerticalOptions="End"
+                            ClearButtonVisibility="WhileEditing"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal"
+                             FlowDirection="LeftToRight">
+                        <Label Text="Peso" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                        <Entry HorizontalOptions="FillAndExpand"
+                            VerticalOptions="End"
+                            ClearButtonVisibility="WhileEditing"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal"
+                             FlowDirection="LeftToRight">
+                        <Label Text="Referencia" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                        <Label Text="" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal"
+                             FlowDirection="LeftToRight">
+                        <Label Text="Usuario" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                        <Label Text="" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal"
+                             FlowDirection="LeftToRight">
+                        <Label Text="Fecha / Hora" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                        <Label Text="" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal"
+                             FlowDirection="LeftToRight">
+                        <Label Text="No se elegió ningun archivo" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                        <Button Text="Seleccionar archivo"
+                            FontSize="17"
+                            HorizontalOptions="FillAndExpand"/>
+                    </StackLayout>
+
+                    <BoxView HorizontalOptions="FillAndExpand" 
+                         HeightRequest="1" 
+                         Color="{DynamicResource NavigationBarColor}"/>
+
+                    <StackLayout Padding="0,15,0,15">
+
+                        <Label Text="Cliente"
+                       FontSize="20"/>
+
+                        <StackLayout Orientation="Horizontal" 
+                             FlowDirection="LeftToRight">
+                            <Entry 
+                            ClearButtonVisibility="WhileEditing" 
+                           HorizontalOptions="FillAndExpand"/>
+
+                            <ImageButton Source="buscar_icon.png"
+                                 BackgroundColor="Transparent"
+                                 Padding="10,0,0,0"/>
+                        </StackLayout>
+
+                    </StackLayout>
+
+                    <BoxView HorizontalOptions="FillAndExpand" 
+                         HeightRequest="1" 
+                         Color="{DynamicResource NavigationBarColor}"/>
+
+                    <StackLayout Padding="0,15,0,15">
+
+                        <Label Text="Proveedor"
+                       FontSize="20"/>
+
+                        <StackLayout Orientation="Horizontal" 
+                             FlowDirection="LeftToRight">
+                            <Entry 
+                            ClearButtonVisibility="WhileEditing" 
+                           HorizontalOptions="FillAndExpand"/>
+
+                            <ImageButton Source="buscar_icon.png"
+                                 BackgroundColor="Transparent"
+                                 Padding="10,0,0,0"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                    <BoxView HorizontalOptions="FillAndExpand" 
+                         HeightRequest="1" 
+                         Color="{DynamicResource NavigationBarColor}"/>
+                    <StackLayout Padding="0,15,0,15">
+
+                        <Label Text="Id Tracking"
+                       FontSize="20"/>
+
+                        <StackLayout Orientation="Horizontal"
+                             FlowDirection="LeftToRight">
+                            <Label Text="Observacion" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                            <Entry HorizontalOptions="FillAndExpand"
+                            VerticalOptions="End"
+                             ClearButtonVisibility="WhileEditing"/>
+
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal"
+                             FlowDirection="LeftToRight">
+                            <Label Text="Peso" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                            <Entry Text="1"
+                             ClearButtonVisibility="WhileEditing"
+                        HorizontalOptions="FillAndExpand"
+                            VerticalOptions="End"/>
+
+                            <Label Text="Pieza(s)" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                            <Entry
+                            ClearButtonVisibility="WhileEditing"
+                            Text="1"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="End"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal"
+                             FlowDirection="LeftToRight">
+                            <Label Text="Valor(Monto)" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                            <Entry Text="1" 
+                               ClearButtonVisibility="WhileEditing"
+                               HorizontalOptions="FillAndExpand"
+                            VerticalOptions="End"/>
+
+                            <Label Text="Moneda" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                            <Picker HorizontalOptions="FillAndExpand"
+                            VerticalOptions="End"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal"
+                             FlowDirection="LeftToRight">
+                            <Label Text="Tipo producto" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                            <Entry HorizontalOptions="FillAndExpand"
+                            VerticalOptions="End"
+                               ClearButtonVisibility="WhileEditing"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" 
+                             FlowDirection="LeftToRight">
+
+                            <Label Text="Id Tracking" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+
+                            <Entry 
+                            ClearButtonVisibility="WhileEditing" 
+                           HorizontalOptions="FillAndExpand"/>
+
+                            <ImageButton Source="mas_icon.png"
+                                 BackgroundColor="Transparent"
+                                 Padding="10,0,0,0"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

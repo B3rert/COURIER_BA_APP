@@ -18,11 +18,26 @@
                             <RowDefinition Height="Auto"/>
                             <RowDefinition Height="10"/>
                         </Grid.RowDefinitions>
-                        <Label
-                             Grid.Column="1"
-                             Grid.Row="2"
+                        <StackLayout Orientation="Horizontal"
+                                     FlowDirection="LeftToRight"
+                                     Grid.Column="1"
+                                    Grid.Row="2">
+                            <Label
+                                HorizontalOptions="StartAndExpand"
                              Text="Modulos"
-                             FontSize="Title"/>
+                             FontSize="Title"
+                                 Margin="0,15,0,0"/>
+                            <Button x:Name="btnLogout"
+                                    Clicked="btnLogout_Clicked"
+                            Text="Cerrar Sesión"
+                            FontSize="12"
+                                HorizontalOptions="End"
+                                VerticalOptions="End"
+                                BackgroundColor="AliceBlue"
+                                HeightRequest="35"/>
+                           
+                            </StackLayout>
+                        
                     </Grid>
                 </ListView.Header>
                 <ListView.ItemTemplate>

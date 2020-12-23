@@ -72,3 +72,8 @@ C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\Co
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.UWP\obj\x86\Debug\Acr.UserDialogs.pri.xml
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.UWP\obj\x86\Debug\Coding4Fun.Toolkit.Controls.pri.xml
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.UWP\obj\x86\Debug\Coding4Fun.Toolkit.pri.xml
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.UWP\bin\x86\Debug\ZXingNetMobile\ZXingNetMobile.xr.xml
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.UWP\bin\x86\Debug\ZXing.Net.Mobile.Core.dll
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.UWP\bin\x86\Debug\ZXingNetMobile.dll
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.UWP\bin\x86\Debug\zxing.portable.dll
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.UWP\obj\x86\Debug\ZXingNetMobile.pri.xml
