@@ -36,9 +36,8 @@ namespace CourierBA.Views
         private async void btnLogout_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new LoginPage());
-            //await Navigation.PushAsync(new NavigationPage(new LoginPage())); //Push the page you want to push
-
-            /*
+            
+            
             var existingPages = Navigation.NavigationStack.ToList();
             //get all the pages in the stack
             foreach (var page in existingPages)
@@ -49,11 +48,9 @@ namespace CourierBA.Views
 
                     continue;
 
-                
-
                 Navigation.RemovePage(page);
             }
-            */
+            
             //        await Navigation.PopToRootAsync();
 
         }

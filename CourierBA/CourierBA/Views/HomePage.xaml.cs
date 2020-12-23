@@ -1,10 +1,11 @@
-﻿using CourierBA.Services;
+﻿using Acr.UserDialogs;
+using CourierBA.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -45,6 +46,37 @@ namespace CourierBA.Views
                 return;
             }
 
+        }
+
+        //File picker
+        private async void btnSelectFile_Clicked(object sender, EventArgs e)
+        {
+            var pickResult = await FilePicker.PickMultipleAsync(new PickOptions
+            {
+                FileTypes = FilePickerFileType.Images,
+                PickerTitle = "Pick an image(s)"
+            });
+
+            if (pickResult != null)
+            {
+                var imageList = new List<ImageSource>();
+                foreach (var image in pickResult)
+                {
+                    var stream = await image.OpenReadAsync();
+                    imageList.Add(ImageSource.FromStream(() => stream));
+
+                }
+                collectionImages.ItemsSource = imageList;
+                lblNameFileSelect.Text = "Archivos selecionados: " + pickResult.Count().ToString();
+            }
+        }
+
+        private void btnClearImage_Clicked(object sender, EventArgs e)
+        {
+            UserDialogs.Instance.ShowLoading(title: "Cargando...");
+            lblNameFileSelect.Text = "No se elegió ningun archivo";
+            collectionImages.ItemsSource = null;
+            UserDialogs.Instance.HideLoading();
         }
     }
 }

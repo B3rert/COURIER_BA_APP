@@ -186,13 +186,42 @@
 
                     <StackLayout Orientation="Horizontal"
                              FlowDirection="LeftToRight">
-                        <Label Text="No se elegió ningun archivo" 
+                        <Label
+                            x:Name="lblNameFileSelect"
+                            Text="No se elegió ningun archivo" 
                            Style="{DynamicResource SmallLabelStyle}"
                            Margin="0,15,0,0"/>
-                        <Button Text="Seleccionar archivo"
+                        <Button
+                            x:Name="btnSelectFile"
+                            Text="Seleccionar archivo"
                             FontSize="17"
-                            HorizontalOptions="FillAndExpand"/>
+                            HorizontalOptions="FillAndExpand"
+                            Clicked="btnSelectFile_Clicked"/>
+                        <ImageButton x:Name="btnClearImage"
+                                     Clicked="btnClearImage_Clicked"
+                                     Source="eliminar_icon.png"
+                                     BackgroundColor="Transparent"
+                                     HorizontalOptions="End"
+                                     HeightRequest="20"/>
                     </StackLayout>
+                    
+                    <StackLayout HeightRequest="150" Padding="0,0,0,10">
+                        <CollectionView x:Name="collectionImages"
+                        ItemsLayout="HorizontalList">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate >
+                                    <StackLayout>
+                                        <Image Source="{Binding .}"
+                                   HeightRequest="140"
+                                   HorizontalOptions="CenterAndExpand" 
+                                   VerticalOptions="Center" 
+                                   Margin="10"/>
+                                    </StackLayout>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </StackLayout>
+
 
                     <BoxView HorizontalOptions="FillAndExpand" 
                          HeightRequest="1" 

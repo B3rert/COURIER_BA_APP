@@ -130,6 +130,13 @@
     <Content Include="Assets\Wide310x150Logo.scale-100.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
+    <Content Include="buscar_icon.png" />
+    <Content Include="camara_icon.png" />
+    <Content Include="Empresa.jpg" />
+    <Content Include="guardar_icon.png" />
+    <Content Include="logo_demosoft.png" />
+    <Content Include="mas_icon.png" />
+    <Content Include="pbox.png" />
     <Content Include="Properties\Default.rd.xml" />
   </ItemGroup>
   <ItemGroup>
