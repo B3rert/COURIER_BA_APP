@@ -52,7 +52,7 @@ namespace CourierBA.Views
             }
             
            
-            //await Navigation.PopToRootAsync();
+           await Navigation.PopToRootAsync();
 
         }
     }

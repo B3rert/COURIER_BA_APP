@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "p6Le51cVv7tOP87v07Y09jtwQWz0x15G47c2y/SG23wgRm8HCVdbrghFuLgW4n6pQ3KozGOFdd8LLPAvPzcYlw==",
+  "dgSpecHash": "8R07Qj7kEMF3kRDM/Xl7sXI76f7cAIxn8uOcBAL4Du1nKm1JX9thq065TiaZoBI/peqLHgho5lSp6MuxYL1bAg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Andres\\Desktop\\DEMOSOFT\\Proyectos\\_CourierBA_app\\CourierBA\\CourierBA\\CourierBA.UWP\\CourierBA.UWP.csproj",
   "expectedPackageFiles": [
@@ -32,6 +32,7 @@
     "C:\\Users\\Andres\\.nuget\\packages\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\\2.2.11\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.2.11.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.11\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.11.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\win2d.uwp\\1.20.0\\win2d.uwp.1.20.0.nupkg.sha512",
+    "C:\\Users\\Andres\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\xamarin.essentials\\1.6.0\\xamarin.essentials.1.6.0.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\xamarin.forms\\4.8.0.1821\\xamarin.forms.4.8.0.1821.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\zxing.net.mobile\\2.4.1\\zxing.net.mobile.2.4.1.nupkg.sha512"

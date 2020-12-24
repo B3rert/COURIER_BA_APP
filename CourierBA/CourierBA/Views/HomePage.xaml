@@ -197,6 +197,15 @@
                             FontSize="17"
                             HorizontalOptions="FillAndExpand"
                             Clicked="btnSelectFile_Clicked"/>
+                        <ImageButton 
+                            VerticalOptions="FillAndExpand"
+                            WidthRequest="18"
+                            x:Name="btnTomarFoto"
+                            Source="camara_blue_icon.png"
+                            BackgroundColor="Transparent"
+                            Clicked="btnTomarFoto_Clicked"
+                            Margin="10,0,10,0"/>
+                        
                         <ImageButton x:Name="btnClearImage"
                                      Clicked="btnClearImage_Clicked"
                                      Source="eliminar_icon.png"
@@ -204,7 +213,6 @@
                                      HorizontalOptions="End"
                                      HeightRequest="20"/>
                     </StackLayout>
-                    
                     <StackLayout HeightRequest="150" Padding="0,0,0,10">
                         <CollectionView x:Name="collectionImages"
                         ItemsLayout="HorizontalList">
