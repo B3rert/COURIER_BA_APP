@@ -55,5 +55,18 @@ namespace CourierBA.Views
            await Navigation.PopToRootAsync();
 
         }
+
+        //Aplication select
+        int? aplicationSelect = null;
+        private void listMenu_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            var apliaction = e.Item as Models.AplicionUserModel;
+            aplicationSelect = apliaction.Application.Value;
+
+            int? vwsgdvs = aplicationSelect;
+            int? iugdiys = vwsgdvs;
+            return;
+
+        }
     }
 }

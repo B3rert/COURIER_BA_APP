@@ -72,7 +72,7 @@ namespace CourierBA.Views
 
                 HttpClient client = new HttpClient();
                 client.BaseAddress = Global.GlobalVariables.Servidor;
-                string url = string.Format("api/AplicationUser?user=" + _usuario); //URL API
+                string url = string.Format("/api/PA_bsc_User_Aplication?user=" + _usuario); //URL API
                 var response = await client.GetAsync(url);
                 result = response.Content.ReadAsStringAsync().Result;
 

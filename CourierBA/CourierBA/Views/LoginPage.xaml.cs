@@ -49,7 +49,7 @@ namespace CourierBA.Views
 
                 HttpClient client = new HttpClient();
                 client.BaseAddress = Global.GlobalVariables.Servidor;
-                string url = string.Format("/api/Login?user=" + UserEntry.Text + "&pass=" + PassEntry.Text); //URL API
+                string url = string.Format("/api/PA_bsc_User_2?user=" + UserEntry.Text + "&pass=" + PassEntry.Text); //URL API
                 var response = await client.GetAsync(url);
                 result = response.Content.ReadAsStringAsync().Result;
 
@@ -57,14 +57,14 @@ namespace CourierBA.Views
                 {
                     //Api Empresa
 
-                    string urlEmpresa = string.Format("/api/Empresa?user=" + UserEntry.Text);
+                    string urlEmpresa = string.Format("/api/PA_bsc_Empresa_1?user=" + UserEntry.Text);
                     var responseEmpresa = await client.GetAsync(urlEmpresa);
                     resultEmpresa = responseEmpresa.Content.ReadAsStringAsync().Result;
 
                     try
                     {
                         //Api estacion 
-                        string urlEstacion = string.Format("/api/Estacion?user=" + UserEntry.Text);
+                        string urlEstacion = string.Format("/api/PA_bsc_Estacion_Trabajo_2?user=" + UserEntry.Text);
                         var responseEstacion = await client.GetAsync(urlEstacion);
                         resultEstacion = responseEstacion.Content.ReadAsStringAsync().Result;
 

@@ -4,7 +4,8 @@
              x:Class="CourierBA.Views.MenuDetailPage">
     <MasterDetailPage.Master>
         <ContentPage Title="Menu">
-            <ListView x:Name="listMenu">
+            <ListView x:Name="listMenu"
+                      ItemTapped="listMenu_ItemTapped">
                 <ListView.Header>
                     <Grid BackgroundColor="{DynamicResource NavigationBarColor}">
                         <Grid.ColumnDefinitions>
