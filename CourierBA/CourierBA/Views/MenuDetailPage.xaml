@@ -35,7 +35,6 @@
                                 VerticalOptions="End"
                                 BackgroundColor="AliceBlue"
                                 HeightRequest="35"/>
-                           
                             </StackLayout>
                         
                     </Grid>
