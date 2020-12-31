@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Syncfusion.XForms.Themes.LightTheme" xmlns:local="clr-namespace:Syncfusion.XForms.Themes">
+     <x:String x:Key="SyncfusionTheme">LightTheme</x:String>
+    <!--Common colors-->
+    <Color x:Key="SyncPrimaryColor">#0E74E0</Color>
+    <Color x:Key="SyncPrimaryLightColor">#0E74E0</Color>
+    <Color x:Key="SyncPrimaryDarkColor">#1470D0</Color>
+    <Color x:Key="SyncPrimaryForegroundColor">#FFFFFF</Color>
+    <Color x:Key="SyncPrimaryLightForegroundColor">#FFFFFF</Color>
+    <Color x:Key="SyncPrimaryDarkForegroundColor">#FFFFFF</Color>
+    <Color x:Key="SyncSuccessColor">#3EA800</Color>
+    <Color x:Key="SyncErrorColor">#FE1616</Color>
+    <Color x:Key="SyncWarningColor">#FF8802</Color>
+    <Color x:Key="SyncInfoColor">#3D99FA</Color>
+
+    <!--SfStepProgressBarTheme-->
+    <x:String x:Key="SfStepProgressBarTheme">CommonTheme</x:String>
+    <Color x:Key="StepProgressBarBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="StepProgressBarTextColor">#000000</Color>
+    <Color x:Key="StepProgressBarTrackColor">#CCCCCC</Color>
+    <Color x:Key="NotStartedMarkerFillColor">#FFFFFF</Color>
+    <Color x:Key="NotStartedMarkerConentFillColor">#CCCCCC</Color>
+    <Color x:Key="NotStartedMarkerStrokeColor">#FFFFFF</Color>
+
+    <!--SfRichTextEditor-->
+    <x:String x:Key="SfRichTextEditorTheme">CommonTheme</x:String>
+    <Color x:Key="SfRichTextEditorBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfRichTextEditorToolbarBackgroundColor">#FAFAFA</Color>
+    <Color x:Key="SfRichTextEditorToolbarButtonColor">#FAFAFA</Color>
+    <Color x:Key="SfRichTextEditorToolbarTextColor">#707070</Color>
+    <Color x:Key="SfRichTextEditorFontColor">#707070</Color>
+    <Color x:Key="SfRichTextEditorToolbarPressedColor">#F0F0F0</Color>
+
+    <!--SfSwitch-->
+    <x:String x:Key="SfSwitchTheme">CommonTheme</x:String>
+    <Color x:Key="MaterialOnTrackColor">#cce4f7</Color>
+    <Color x:Key="MaterialOnTrackBorderColor">#cce4f7</Color>
+    <Color x:Key="MaterialOffThumbColor">#FFFFFF</Color>
+    <Color x:Key="MaterialOffTrackColor">#949494</Color>
+    <Color x:Key="MaterialOffThumbBorderColor">#D3D3D3</Color>
+    <Color x:Key="MaterialOffTrackBorderColor">#949494</Color>
+    <Color x:Key="MaterialIndeterminateTrackColor">#CACACA</Color>
+    <Color x:Key="MaterialIndeterminateTrackBorderColor">#CACACA</Color>
+    <Color x:Key="CupertinoOffThumbBorderColor">#E0E0E0</Color>
+    <Color x:Key="CupertinoOffTrackColor">#FFFFFF</Color>
+    <Color x:Key="CupertinoOffTrackBorderColor">#E5E5E5</Color>
+    <Color x:Key="FluentOffThumbColor">#000000</Color>
+    <Color x:Key="FluentOffTrackColor">#FFFFFF</Color>
+    <Color x:Key="FluentOffThumbBorderColor">#000000</Color>
+    <Color x:Key="FluentOffTrackBorderColor">#000000</Color>
+
+    <!--SfSchedule-->
+    <x:String x:Key="SfScheduleTheme">CommonTheme</x:String>
+     <!--ScheduleBackgroundColor-->
+    <Color x:Key="SfScheduleBackgroundColor">#FFFFFF</Color>
+    <!--CurrentTimeIndicatorColor-->
+    <Color x:Key="SfScheduleCurrentTimeIndicatorColor">#212121</Color>
+    <!--DayViewSettings-->
+    <Color x:Key="SfScheduleDayViewNonWorkingHoursTimeSlotColor">#FAFAFA</Color>
+    <Color x:Key="SfScheduleDayViewNonWorkingHoursTimeSlotBorderColor">#F0F0F0</Color>
+    <Color x:Key="SfScheduleDayViewTimeSlotColor">#FFFFFF</Color>
+    <Color x:Key="SfScheduleDayViewTimeSlotBorderColor">#F0F0F0</Color>
+    <Color x:Key="SfScheduleDayViewVerticalLineColor">#F0F0F0</Color>
+    <Color x:Key="SfScheduleDayViewAllDayAppointmentLayoutColor">#FFFFFF</Color>
+    <!--WeekViewSettings-->
+    <Color x:Key="SfScheduleWeekViewNonWorkingHoursTimeSlotColor">#FAFAFA</Color>
+    <Color x:Key="SfScheduleWeekViewNonWorkingHoursTimeSlotBorderColor">#F0F0F0</Color>
+    <Color x:Key="SfScheduleWeekViewTimeSlotColor">#FFFFFF</Color>
+    <Color x:Key="SfScheduleWeekViewTimeSlotBorderColor">#F0F0F0</Color>
+    <Color x:Key="SfScheduleWeekViewVerticalLineColor">#F0F0F0</Color>
+    <Color x:Key="SfScheduleWeekViewAllDayAppointmentLayoutColor">#FFFFFF</Color>
+    <!--WorkWeekViewSettings-->
+    <Color x:Key="SfScheduleWorkWeekViewNonWorkingHoursTimeSlotColor">#FAFAFA</Color>
+    <Color x:Key="SfScheduleWorkWeekViewNonWorkingHoursTimeSlotBorderColor">#F0F0F0</Color>
+    <Color x:Key="SfScheduleWorkWeekViewTimeSlotColor">#FFFFFF</Color>
+    <Color x:Key="SfScheduleWorkWeekViewTimeSlotBorderColor">#F0F0F0</Color>
+    <Color x:Key="SfScheduleWorkWeekViewVerticalLineColor">#F0F0F0</Color>
+    <Color x:Key="SfScheduleWorkWeekViewAllDayAppointmentLayoutColor">#FFFFFF</Color>
+    <!--TimelineViewSettings-->
+    <Color x:Key="SfScheduleTimelineViewNonWorkingHoursTimeSlotColor">#FAFAFA</Color>
+    <Color x:Key="SfScheduleTimelineViewNonWorkingHoursTimeSlotBorderColor">#F0F0F0</Color>
+    <Color x:Key="SfScheduleTimelineViewTimeSlotColor">#FFFFFF</Color>
+    <Color x:Key="SfScheduleTimelineViewTimeSlotBorderColor">#F0F0F0</Color>
+    <!--MonthViewSettings-->
+    <Color x:Key="SfScheduleMonthViewSelectionTextColor">#000000</Color>
+    <!--DayLabelSettings-->
+    <Color x:Key="SfScheduleDayViewLabelTimeLabelColor">#707070</Color>
+    <!--WeekLabelSettings-->
+    <Color x:Key="SfScheduleWeekViewLabelTimeLabelColor">#707070</Color>
+    <!--WorkWeekLabelSettings-->
+    <Color x:Key="SfScheduleWorkWeekViewLabelTimeLabelColor">#707070</Color>
+    <!--TimelineLabelSettings-->
+    <Color x:Key="SfScheduleTimelineViewLabelTimeLabelColor">#707070</Color>
+    <!--HeaderStyle-->
+    <Color x:Key="SfScheduleHeaderBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfScheduleHeaderTextColor">#707070</Color>
+    <!--ViewHeaderStyle-->
+    <Color x:Key="SfScheduleViewHeaderDayTextColor">#707070</Color>
+    <Color x:Key="SfScheduleViewHeaderBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfScheduleViewHeaderDateTextColor">#707070</Color>
+    <!--SelectionStyle-->
+    <Color x:Key="SfScheduleSelectionBackgroundColor">#33C0C0C0</Color>
+    <Color x:Key="SfScheduleSelectionBorderColor">#F0F0F0</Color>
+    <!--AppointmentStyle-->
+    <Color x:Key="SfScheduleAppointmentTextColor">#FFFFFF</Color>
+    <Color x:Key="SfScheduleAppointmentBorderColor">#FFFFFF</Color>
+    <Color x:Key="SfScheduleAppointmentSelectionBorderColor">#424242</Color>
+    <Color x:Key="SfScheduleAppointmentSelectionTextColor">#FFFFFF</Color>
+    <!--MonthViewCellStyle-->
+    <Color x:Key="SfScheduleMonthCellTextColor">#414141</Color>
+    <Color x:Key="SfScheduleMonthCellBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfScheduleMonthCellTodayBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfScheduleMonthCellPreviousMonthTextColor">#C2C2C2</Color>
+    <Color x:Key="SfScheduleMonthCellPreviousMonthBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfScheduleMonthCellNextMonthBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfScheduleMonthCellNextMonthTextColor">#C2C2C2</Color>
+    <!--WeekNumberStyle-->
+    <Color x:Key="SfScheduleMonthViewWeekNumberTextColor">#707070</Color>
+    <Color x:Key="SfScheduleMonthViewWeekNumberBackgroundColor">#FFFFFF</Color>
+    <!--AgendaViewStyle-->
+    <Color x:Key="SfScheduleMonthAgendaViewSubjectFontColor">#414141</Color>
+    <Color x:Key="SfScheduleMonthAgendaViewBackgroundColor">#F5F5F5</Color>
+    <Color x:Key="SfScheduleMonthAgendaViewTimeFontColor">#707070</Color>
+    <Color x:Key="SfScheduleMonthAgendaViewDateFontColor">#707070</Color>
+    <!--TimeIndicatorStyle-->
+    <Color x:Key="SfScheduleTimeIndicatorTextColor">#6D25E8</Color>
+    <!--SfSchedule-End-->
+
+    <!--SfDataGridControl-->
+    <x:String x:Key="SfDataGridTheme">CommonTheme</x:String>
+	<!--BackGroundColor-->
+    <x:String x:Key="SfDataGridBackgroundColor">#FFFFFF</x:String>
+    <!--Header-->
+    <Color x:Key="SfDataGridHeaderBackgroundColor">#F0F0F0</Color>
+    <Color x:Key="SfDataGridHeaderForegroundColor">#414141</Color>
+    <Color x:Key="SfDataGridHeaderBorderColor">#E0E0E0</Color>
+    <!--Body-->
+    <Color x:Key="SfDataGridRecordBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfDataGridRecordForegroundColor">#414141</Color>
+    <Color x:Key="SfDataGridUnboundRowBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfDataGridUnboundRowForegroundColor">#414141</Color>
+    <Color x:Key="SfDataGridBorderColor">#E0E0E0</Color>
+    <!--Selection-->
+    <Color x:Key="SfDataGridSelectionBackgroundColor">#F0F0F0</Color>
+    <Color x:Key="SfDataGridSelectionForegroundColor">#414141</Color>
+    <!--AlternateSelection-->
+    <Color x:Key="SfDataGridAlternatingRowBackgroundColor">#FAFAFA</Color>
+    <!--Interaction Control-->
+    <!--Row-->
+    <Color x:Key="SfDataGridRowDragViewBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfDataGridRowDragViewForegroundColor">#414141</Color>
+    <!--Column-->
+    <Color x:Key="SfDataGridColumnDragViewBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfDataGridColumnDragViewForegroundColor">#414141</Color>
+    <Color x:Key="SfDataGridColumnDragViewBorderColor">#E0E0E0</Color>
+    <!--Table Summary -->
+    <Color x:Key="SfDataGridTableSummaryBackgroundColor">#FAFAFA</Color>
+    <Color x:Key="SfDataGridTableSummaryForegroundColor">#414141</Color>
+    <!--Caption Summary-->
+    <Color x:Key="SfDataGridCaptionSummaryRowBackgroundColor">#FAFAFA</Color>
+    <Color x:Key="SfDataGridCaptionSummaryRowForegroundColor">#414141</Color>
+    <!--Group Summary-->
+    <Color x:Key="SfDataGridGroupSummaryRowBackgroundColor">#FAFAFA</Color>
+    <Color x:Key="SfDataGridGroupSummaryRowForegroundColor">#414141</Color>
+    <!--Load More View-->
+    <Color x:Key="SfDataGridLoadMoreViewBackgroundColor">#F0F0F0</Color>
+    <Color x:Key="SfDataGridLoadMoreViewForegroundColor">#414141</Color>
+    <!--Indent Column -->
+    <Color x:Key="SfDataGridIndentBackgroundColor" >#F0F0F0</Color>
+    <!--Stacked Header -->
+    <Color x:Key="SfDataGridStackedHeaderBackgroundColor">#F0F0F0</Color>
+    <Color x:Key="SfDataGridStackedHeaderForegroundColor">#414141</Color>
+
+    <!--SfPopupLayout-->
+    <x:String x:Key="SfPopupLayoutTheme">CommonTheme</x:String>
+    <Color x:Key="SfPopupLayoutHeaderBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfPopupLayoutContentBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfPopupLayoutContentTextColor">#414141</Color>
+    <Color x:Key="SfPopupLayoutAcceptButtonBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfPopupLayoutDeclineButtonTextColor">#414141</Color>
+    <Color x:Key="SfPopupLayoutFooterBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfPopupLayoutBorderColor">#C2C2C2</Color>
+    <Color x:Key="SfPopupLayoutDeclineButtonBackgroundColor">#D1D1D1</Color>
+    <Color x:Key="SfPopupLayoutHeaderTextColor">#414141</Color>
+
+    <!--End-->
+    
+    <!--SfPullToRefreshControl-->
+    <x:String x:Key="SfPullToRefreshTheme">CommonTheme</x:String>
+    <Color x:Key="SfPullToRefreshBackgroundColor">#FFFFFF</Color>
+    
+    <!--SfCardViewControl-->
+    <x:String x:Key="SfCardViewTheme">CommonTheme</x:String>
+    <Color x:Key="CardViewContentBackgroundColor">#393939</Color>
+
+    <!--SfTreeView-->
+    <x:String x:Key="SfTreeViewTheme">CommonTheme</x:String>
+    <Color x:Key="SfTreeViewBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfTreeViewSelectionBackgroundColor">#F0F0F0</Color>
+    <Color x:Key="SfTreeViewFocusBorderColor">#E0E0E0</Color>
+    <Color x:Key="SfTreeViewContentForegroundColor">#414141</Color>
+    <Color x:Key="SfTreeViewExpanderColor">#707070</Color>
+    <Thickness x:Key="SfTreeViewFocusBorderThickness" Left="1" Top="1" Right="1" Bottom="1"/>
+	
+	 <!--SfListView-->
+    <x:String x:Key="SfListViewTheme">CommonTheme</x:String>
+    <Color x:Key="SfListViewSelectionBackgroundColor">#F0F0F0</Color>
+    <Color x:Key="SfListViewFocusBorderColor">#C2C2C2</Color>
+    <Thickness x:Key="SfListViewFocusBorderThickness" Left="1" Top="1" Right="1" Bottom="1"/>
+    <Color x:Key="SfListViewForegroundColor">#414141</Color>
+    <Color x:Key="SfListViewBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfListViewGroupHeaderForegroundColor">#707070</Color>
+    <Color x:Key="SfListViewLoadMoreForegroundColor">#414141</Color>
+    <Color x:Key="SfListViewLoadMoreBackgroundColor">#F0F0F0</Color>
+    <x:Double x:Key="SfListViewLoadMoreOpacity">0.8</x:Double>
+    
+    <!--SfDateTimeRangeNavigator-->
+    <x:String x:Key="SfDateTimeRangeNavigatorTheme">CommonTheme</x:String>
+	<Color x:Key="SfDateTimeRangeNavigatorBackgroundColor">#Transparent</Color>
+	<Color x:Key="SfDateTimeRangeNavigatorOverlayColor">#99FFFFFF</Color>
+	<!--Scale Style-->
+    <Color x:Key="SfDateTimeRangeNavigatorLabelTextColor">#414141</Color>
+	<Color x:Key="SfDateTimeRangeNavigatorLabelBackgroundColor">#F0F0F0</Color>
+	<Color x:Key="SfDateTimeRangeNavigatorLabelBorderColor">#F0F0F0</Color>
+	<Color x:Key="SfDateTimeRangeNavigatorSelectedLabelBackgroundColor">#F0F0F0</Color>
+	<Color x:Key="SfDateTimeRangeNavigatorSelectedLabelBorderColor">#F0F0F0</Color>
+	<Color x:Key="SfDateTimeRangeNavigatorGridLineColor">#E0E0E0</Color>
+    <Color x:Key="SfDateTimeRangeNavigatorTickLineColor">#E0E0E0</Color>
+	<!--Thumb Style-->
+    <Color x:Key="SfDateTimeRangeNavigatorThumbBackgroundColor">#FFFFFF</Color>
+	<Color x:Key="SfDateTimeRangeNavigatorThumbBorderColor">#212121</Color>
+    <Color x:Key="SfDateTimeRangeNavigatorThumbLineColor">#212121</Color>
+	<!--Tooltip Style-->
+    <Color x:Key="SfDateTimeRangeNavigatorTooltipTextColor">#FFFFFF</Color>
+    
+    <!--SfChart-->
+    <x:String x:Key="SfChartTheme">CommonTheme</x:String>
+	<Color x:Key="SfChartTitleTextColor">#414141</Color>
+	<Color x:Key="SfChartTitleBorderColor">Transparent</Color>
+	<Color x:Key="SfChartTitleBackgroundColor">Transparent</Color>
+	<Color x:Key="SfChartBackgroundColor">Transparent</Color>
+	<!--Selection Zooming-->
+    <Color x:Key="SfChartSelectionRectFillColor">#338CBDFF</Color>
+    <Color x:Key="SfChartSelectionRectStrokeColor">#8CBDFF</Color>
+	<!--Annotation-->
+    <Color x:Key="SfChartAnnotationFillColor">#33177CE7</Color>
+	<Color x:Key="SfChartAnnotationLabelBorderColor">Transparent</Color>
+	<Color x:Key="SfChartAnnotationLabelBackgroundColor">Transparent</Color>
+	<Color x:Key="SfChartAnnotationAxisLabelTextColor">#FFFFFF</Color>
+	<!--Trackball-->
+    <Color x:Key="SfChartTrackballLineStrokeColor">#424242</Color>
+    <Color x:Key="SfChartTrackballBackgroundColor">#424242</Color>
+    <Color x:Key="SfChartTrackballBorderColor">#424242</Color>
+	<Color x:Key="SfChartTrackballTextColor">#FFFFFF</Color>
+	<Color x:Key="SfChartTrackballAxisLabelBackgroundColor">#424242</Color>
+    <Color x:Key="SfChartTrackballAxisLabelBorderColor">#424242</Color>
+	<Color x:Key="SfChartTrackballAxisLabelTextColor">#FFFFFF</Color>
+	<!--Selection-->
+    <Color x:Key="SfChartDataPointSelectionColor">#606060</Color>
+    <Color x:Key="SfChartSeriesSelectionColor">#606060</Color>
+	<!--Stripline-->
+    <Color x:Key="SfChartStriplineBackgroundColor">#F0F0F0</Color>
+    <Color x:Key="SfChartStriplineBorderColor">#F0F0F0</Color>
+    <Color x:Key="SfChartStriplineTextColor">#414141</Color>
+	<Color x:Key="SfChartStriplineLabelBorderColor">Transparent</Color>
+	<Color x:Key="SfChartStriplineLabelBackgroundColor">Transparent</Color>
+	<!--Axis-->
+    <Color x:Key="SfChartMajorGridLineColor">#C2C2C2</Color>
+    <Color x:Key="SfChartMinorGridLineColor">#C2C2C2</Color>
+    <Color x:Key="SfChartMajorTickLineColor">#D1D1D1</Color>
+    <Color x:Key="SfChartMinorTickLineColor">#E0E0E0</Color>
+    <Color x:Key="SfChartAxisLineColor">#C2C2C2</Color>
+	<Color x:Key="SfChartAxisTitleTextColor">#414141</Color>
+	<Color x:Key="SfChartAxisTitleBackgroundColor">Transparent</Color>
+	<Color x:Key="SfChartAxisTitleBorderColor">Transparent</Color>
+	<Color x:Key="SfChartAxisLabelColor">#707070</Color>
+	<Color x:Key="SfChartAxisLabelBackgroundColor">Transparent</Color>
+	<Color x:Key="SfChartAxisLabelBorderColor">Transparent</Color>
+	<!--Legend-->
+	<Color x:Key="SfChartLegendTitleTextColor">#414141</Color>
+	<Color x:Key="SfChartLegendTitleBorderColor">Transparent</Color>
+	<Color x:Key="SfChartLegendTitleBackgroundColor">Transparent</Color>
+    <Color x:Key="SfChartLegendLabelColor">#414141</Color>
+	<!--ColorModel-->
+	<x:String x:Key="SfChartColorPaletteName">Custom</x:String>
+    <local:SfChartColors x:Key="SfChartColorModelColors" >
+        <Color>#E3648C</Color>
+        <Color>#327BCF</Color>
+        <Color>#F6B781</Color>
+        <Color>#00BBAC</Color>
+        <Color>#E87953</Color>
+        <Color>#77B4EB</Color>
+        <Color>#7D83E5</Color>
+        <Color>#DB88BA</Color>
+        <Color>#6EAE46</Color>
+        <Color>#BCB83C</Color>
+    </local:SfChartColors>
+    
+    <!--SfKanban-->
+    <x:String x:Key="SfKanbanTheme">CommonTheme</x:String>
+	<Color x:Key="SfKanbanBackgroundColor">#F5F5F5</Color>
+    <Color x:Key="SfKanbanHeaderTitleTextColor">#494949</Color>
+    <Color x:Key="SfKanbanHeaderBackgroundColor">Transparent</Color>
+	<Color x:Key="SfKanbanHeaderCollapsedBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfKanbanHeaderInfoTextColor">#767980</Color>
+    <Color x:Key="SfKanbanMinValidationColor">#FF7F00</Color>
+    <Color x:Key="SfKanbanMaxValidationColor">#FF0000</Color>
+    <Color x:Key="SfKanbanValidationColor">#E0E0E0</Color>
+    <Color x:Key="SfKanbanPlaceholderBackgroundColor">#F5F5F5</Color>
+    <Color x:Key="SfKanbanPlaceholderBorderColor">#A3A3A3</Color>
+    <Color x:Key="SfKanbanPlaceholderTextColor">#414141</Color>
+    <Color x:Key="SfKanbanPlaceholderSelectedBackgroundColor">#E0E0E0</Color>
+    <Color x:Key="SfKanbanPlaceholderSelectedBorderColor">#A3A3A3</Color>
+    <Color x:Key="SfKanbanPlaceholderSelectedTextColor">#414141</Color>
+    <Color x:Key="SfKanbanCardBackgroundColor">White</Color>
+    <Color x:Key="SfKanbanCardBorderColor">#E4E4E5</Color>
+    <Color x:Key="SfKanbanCardTextColor">#3F444F</Color>
+    <Color x:Key="SfKanbanCardTitleColor">#494949</Color>
+    <Color x:Key="SfKanbanCardTagBackgroundColor">#EDEDED</Color>
+    <Color x:Key="SfKanbanCardTagTextColor">#454545</Color>
+    
+    <!--SfCircularGauge-->
+    <x:String x:Key="SfCircularGaugeTheme">CommonTheme</x:String>
+    <Color x:Key="SfCircularGaugeBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfCircularGaugeScaleLabelColor">#414141</Color>
+    <Color x:Key="SfCircularGaugeScaleRimColor">#F0F0F0</Color>
+    <Color x:Key="SfCircularGaugeNeedlePointerColor">#707070</Color>
+    <Color x:Key="SfCircularGaugeSymbolPointerColor">#707070</Color>
+    <Color x:Key="SfCircularGaugeRangePointerColor">#177CE7</Color>
+    <Color x:Key="SfCircularGaugeRangeColor">#177CE7</Color>
+    <Color x:Key="SfCircularGaugeHeaderColor">#414141</Color>
+    <Color x:Key="SfCircularGaugeMinorTickColor">#C2C2C2</Color>
+    <Color x:Key="SfCircularGaugeMajorTickColor">#C2C2C2</Color>
+    <Color x:Key="SfCircularGaugeKnobColor">#707070</Color>
+    <Color x:Key="SfCircularGaugeKnobStrokeColor">#707070</Color>
+    <Color x:Key="SfCircularGaugeTailColor">#707070</Color>
+    <Color x:Key="SfCircularGaugeTailStrokeColor">#707070</Color>
+
+    <!--SfLinearGauge-->
+    <x:String x:Key="SfLinearGaugeTheme">CommonTheme</x:String>
+    <Color x:Key="SfLinearGaugeBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfLinearGaugeScaleBarColor">#949494</Color>
+    <Color x:Key="SfLinearGaugeLabelColor">#414141</Color>
+    <Color x:Key="SfLinearGaugeRangeColor">#F0F0F0</Color>
+    <Color x:Key="SfLinearGaugeHeaderColor">#414141</Color>
+    <Color x:Key="SfLinearGaugeSymbolColor">#707070</Color>
+    <Color x:Key="SfLinearGaugeTickColor">#C2C2C2</Color>
+    <Color x:Key="SfLinearGaugeBarColor">#707070</Color>
+
+    <!--SfDigitalGauge-->
+    <x:String x:Key="SfDigitalGaugeTheme">CommonTheme</x:String>
+    <Color x:Key="SfDigitalGaugeBackgroundColor">#F0F0F0</Color>
+    <Color x:Key="SfDigitalGaugeDisabledSegmentColor">#D1D1D1</Color>
+    <Color x:Key="SfDigitalGaugeCharacterStrokeColor">#177CE7</Color>
+
+    <!--SfSunburstChart-->
+    <x:String x:Key="SfSunburstChartTheme">CommonTheme</x:String>
+    <Color x:Key="SfSunburstChartBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfSunburstChartTitleColor">#414141</Color>
+    <Color x:Key="SfSunburstLegendTextColor">#707070</Color>
+    <Color x:Key="SfSunburstSelectionColor">#555555</Color>
+    <Color x:Key="SfSunburstSelectionStrokeColor">#FFFFFF</Color>
+    <Color x:Key="SfSunburstTooltipBorderColor">#949494</Color>
+    <Color x:Key="SfSunburstTooltipBackgroundColor">#414141</Color>
+    <Color x:Key="SfSunburstTooltipTextColor">#C2C2C2</Color>
+
+    <!--SfSparkline-->
+    <x:String x:Key="SfSparklineTheme">CommonTheme</x:String>
+    <Color x:Key="SfSparklineAreaBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfLineSparklineBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfColumnSparklineBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfWinLossSparklineBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfSparklineAreaFillColor">#DFF4F9</Color>
+    <Color x:Key="SfLineSparklineStrokeColor ">#36CCFD</Color>
+    <Color x:Key="SfSparklineMarkerBaseColor">#36CCFD</Color>
+    <Color x:Key="SfSparklineAxisStrokeColor">#36CCFD</Color>
+    <Color x:Key="SfSparklineRangeBandColor">#DFF4F9</Color>
+    <Color x:Key="SfWinLossSparklineStrokeColor">#36CCFD</Color>
+    <Color x:Key="SfWinLossSparklineColor">#DFF4F9</Color>
+    <Color x:Key="SfColumnSparklineStrokeColor">#36CCFD</Color>
+    <Color x:Key="SfColumnSparklineColor">#DFF4F9</Color>
+
+    <!--SfMaps-->
+    <x:String x:Key="SfMapsTheme">CommonTheme</x:String>
+    <Color x:Key="SfMapsBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfMapsShapeFillColor">#D1D1D1</Color>
+    <Color x:Key="SfMapsShapeStrokeColor">#FFFFFF</Color>
+    <Color x:Key="SfMapsSelectedShapeColor">#808080</Color>
+    <Color x:Key="SfMapsSelectedShapeStrokeColor">#FFFFFF</Color>
+    <Color x:Key="SfMapsBubbleMarkerFillColor">#4180BF</Color>
+    <Color x:Key="SfMapsLegendTextColor">#414141</Color>
+    <Color x:Key="SfMapsDataLabelTextColor">#414141</Color>
+    <Color x:Key="SfMapsMarkerLabelColor">#414141</Color>
+    <Color x:Key="SfMapsMarkerIconColor">#00983E</Color>
+    <Color x:Key="SfMapsTooltipBackgroundColor">#414141</Color>
+    <Color x:Key="SfMapsTooltipStrokeColor">#FFFFFF</Color>
+    <Color x:Key="SfMapsTooltipTextColor">#FFFFFF</Color>
+
+    <!--SfTreeMap-->
+    <x:String x:Key="SfTreeMapTheme">CommonTheme</x:String>
+    <Color x:Key="SfTreemapBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfTreemapGroupBorderColor">#E0E0E0</Color>
+    <Color x:Key="SfTreemapGroupBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfTreemapLabelColor">#414141</Color>
+    <Color x:Key="SfTreemapLeafItemBorderColor">#E0E0E0</Color>
+    <Color x:Key="SfTreemapTooltipBackgroundColor">#414141</Color>
+    <Color x:Key="SfTreemapTooltipStrokeColor">#FFFFFF</Color>
+    <Color x:Key="SfTreemapTooltipTextColor">#FFFFFF</Color>
+	
+	<!--SfBadgeView-->
+    <x:String x:Key="SfBadgeViewTheme">CommonTheme</x:String>
+    <Color x:Key="SfBadgeViewStrokeColor">#FFFFFF</Color>
+    
+    <!--SfImageEditor-->
+    <x:String x:Key="SfImageEditorTheme">CommonTheme</x:String>
+    <Color x:Key="SfImageEditorToolbarBorderColor">#E0E0E0</Color>
+    <Color x:Key="SfImageEditorToolbarBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfImageEditorToolbarTextColor">#707070</Color>
+    <Color x:Key="SfImageEditorToolbarPressedColor">#F0F0F0</Color>
+    <Color x:Key="SfImageEditorToolbarLineSeparatorColor">#D1D1D1</Color>
+    <Color x:Key="SfImageEditorToolbarSelectionColor">#177CE7</Color>
+    <Color x:Key="SfImageEditorDeleteBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfImageEditorDeletePressedColor">#FFFFFF</Color>
+    <Color x:Key="SfImageEditorDeleteBorderColor">#D1D1D1</Color>
+    <Color x:Key="SfImageEditorToolbarSliderProgressColor">#177CE7</Color>
+    <Color x:Key="SfImageEditorToolbarColorPaletteHighlightColor">#3698FE</Color>
+    <Color x:Key="SfImageEditorBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfImageEditorTextPreviewerEditTextColor">#414141</Color>
+    <Color x:Key="SfImageEditorTextPreviewerBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfImageEditorTextPreviewerButtonColor">#414141</Color>
+    <Color x:Key="SfImageEditorTextPreviewerButtonBackgroundColor">#D1D1D1</Color>
+    <Color x:Key="SfImageEditorTextPreviewerButtonPressedColor">#177CE7</Color>
+    <Color x:Key="SfImageEditorTextPreviewerButtonTextColor">#414141</Color>
+    <Color x:Key="SfImageEditorCheckBoxStrokeColor">#177CE7</Color>
+    <Color x:Key="SfTextPreviewerButtonDisabledColor">#D1D1D1</Color>
+    <Color x:Key="SfTextPreviewerButtonDisabledTextColor">#414141</Color>
+
+    <!--SfComboBox-->
+    <x:String x:Key="SfComboBoxTheme">CommonTheme</x:String>
+    <Color x:Key="SfComboBoxBackgroundColor">Transparent</Color>
+    <Color x:Key="SfComboBoxTextColor">#414141</Color>
+    <Color x:Key="SfComboBoxBorderColor">#D1D1D1</Color>
+    <Color x:Key="SfComboBoxClearButtonColor">#707070</Color>
+    <Color x:Key="SfComboBoxWatermarkColor">#949494</Color>
+    <Color x:Key="SfComboBoxDropDownBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfComboBoxDropDownTextColor">#414141</Color>
+    <Color x:Key="SfComboBoxTokenBackgroundColor">#F0F0F0</Color>
+    <Color x:Key="SfComboBoxTokenTextColor">#414141</Color>
+    <Color x:Key="SfComboBoxTokenDeleteButtonColor">#707070</Color>
+    <Color x:Key="SfComboBoxDropDownButtonBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfComboBoxDropDownButtonTextColor">#414141</Color>
+    <Color x:Key="SfComboBoxSelectedDropDownItemColor">#e4e4e4</Color>
+    <Color x:Key="SfComboBoxClearButtonBackgroundColor">#CCCCCC</Color>
+    <Color x:Key="SfComboBoxHighlightedDropDownButtonBackgroundColor">#D3D3D3</Color>
+
+    <!--SfAutoComplete-->
+    <x:String x:Key="SfAutoCompleteTheme">CommonTheme</x:String>
+    <Color x:Key="SfAutoCompleteBackgroundColor">Transparent</Color>
+    <Color x:Key="SfAutoCompleteTextColor">#414141</Color>
+    <Color x:Key="SfAutoCompleteBorderColor">#D1D1D1</Color>
+    <Color x:Key="SfAutoCompleteClearButtonColor">#707070</Color>
+    <Color x:Key="SfAutoCompleteWatermarkColor">#949494</Color>
+    <Color x:Key="SfAutoCompleteDropDownBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfAutoCompleteDropDownTextColor">#414141</Color>
+    <Color x:Key="SfAutoCompleteTokenBackgroundColor">#F0F0F0</Color>
+    <Color x:Key="SfAutoCompleteTokenTextColor">#414141</Color>
+    <Color x:Key="SfAutoCompleteClearButtonBackgroundColor">#CCCCCC</Color>
+    <Color x:Key="SfAutoCompleteTokenDeleteButtonColor">#707070</Color>
+    
+    <!--SfCarousel-->
+    <x:String x:Key="SfCarouselTheme">CommonTheme</x:String>
+    <Color x:Key="SfCarouselBackgroundColor">#FFFFFF</Color>
+
+    <!--SfSegmentedControl-->
+    <x:String x:Key="SfSegmentedControlTheme">CommonTheme</x:String>
+    <Color x:Key="SfSegmentedControlBorderColor">#D1D1D1</Color>
+    <Color x:Key="SfSegmentFontIconFontColor">#707070</Color>
+    <Color x:Key="SfSegmentFontColor">#414141</Color>
+    <Color x:Key="SfSegmentColor">#FFFFFF</Color>
+    <Color x:Key="SfSegmentBorderColor">#D1D1D1</Color>
+
+    <!--SfNavigationDrawer-->
+    <x:String x:Key="SfNavigationDrawerTheme">CommonTheme</x:String>
+    <Color x:Key="SfNavigationDrawerBackgroundColor">#FFFFFF</Color>
+    
+    <!--SfMaskedEdit-->
+    <x:String x:Key="SfMaskedEditTheme">CommonTheme</x:String>
+    <Color x:Key="SfMaskedEditTextColor">#414141</Color>
+    <Color x:Key="SfMaskedEditWatermarkColor">#BFBDBD</Color>
+    <Color x:Key="SfMaskedEditBackgroundColor">Transparent</Color>
+    <Color x:Key="SfMaskedEditBorderColor">#D1D1D1</Color>
+
+    <!--SfBusyIndicator-->
+    <x:String x:Key="SfBusyIndicatorTheme">CommonTheme</x:String>
+    <Color x:Key="SfBusyIndicatorTextColor">#414141</Color>
+
+    <!--SfPicker-->
+    <x:String x:Key="SfPickerTheme">CommonTheme</x:String>
+    <Color x:Key="SfPickerBackgroundColor">#E1E1E1</Color>
+    <Color x:Key="SfPickerUnselectedItemTextColor">#707070</Color>
+    <Color x:Key="SfPickerColumnHeaderTextColor">#414141</Color>
+    <Color x:Key="SfPickerColumnHeaderBackgroundColor">#E1E1E1</Color>
+    <Color x:Key="SfPickerBorderColor">#E0E0E0</Color>
+    <Color x:Key="SfPickerSelectionBackgroundColor">#E1E1E1</Color>
+
+    <!--SfRating-->
+    <x:String x:Key="SfRatingTheme">CommonTheme</x:String>
+    <Color x:Key="SfRatingUnratedFillColor">#E0E0E0</Color>
+    <Color x:Key="SfRatingUnratedStrokeColor">#E0E0E0</Color>
+    <Color x:Key="SfRatingTooltipBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfRatingTooltipTextColor">#414141</Color>
+    <Color x:Key="SfRatingTooltipBorderColor">#D1D1D1</Color>
+
+    <!--SfRangeSlider-->
+    <x:String x:Key="SfRangeSliderTheme">CommonTheme</x:String>
+    <Color x:Key="SfRangeSliderBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfRangeSliderTickColor">#D1D1D1</Color>
+    <Color x:Key="SfRangeSliderLabelColor">#414141</Color>
+    <Color x:Key="SfRangeSliderUnselectedTrackColor">#D1D1D1</Color>
+    <Color x:Key="SfRangeSliderToolTipBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfRangeSliderToolTipTextColor">#414141</Color>
+    <Color x:Key="SfRangeSliderToolTipBorderColor">#E0E0E0</Color>
+
+    <!--SfNumericTextBox-->
+    <x:String x:Key="SfNumericTextBoxTheme">CommonTheme</x:String>
+    <Color x:Key="SfNumericTextBoxTextColor">#414141</Color>
+    <Color x:Key="SfNumericTextBoxBackgroundColor">Transparent</Color>
+    <Color x:Key="SfNumericTextBoxBorderColor">#D1D1D1</Color>
+
+     <!--SfNumericUpDown-->
+    <x:String x:Key="SfNumericUpDownTheme">CommonTheme</x:String>
+    <Color x:Key="SfNumericUpDownTextColor">#414141</Color>
+    <Color x:Key="SfNumericUpDownBackgroundColor">Transparent</Color>
+    <Color x:Key="SfNumericUpDownBorderColor">#D1D1D1</Color>
+    <Color x:Key="SfNumericUpDownButtonBackgroundColor">Transparent</Color>
+    <Color x:Key="SfNumericUpDownButtonForegroundColor">#707070</Color>
+    <Color x:Key="SfNumericUpDownHighlightedBackgroundColor">#F0F0F0</Color>
+    <Color x:Key="SfNumericUpDownHighlightedFontColor">#707070</Color>
+	<Color x:Key="SfNumericUpDownSpinButtonColor">#707070</Color>
+
+    <!--SfCheckBox-->
+    <x:String x:Key="SfCheckBoxTheme">CommonTheme</x:String>
+    <Color x:Key="SfCheckBoxBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfCheckBoxTextColor">#414141</Color>
+    <Color x:Key="SfCheckBoxUncheckedColor">#A3A3A3</Color>
+
+    <!--SfRadioButton-->
+    <x:String x:Key="SfRadioButtonTheme">CommonTheme</x:String>
+    <Color x:Key="SfRadioButtonBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfRadioButtonTextColor">#414141</Color>
+    <Color x:Key="SfRadioButtonUncheckedColor">#A3A3A3</Color>
+
+    <!--SfProgressBar-->
+    <x:String x:Key="SfProgressBarTheme">CommonTheme</x:String>
+    <Color x:Key="SfProgressBarTrackColor">#D1D1D1</Color>
+    <Color x:Key="SfProgressBarSecondaryProgressColor">#40177CE7</Color>
+
+    <!--SfRotator-->
+    <x:String x:Key="SfRotatorTheme">CommonTheme</x:String>
+    <Color x:Key="SfRotatorUnselectedDotColor">#FFFFFF</Color>
+    <Color x:Key="SfRotatorDotsBorderColor">#C2C2C2</Color>
+	
+	<!--SfRadialMenu-->
+    <x:String x:Key="SfRadialMenuTheme">CommonTheme</x:String>
+    <Color x:Key="SfRadialMenuCenterButtonBackgroundColor">#949494</Color>
+    <Color x:Key="SfRadialMenuCenterButtonTextColor">#FFFFFF</Color>
+    <Color x:Key="SfRadialMenuCenterButtonBorderColor">#FFFFFF</Color>
+    <Color x:Key="SfRadialMenuRimColor">#F0F0F0</Color>
+    <Color x:Key="SfRadialMenuSeparatorColor">#E0E0E0</Color>
+    <Color x:Key="SfRadialMenuTextColor">#707070</Color>
+    <Color x:Key="SfRadialMenuIconFontColor">#707070</Color>
+    <Color x:Key="SfRadialMenuPressedColor">#E0E0E0</Color>
+	
+	<!--SfTabView-->
+    <x:String x:Key="SfTabViewTheme">CommonTheme</x:String>
+    <Color x:Key="SfTabItemFontColor">#FFFFFF</Color>
+
+    <!-- SfBorder -->
+    <x:String x:Key="SfBorderTheme">CommonTheme</x:String>
+    <Color x:Key="SfBorderBackgroundColor">#E0E0E0</Color>
+    <Color x:Key="SfBorderBorderColor">#C2C2C2</Color>
+
+    <!--SfBackdropPage-->
+    <x:String x:Key="SfBackdropPageTheme">CommonTheme</x:String>
+    <Color x:Key="SfBackdropPageFrontLayerBackgroundColor">#FFFFFF</Color>
+
+    <!--SfChipTheme-->
+    <x:String x:Key="SfChipTheme">CommonTheme</x:String>
+    <Color x:Key="SfChipBackgroundColor">#E0E0E0</Color>
+    <Color x:Key="SfChipBorderColor">Transparent</Color>
+    <Color x:Key="SfChipTextColor">#414141</Color>
+    <Color x:Key="SfChipCloseButtonColor">#707070</Color>
+    <Color x:Key="SfChipSelectionIndicatorColor">#707070</Color>
+
+     <!--SfChipGroupTheme-->
+    <x:String x:Key="SfChipGroupTheme">CommonTheme</x:String>
+    <Color x:Key="SfChipGroupBackgroundColor">#E0E0E0</Color>
+    <Color x:Key="SfChipGroupBorderColor">Transparent</Color>
+    <Color x:Key="SfChipGroupTextColor">#414141</Color>
+    <Color x:Key="SfChipGroupCloseButtonColor">#707070</Color>
+    <Color x:Key="SfChipGroupSelectionIndicatorColor">#707070</Color>
+
+	<!--SfCalendar-->
+    <x:String x:Key="SfCalendarTheme">CommonTheme</x:String>
+    <Color x:Key="SfCalendarBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfCalendarInlineTextColor">#414141</Color>
+    <Color x:Key="SfCalendarBlackoutColor">#D1D1D1</Color>
+    <Color x:Key="SfCalendarDateSelectionColor">#F5F5F5</Color>
+    <Color x:Key="SfCalendarInlineBackgroundColor">#F5F5F5</Color>
+    <Color x:Key="SfCalendarSelectedDayTextColor">#000000</Color>
+    <Color x:Key="SfCalendarTodaySelectionTextColor">#FFFFFF</Color>
+    <Color x:Key="SfCalendarBorderColor">#F0F0F0</Color>  
+    <Color x:Key="SfCalendarDisabledBackgroundColor">Transparent</Color>
+    <Color x:Key="SfCalendarDisabledTextColor">#C2C2C2</Color>
+    <Color x:Key="SfCalendarPreviousMonthBackgroundColor">Transparent</Color>
+    <Color x:Key="SfCalendarPreviousMonthTextColor">#C2C2C2</Color>
+    <Color x:Key="SfCalendarCurrentMonthBackgroundColor">Transparent</Color>
+    <Color x:Key="SfCalendarCurrentMonthTextColor">#414141</Color>
+    <Color x:Key="SfCalendarWeekEndTextColor">#707070</Color>
+    <Color x:Key="SfCalendarDayHeaderTextColor">#707070</Color>
+    <Color x:Key="SfCalendarDayHeaderBackgroundColor">Transparent</Color>
+    <Color x:Key="SfCalendarWeekEndBackgroundColor">Transparent</Color>
+    <Color x:Key="SfCalendarHeaderBackgroundColor">Transparent</Color>
+    <Color x:Key="SfCalendarHeaderTextColor">#707070</Color>
+    <Color x:Key="SfCalendarYearViewLayoutBackground">Transparent</Color>
+    <Color x:Key="SfCalendarYearViewHeaderBackground">Transparent</Color>
+    <Color x:Key="SfCalendarYearViewMonthLayoutBackground">Transparent</Color>
+    <Color x:Key="SfCalendarYearViewMonthHeaderBackground">Transparent</Color>
+    <Color x:Key="SfCalendarYearViewDateTextColor">#414141</Color>
+    <Color x:Key="SfCalendarYearViewHeaderTextColor">#707070</Color>
+	<Color x:Key="SfCalendarAgendaSelectedDateColor">#000000</Color>
+
+	<!--SfDataFormControl-->
+    <x:String x:Key="SfDataFormTheme">CommonTheme</x:String>
+    <Color x:Key="SfDataFormBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfDataFormEditorBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfDataFormEditorDisabledBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfDataFormEditorTextColor">#414141</Color>
+    <Color x:Key="SfDataFormEditorPlaceholderColor">#949494</Color>
+    <Color x:Key="SfDataFormEditorDisabledTextColor">#C2C2C2</Color>
+    <Color x:Key="SfDataFormLabelTextColor">#707070</Color>
+    <Color x:Key="SfDataFormLabelDisabledTextColor">#C2C2C2</Color>
+    <Color x:Key="SfDataFormLabelBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfDataFormLabelDisabledBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfDataFormEditorBorderColor">#D1D1D1</Color>
+    <Color x:Key="SfDataFormSwitchOnTrackColor">#81B8F2</Color>
+    <Color x:Key="SfDataFormSwitchOnTrackPressedColor">#81B8F2</Color>
+    <Color x:Key="SfDataFormSwitchOnTrackHoverColor">#81B8F2</Color>
+    <Color x:Key="SfDataFormSwitchOffTrackColor">#949494</Color>
+    <Color x:Key="SfDataFormSwitchOffThumbColor">#F1F1F1</Color>
+    <Color x:Key="SfDataFormSwitchOffTrackPressedColor">#949494</Color>
+    <Color x:Key="SfDataFormSwitchOffThumbPressedColor">#F1F1F1</Color>
+    <Color x:Key="SfDataFormSwitchOffTrackHoverColor">#949494</Color>
+    <Color x:Key="SfDataFormSwitchOffThumbHoverColor">#F1F1F1</Color>
+    <Color x:Key="SfDataFormSwitchOnTrackDisabledColor">#E0E0E0</Color>
+    <Color x:Key="SfDataFormSwitchOnThumbDisabledColor">#BDBDBD</Color>
+    <Color x:Key="SfDataFormSwitchOffTrackDisabledColor">#BDBDBD</Color>
+    <Color x:Key="SfDataFormSwitchOffThumbDisabledColor">#E0E0E0</Color>
+    <Color x:Key="SfDataFormSwitchOnPressedBorderColor">#616161</Color>
+    <Color x:Key="SfDataFormSwitchOffBorderColor">#414141</Color>
+    <Color x:Key="SfDataFormSwitchOffPointerOverBorderColor">#414141</Color>
+    <Color x:Key="SfDataFormSwitchOffPressedBorderColor">#616161</Color>
+    <Color x:Key="SfDataFormSwitchOnDisabledBorderColor">#616161</Color>
+    <Color x:Key="SfDataFormSwitchOffDisabledBorderColor">#616161</Color>
+
+    <!--SfDiagram Start-->
+    <x:String x:Key="SfDiagramTheme">CommonTheme</x:String>
+    <Color x:Key="SfDiagramStencilHeaderBackgroundColor">#FAFAFA</Color>
+    <Color x:Key="SfDiagramStencilHeaderForegroundColor">#414141</Color>
+    <Color x:Key="SfDiagramDialogHeaderForegroundColor">#414141</Color>
+    <Color x:Key="SfDiagramDialogBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfDiagramLabelBackgroundColor">#F5F5F5</Color>
+    <Color x:Key="SfDiagramStencilBorderColor">#E0E0E0</Color>
+    <Color x:Key="SfDiagramStencilBackgroundColor">#FFFFFF</Color>
+    <!--SfDiagram End-->
+
+    <!--SfTextInputLayout Control-->
+    <x:String x:Key="SfTextInputLayoutTheme">CommonTheme</x:String>
+    <Color x:Key="SfTextInputLayoutHintColor">#707070</Color>
+    <Color x:Key="SfTextInputLayoutDisabledHintColor">#C2C2C2</Color>
+    <Color x:Key="SfTextInputLayoutFloatedHintUnfocusedColor">#707070</Color>
+    <Color x:Key="SfTextInputLayoutFloatedHintDisabledColor">#C2C2C2</Color>
+    <Color x:Key="SfTextInputLayoutLineColor">#D1D1D1</Color>
+    <Color x:Key="SfTextInputLayoutFilledLineDisabledColor">#E0E0E0</Color>
+    <Color x:Key="SfTextInputLayoutOutlinedLineDisabledColor">#E0E0E0</Color>
+    <Color x:Key="SfTextInputLayoutCounterLabelColor">#707070</Color>
+    <Color x:Key="SfTextInputLayoutCounterLabelDisabledColor">#C2C2C2</Color>
+    <Color x:Key="SfTextInputLayoutContainerBackgroundColor">#F5F5F5</Color>
+    <Color x:Key="SfTextInputLayoutContainerBackgroundDisabledColor">#FAFAFA</Color>
+    <Color x:Key="SfTextInputLayoutHelperTextColor">#707070</Color>
+    <Color x:Key="SfTextInputLayoutHelperTextDisabledColor">#C2C2C2</Color>
+    <Color x:Key="SfTextInputLayoutErrorTextColor">#FE1616</Color>
+    <Color x:Key="SfTextInputLayoutErrorTextDisabledColor">#C2C2C2</Color>
+    <Color x:Key="SfTextInputLayoutPasswordToggleFocusedColor">#707070</Color>
+    <Color x:Key="SfTextInputLayoutPasswordToggleUnfocusedColor">#707070</Color>
+    <Color x:Key="SfTextInputLayoutPasswordToggleDisabledColor">#C2C2C2</Color>
+	
+	<!--SfPdfViewer-->
+	 <x:String x:Key="SfPdfViewerTheme">CommonTheme</x:String>
+    <Color x:Key="SfPdfViewerBackgroundColor">#F0F0F0</Color>
+	<Color x:Key="SfPdfViewerButtonPressedColor">#E0E0E0</Color>
+    <Color x:Key="SfPdfViewerToolbarBackgroundColor">#FAFAFA</Color>
+    <Color x:Key="SfPdfViewerToolbarBorderColor">#E0E0E0</Color>
+    <Color x:Key="SfPdfViewerToolbarSeparatorColor">#E0E0E0</Color>
+    <Color x:Key="SfPdfViewerButtonIconEnabledColor">#707070</Color>
+    <Color x:Key="SfPdfViewerButtonIconDisabledColor">#C2C2C2</Color>
+    <Color x:Key="SfPdfViewerEditWindowPlaceHolderColor">#949494</Color>
+    <Color x:Key="SfPdfViewerSearchbarBackgroundColor">#FFFFFF</Color> 
+    <Color x:Key="SfPdfViewerFreeTextConfirmationButtonDisabledColor">#C2C2C2</Color>
+    <Color x:Key="SfPdfViewerFreeTextCancelButtonEnabledColor">#707070</Color>
+    <Color x:Key="SfPdfViewerFreeTextCancelButtonDisabledColor">#C2C2C2</Color>
+    <Color x:Key="SfPdfViewerEntryTextColor">#414141</Color>
+    <Color x:Key="SfPdfViewerEntryBorderColor">#E0E0E0</Color>
+    <Color x:Key="SfPdfViewerEntryPlaceholderColor">#949494</Color>
+    <Color x:Key="SfPdfViewerEntryBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfPdfViewerSearchInstancesLabelTextColor">#707070</Color>
+    <Color x:Key="SfPdfViewerBookmarkTitlebarBackgroundColor">#F0F0F0</Color>
+    <Color x:Key="SfPdfViewerTextElementColor">#414141</Color>
+    <Color x:Key="SfPdfViewerBookmarkItemBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfPdfViewerBookmarkTitlebarTextColor">#414141</Color>
+    <Color x:Key="SfPdfViewerMoreMenuBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfPdfViewerMoreMenuTextDisabledColor">#C2C2C2</Color>
+    <Color x:Key="SfPdfViewerMoreMenuTextEnabledColor">#414141</Color>
+    <Color x:Key="SfPdfViewerThicknessViewBackgroundColor">#FAFAFA</Color>
+    <Color x:Key="SfPdfViewerThicknessViewButtonBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfPdfViewerThicknessViewButtonBorderDisabledColor">#E0E0E0</Color>
+    <Color x:Key="SfPdfViewerSignaturePadTitleColor">#414141</Color>
+    <Color x:Key="SfPdfViewerSignaturePadColor">#FFFFFF</Color>
+    <Color x:Key="SfPdfViewerSignaturePadHeaderFooterColor">#FAFAFA</Color>
+    <Color x:Key="SfPdfViewerSignatureBorderColor">#E0E0E0</Color>
+    <Color x:Key="SfPdfViewerSignaturePadConfirmationButtonDisabledColor">#C2C2C2</Color>
+    <Color x:Key="SfPdfViewerSignaturePadCancelButtonEnabledColor">#707070</Color>
+    <Color x:Key="SfPdfViewerSignaturePadCancelButtonDisabledColor">#C2C2C2</Color>
+    <Color x:Key="SfPdfViewerSignaturePadClearButtonDisabledColor">#C2C2C2</Color>
+    <Color x:Key="SfPdfViewerThicknessButtonBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfPdfViewerScrollHeadColor">#FAFAFA</Color>
+    <Color x:Key="SfPdfViewerScrollHeadBorderColor">#E0E0E0</Color>
+    <Color x:Key="SfPdfViewerScrollHeadPageNumberViewBackgroundColor">#D9FAFAFA</Color>
+    <Color x:Key="SfPdfViewerScrollHeadPageNumberViewSeparatorColor">#C2C2C2</Color>
+    <Color x:Key="SfPdfViewerAlertDialogBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfPdfViewerAlertDialogTitleColor">#414141</Color>
+    <Color x:Key="SfPdfViewerAlertDialogTextColor">#414141</Color>
+    <Color x:Key="SfPdfViewerAlertDialogBorderColor">#c2c2c2</Color>
+
+    <!--SfExpander Control-->
+    <x:String x:Key="SfExpanderTheme">CommonTheme</x:String>
+    <Color x:Key="SfExpanderHeaderBackgroundColor">#FAFAFA</Color>
+    <Color x:Key="SfExpanderIconColor">#707070</Color>
+
+    <!--SfAccordion Control-->
+    <x:String x:Key="SfAccordionTheme">CommonTheme</x:String>
+    <Color x:Key="SfAccordionHeaderBackgroundColor">#FAFAFA</Color>
+    <Color x:Key="SfAccordionIconColor">#707070</Color>
+    
+    <!--  SfEffectsViewControl  -->
+    <x:String x:Key="SfEffectsViewTheme">CommonTheme</x:String>
+    <Color x:Key="SfEffectsViewHighlightColor">#000000</Color>
+    <Color x:Key="SfEffectsViewRippleColor">#000000</Color>
+    <Color x:Key="SfEffectsViewSelectionColor">#000000</Color>
+
+    <!--  SfShimmerControl  -->
+    <x:String x:Key="SfShimmerTheme">CommonTheme</x:String>
+    <Color x:Key="SfShimmerWaveColor">#000000</Color>
+    <Color x:Key="SfShimmerColor">#000000</Color>
+
+    <!--  SfChat  -->
+    <x:String x:Key="SfChatTheme">CommonTheme</x:String>
+    <!--Incoming Message-->
+    <Color x:Key="SfChatIncomingMessageTextColor">#414141</Color>
+    <Color x:Key="SfChatIncomingMessageBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfChatIncomingMessageAuthorTextColor">#707070</Color>
+    <Color x:Key="SfChatIncomingMessageTimestampTextColor">#707070</Color>
+
+    <x:String x:Key="SfChatIncomingMessageFontFamily">"Roboto-Regular"</x:String>
+    <x:Double x:Key="SfChatIncomingMessageFontSize">14.0</x:Double>
+    <FontAttributes x:Key="SfChatIncomingMessageFontAttributes">None</FontAttributes>
+
+    <x:String x:Key="SfChatIncomingMessageAuthorFontFamily">"Roboto-Regular"</x:String>
+    <x:Double x:Key="SfChatIncomingMessageAuthorFontSize">12.0</x:Double>
+    <FontAttributes x:Key="SfChatIncomingMessageAuthorFontAttributes">None</FontAttributes>
+
+    <x:Double x:Key="SfChatIncomingMessageTimestampFontFamily">"Roboto-Regular"</x:Double>
+    <x:String x:Key="SfChatIncomingMessageTimestampFontSize">12.0</x:String>
+    <FontAttributes x:Key="SfChatIncomingMessageTimestampFontAttributes">None</FontAttributes>
+
+    <!--Outgoing Message-->
+    <Color x:Key="SfChatOutgoingMessageAuthorTextColor">#BFFFFFFF</Color>
+    <Color x:Key="SfChatOutgoingMessageTimestampTextColor">#A6FFFFFF</Color>
+
+    <x:String x:Key="SfChatOutgoingMessageFontFamily">"Roboto-Regular"</x:String>
+    <x:Double x:Key="SfChatOutgoingMessageFontSize">14.0</x:Double>
+    <FontAttributes x:Key="SfChatOutgoingMessageFontAttributes">None</FontAttributes>
+
+    <x:String x:Key="SfChatOutgoingMessageAuthorFontFamily">"Roboto-Regular"</x:String>
+    <x:Double x:Key="SfChatOutgoingMessageAuthorFontSize">12.0</x:Double>
+    <FontAttributes x:Key="SfChatOutgoingMessageAuthorFontAttributes">None</FontAttributes>
+
+    <x:String x:Key="SfChatOutgoingMessageTimestampFontFamily">"Roboto-Regular"</x:String>
+    <x:Double x:Key="SfChatOutgoingMessageTimestampFontSize">12.0</x:Double>
+    <FontAttributes x:Key="SfChatOutgoingMessageTimestampFontAttributes">None</FontAttributes>
+
+    <!--Editor-->
+    <Color x:Key="SfChatEditorTextColor">#414141</Color>
+    <Color x:Key="SfChatEditorBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfChatEditorPlaceholderTextColor">#949494</Color>
+    <Color x:Key="SfChatEditorBorderColor">#D1D1D1</Color>
+
+    <x:String x:Key="SfChatEditorFontFamily">"Roboto-Regular"</x:String>
+    <x:Double x:Key="SfChatEditorFontSize">14.0</x:Double>
+    <FontAttributes x:Key="SfChatEditorFontAttributes">None</FontAttributes>
+    
+    <!-- Attachment icon-->
+    <Color x:Key="SfChatAttachmentButtonColor">#707070</Color>
+    <Color x:Key="SfChatAttachmentButtonEffectColor">#E1E1E1</Color>
+    
+    <!--Send icon-->
+    <Color x:Key="SfChatSendButtonColor">#707070</Color>
+    <Color x:Key="SfChatSendButtonDisabledColor">#C2C2C2</Color>
+    <!--Typing indicator-->
+    <Color x:Key="SfChatTypingIndicatorTextColor">#707070</Color>
+    <Color x:Key="SfChatTypingIndicatorBackgroundColor">#F5F5F5</Color>
+
+    <x:String x:Key="SfChatTypingIndicatorFontFamily">"Roboto-Italic"</x:String>
+    <x:Double x:Key="SfChatTypingIndicatorFontSize">12.0</x:Double>
+    <FontAttributes x:Key="SfChatTypingIndicatorFontAttributes">None</FontAttributes>
+
+    <!-- Time break view -->
+    <Color x:Key="SfChatTimeBreakViewBackgroundColor">#260E74E0</Color>
+    <Color x:Key="SfChatTimeBreakViewBorderColor">#800E74E0</Color>
+
+    <x:String x:Key="SfChatTimeBreakViewFontFamily">"Roboto-Medium"</x:String>
+    <x:Double x:Key="SfChatTimeBreakViewFontSize">12.0</x:Double>
+    <FontAttributes x:Key="SfChatTimeBreakViewFontAttributes">Bold</FontAttributes>
+
+    <!-- Suggestion list -->
+    <Color x:Key="SfChatSuggestionListItemBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfChatSuggestionListItemBorderColor">#E0E0E0</Color>
+
+    <x:String x:Key="SfChatSuggestionListItemFontFamily">"Roboto-Regular"</x:String>
+    <x:Double x:Key="SfChatSuggestionListItemFontSize">14.0</x:Double>
+    <FontAttributes x:Key="SfChatSuggestionListItemFontAttributes">None</FontAttributes>
+
+    <!-- Date picker -->
+    <Color x:Key="SfChatDatePickerBackgroundColor">#FFFFFF</Color>
+    <!-- Time picker -->
+    <Color x:Key="SfChatTimePickerBackgroundColor">#FFFFFF</Color>
+
+    <!-- Calendar -->
+    <Color x:Key="SfChatCalendarBackgroundColor">#FAFAFA</Color>
+
+    <!-- Hyper link -->
+    <Color x:Key="SfChatHyperlinkMetaTitleTextColor">#FF414141</Color>
+    <Color x:Key="SfChatHyperlinkDescriptionTextColor">#FF707070</Color>
+    <Color x:Key="SfChatHyperlinkDescriptionBackgroundColor">#FFF5F5F5</Color>
+    <Color x:Key="SfChatHyperlinkImageBackgroundColor">#EBEBEB</Color>
+
+    <Color x:Key="SfChatMessageInputViewBackgroundColor">#F0F0F0</Color>
+    <Color x:Key="SfChatBackgroundColor">#F5F5F5</Color>
+
+    <!-- Card -->
+    <Color x:Key="SfChatCardBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfChatCardButtonBackgroundColor">#FFFFF</Color>
+    <Color x:Key="SfChatCardButtonBorderColor">#E0E0E0</Color>
+    <Color x:Key="SfChatCardTitleTextColor">#212121</Color>
+    <Color x:Key="SfChatCardSubtitleTextColor">#5C5C5C</Color>
+    <Color x:Key="SfChatCardDescriptionTextColor">#000000</Color>
+
+    
+    <!-- Load More -->
+    <Color x:Key="SfChatLoadMoreBackgroundColor">#FFFFFF</Color>
+    
+    <!--SfDataPager-->
+    <x:String x:Key="SfDataPagerTheme">CommonTheme</x:String>
+    <Color x:Key="SfDataPagerBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfDataPagerNumericButtonForegroundColor">#414141</Color>
+    <Color x:Key="SfDataPagerNumericButtonBackgroundColor">#F0F0F0</Color>
+    <Color x:Key="SfDataPagerButtonBorderColor">#E0E0E0</Color>
+    <Color x:Key="SfDataPagerNavigationButtonBackgroundColor">#F0F0F0</Color>
+    <Color x:Key="SfDataPagerEnabledNavigationButtonIconColor">#707070</Color>
+    <Color x:Key="SfDataPagerDisabledNavigationButtonIconColor">#C2C2C2</Color>
+    <!--SfDataPager End-->
+    
+</ResourceDictionary>

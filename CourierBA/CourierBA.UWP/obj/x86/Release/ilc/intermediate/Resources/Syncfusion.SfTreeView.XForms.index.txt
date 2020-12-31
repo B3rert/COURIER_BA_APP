@@ -1,0 +1,2 @@
+Syncfusion.SfTreeView.XForms, Version=18.4451.0.32, Culture=neutral, PublicKeyToken=null
+  Syncfusion.SfTreeView.XForms.Control.Theme.SfTreeViewStyles.xaml

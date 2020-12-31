@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xForms="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+             x:Class="Syncfusion.XForms.Border.SfBorderStyles">
+
+    <!-- SfBorder control Style-->
+    <Style TargetType="xForms:SfBorder">
+        <Setter Property="BackgroundColor" Value="{DynamicResource SfBorderBackgroundColor}" />
+        <Setter Property="BorderColor" Value="{DynamicResource SfBorderBorderColor}" />
+    </Style>
+
+</ResourceDictionary>

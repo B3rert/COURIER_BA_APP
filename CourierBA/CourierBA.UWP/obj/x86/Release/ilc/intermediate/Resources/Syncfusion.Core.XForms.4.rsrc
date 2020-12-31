@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary x:Class="Syncfusion.XForms.Shimmer.SfShimmerStyles"
+                    xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:shimmer="clr-namespace:Syncfusion.XForms.Shimmer;assembly=Syncfusion.Core.XForms">
+
+    <Style TargetType="shimmer:SfShimmer">
+        <Setter Property="WaveColor"
+                Value="{DynamicResource SfShimmerWaveColor}" />
+        <Setter Property="Color"
+                Value="{DynamicResource SfShimmerColor}" />
+    </Style>
+</ResourceDictionary>

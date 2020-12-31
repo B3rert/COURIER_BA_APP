@@ -37,11 +37,41 @@
     <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\coding4fun.toolkit.controls\2.1.8\lib\netcore451\Coding4Fun.Toolkit.dll">
       <PackagePath>Coding4Fun.Toolkit.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\dryioc.dll\4.5.0\lib\netstandard2.0\DryIoc.dll">
+      <PackagePath>DryIoc.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\prism.core\8.0.0.1909\lib\netstandard2.0\Prism.dll">
+      <PackagePath>Prism.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\prism.dryioc.forms\8.0.0.1909\lib\netstandard2.0\Prism.DryIoc.Forms.dll">
+      <PackagePath>Prism.DryIoc.Forms.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\prism.forms\8.0.0.1909\lib\netstandard2.0\Prism.Forms.dll">
+      <PackagePath>Prism.Forms.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.11\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.licensing\18.4.0.32\lib\uap10.0\Syncfusion.Licensing.dll">
+      <PackagePath>Syncfusion.Licensing.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.xamarin.core\18.4.0.32\lib\uap10.0\Syncfusion.Core.XForms.UWP.dll">
+      <PackagePath>Syncfusion.Core.XForms.UWP.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.xamarin.core\18.4.0.32\lib\uap10.0\Syncfusion.Core.XForms.dll">
+      <PackagePath>Syncfusion.Core.XForms.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.xamarin.gridcommon\18.4.0.32\lib\uap10.0\Syncfusion.GridCommon.Portable.dll">
+      <PackagePath>Syncfusion.GridCommon.Portable.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.xamarin.sftreeview\18.4.0.32\lib\uap10.0\Syncfusion.SfTreeView.XForms.UWP.dll">
+      <PackagePath>Syncfusion.SfTreeView.XForms.UWP.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.xamarin.sftreeview\18.4.0.32\lib\uap10.0\Syncfusion.SfTreeView.XForms.dll">
+      <PackagePath>Syncfusion.SfTreeView.XForms.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\win2d.uwp\1.20.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
@@ -51,6 +81,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\xamarin.essentials\1.6.0\lib\uap10.0.16299\Xamarin.Essentials.dll">
       <PackagePath>Xamarin.Essentials.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\xamarin.essentials.interfaces\1.6.0\lib\netstandard2.0\Essential.Interfaces.dll">
+      <PackagePath>Essential.Interfaces.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\xamarin.forms\4.8.0.1821\lib\uap10.0.16299\Xamarin.Forms.Core.dll">
       <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
@@ -88,6 +121,12 @@
     <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\coding4fun.toolkit.controls\2.1.8\lib\netcore451\Coding4Fun.Toolkit.Controls\Coding4Fun.Toolkit.Controls.xr.xml">
       <PackagePath>Coding4Fun.Toolkit.Controls\Coding4Fun.Toolkit.Controls.xr.xml</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.xamarin.core\18.4.0.32\lib\uap10.0\Syncfusion.Core.XForms.UWP\Syncfusion.Core.XForms.UWP.xr.xml">
+      <PackagePath>Syncfusion.Core.XForms.UWP\Syncfusion.Core.XForms.UWP.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.xamarin.sftreeview\18.4.0.32\lib\uap10.0\Syncfusion.SfTreeView.XForms.UWP\Syncfusion.SfTreeView.XForms.UWP.xr.xml">
+      <PackagePath>Syncfusion.SfTreeView.XForms.UWP\Syncfusion.SfTreeView.XForms.UWP.xr.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\xamarin.forms\4.8.0.1821\lib\uap10.0.16299\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
     </AppxPackagedFile>
@@ -96,6 +135,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\coding4fun.toolkit.controls\2.1.8\lib\netcore451\Coding4Fun.Toolkit.Controls\Themes\Generic.xbf">
       <PackagePath>Coding4Fun.Toolkit.Controls\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.xamarin.sftreeview\18.4.0.32\lib\uap10.0\Syncfusion.SfTreeView.XForms.UWP\Resources\NodeCollapse.png">
+      <PackagePath>Syncfusion.SfTreeView.XForms.UWP\Resources\NodeCollapse.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.xamarin.sftreeview\18.4.0.32\lib\uap10.0\Syncfusion.SfTreeView.XForms.UWP\Resources\NodeExpand.png">
+      <PackagePath>Syncfusion.SfTreeView.XForms.UWP\Resources\NodeExpand.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.xamarin.sftreeview\18.4.0.32\lib\uap10.0\Syncfusion.SfTreeView.XForms.UWP\Resources\Treeview_ExpanderIcon.ttf">
+      <PackagePath>Syncfusion.SfTreeView.XForms.UWP\Resources\Treeview_ExpanderIcon.ttf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>

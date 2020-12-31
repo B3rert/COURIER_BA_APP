@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" 
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:local="clr-namespace:Syncfusion.XForms.TreeView"
+                    x:Class="Syncfusion.XForms.TreeView.SfTreeViewStyles">
+    <Style TargetType="local:SfTreeView">
+        <Setter Property="BackgroundColor" Value="{DynamicResource SfTreeViewBackgroundColor}"/>
+        <Setter Property="SelectionBackgroundColor" Value="{DynamicResource SfTreeViewSelectionBackgroundColor}"/>
+        <Setter Property="SelectionForegroundColor" Value="{DynamicResource SyncPrimaryLightColor}"/>
+        <Setter Property="FocusBorderColor" Value="{DynamicResource SfTreeViewFocusBorderColor}"/>
+        <Setter Property="FocusBorderThickness" Value="{DynamicResource SfTreeViewFocusBorderThickness}"/>
+    </Style>
+</ResourceDictionary>

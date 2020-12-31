@@ -8,6 +8,7 @@ namespace CourierBA
     {
         public App()
         {
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Mzc1NjYwQDMxMzgyZTM0MmUzMGYrUWVSNFB6SXRkaE9hTmJnMDNKdHJQc1N2UGFjOGVWNU43RWxMaTZBd1E9");
             InitializeComponent();
 
             MainPage = new NavigationPage(new Views.LoginPage());

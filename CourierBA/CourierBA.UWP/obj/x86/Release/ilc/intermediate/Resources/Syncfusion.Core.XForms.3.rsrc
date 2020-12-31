@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary x:Class="Syncfusion.XForms.EffectsView.SfEffectsViewStyles"
+                    xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:effects="clr-namespace:Syncfusion.XForms.EffectsView">
+
+    <Style TargetType="effects:SfEffectsView">
+        <Setter Property="HighlightColor"
+                Value="{DynamicResource SfEffectsViewHighlightColor}" />
+        <Setter Property="RippleColor"
+                Value="{DynamicResource SfEffectsViewRippleColor}" />
+        <Setter Property="SelectionColor"
+                Value="{DynamicResource SfEffectsViewSelectionColor}" />
+    </Style>
+
+</ResourceDictionary>

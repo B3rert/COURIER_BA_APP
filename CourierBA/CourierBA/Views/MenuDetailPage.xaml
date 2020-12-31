@@ -1,12 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.XForms.TreeView;assembly=Syncfusion.SfTreeView.XForms"
+             xmlns:shimmer="clr-namespace:Syncfusion.XForms.Shimmer;assembly=Syncfusion.Core.XForms"
+             xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+             xmlns:local="clr-namespace:CourierBA.ViewModels"
              x:Class="CourierBA.Views.MenuDetailPage">
     <MasterDetailPage.Master>
         <ContentPage Title="Menu">
-            <ListView x:Name="listMenu"
-                      ItemTapped="listMenu_ItemTapped">
-                <ListView.Header>
+            <StackLayout>
+
+                <StackLayout>
                     <Grid BackgroundColor="{DynamicResource NavigationBarColor}">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="10"/>
@@ -36,25 +40,90 @@
                                 VerticalOptions="End"
                                 BackgroundColor="AliceBlue"
                                 HeightRequest="35"/>
-                            </StackLayout>
-                        
+                        </StackLayout>
+
                     </Grid>
-                </ListView.Header>
-                <!--Items-->
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="{Binding Observacion_1}"
-                                           HorizontalOptions="FillAndExpand"
-                                           VerticalOptions="CenterAndExpand"
-                                           FontSize="16"
-                                       Padding="20,0,0,0"/>
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                </StackLayout>
+
+                <shimmer:SfShimmer x:Name="shimmerHeader"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  
+                                   IsActive="{Binding IsRunning}" Type="Video" Padding="0,0,0,5">
+                    <shimmer:SfShimmer.CustomView>
+                        <Grid Padding="10" RowDefinitions="20,20,20,20,20,20,20,20,20,20">
+
+                            <border:SfBorder 
+                         BackgroundColor="{Binding Color,Source={x:Reference shimmerHeader}}"
+                         BorderColor="Transparent"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand" />
+
+                            <border:SfBorder Grid.Row="1"
+                         BackgroundColor="{Binding Color,Source={x:Reference shimmerHeader}}"
+                         BorderColor="Transparent"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand" />
+                            <border:SfBorder Grid.Row="2"
+                         BackgroundColor="{Binding Color,Source={x:Reference shimmerHeader}}"
+                         BorderColor="Transparent"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand" />
+                            <border:SfBorder Grid.Row="3"
+                         BackgroundColor="{Binding Color,Source={x:Reference shimmerHeader}}"
+                         BorderColor="Transparent"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand" />
+                            <border:SfBorder Grid.Row="4"
+                         BackgroundColor="{Binding Color,Source={x:Reference shimmerHeader}}"
+                         BorderColor="Transparent"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand" />
+                            <border:SfBorder Grid.Row="5"
+                         BackgroundColor="{Binding Color,Source={x:Reference shimmerHeader}}"
+                         BorderColor="Transparent"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand" />
+                            <border:SfBorder Grid.Row="6"
+                         BackgroundColor="{Binding Color,Source={x:Reference shimmerHeader}}"
+                         BorderColor="Transparent"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand" />
+                            <border:SfBorder Grid.Row="7"
+                         BackgroundColor="{Binding Color,Source={x:Reference shimmerHeader}}"
+                         BorderColor="Transparent"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand" />
+                            <border:SfBorder Grid.Row="8"
+                         BackgroundColor="{Binding Color,Source={x:Reference shimmerHeader}}"
+                         BorderColor="Transparent"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand" />
+                            <border:SfBorder Grid.Row="9"
+                         BackgroundColor="{Binding Color,Source={x:Reference shimmerHeader}}"
+                         BorderColor="Transparent"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand" />
+                        </Grid>
+                    </shimmer:SfShimmer.CustomView>
+                    <shimmer:SfShimmer.Content>
+                        <syncfusion:SfTreeView x:Name="treeView" VerticalOptions="StartAndExpand"
+                       ChildPropertyName="Children"
+                       
+                       ItemsSource="{Binding Menus}">
+                            <syncfusion:SfTreeView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Padding="5,0,0,0">
+                                        <Label Text="{Binding Name}" 
+                                   FontSize="Medium"
+                                   VerticalTextAlignment="Center"/>
+                                        <Grid.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type local:MenuViewModel}}, Path=ExecuteCommand}" CommandParameter="{Binding .}" />
+                                        </Grid.GestureRecognizers>
+                                    </Grid>
+                                </DataTemplate>
+                            </syncfusion:SfTreeView.ItemTemplate>
+                        </syncfusion:SfTreeView>
+                    </shimmer:SfShimmer.Content>
+                </shimmer:SfShimmer>
+            </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>
 </MasterDetailPage>

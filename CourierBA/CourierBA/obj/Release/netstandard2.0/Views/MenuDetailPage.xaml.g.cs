@@ -17,16 +17,20 @@ namespace CourierBA.Views {
     public partial class MenuDetailPage : global::Xamarin.Forms.MasterDetailPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.ListView listMenu;
+        private global::Xamarin.Forms.Button btnLogout;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Button btnLogout;
+        private global::Syncfusion.XForms.Shimmer.SfShimmer shimmerHeader;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Syncfusion.XForms.TreeView.SfTreeView treeView;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MenuDetailPage));
-            listMenu = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "listMenu");
             btnLogout = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "btnLogout");
+            shimmerHeader = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Syncfusion.XForms.Shimmer.SfShimmer>(this, "shimmerHeader");
+            treeView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Syncfusion.XForms.TreeView.SfTreeView>(this, "treeView");
         }
     }
 }

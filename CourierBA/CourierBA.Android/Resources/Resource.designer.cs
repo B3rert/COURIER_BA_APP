@@ -2800,6 +2800,44 @@ namespace CourierBA.Droid
 			global::Plugin.Media.Resource.Styleable.GradientColor_android_tileMode = global::CourierBA.Droid.Resource.Styleable.GradientColor_android_tileMode;
 			global::Plugin.Media.Resource.Styleable.GradientColor_android_type = global::CourierBA.Droid.Resource.Styleable.GradientColor_android_type;
 			global::Plugin.Media.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::CourierBA.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar1 = global::CourierBA.Droid.Resource.Drawable.Avatar1;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar10 = global::CourierBA.Droid.Resource.Drawable.Avatar10;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar11 = global::CourierBA.Droid.Resource.Drawable.Avatar11;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar12 = global::CourierBA.Droid.Resource.Drawable.Avatar12;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar13 = global::CourierBA.Droid.Resource.Drawable.Avatar13;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar14 = global::CourierBA.Droid.Resource.Drawable.Avatar14;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar15 = global::CourierBA.Droid.Resource.Drawable.Avatar15;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar16 = global::CourierBA.Droid.Resource.Drawable.Avatar16;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar17 = global::CourierBA.Droid.Resource.Drawable.Avatar17;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar18 = global::CourierBA.Droid.Resource.Drawable.Avatar18;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar19 = global::CourierBA.Droid.Resource.Drawable.Avatar19;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar2 = global::CourierBA.Droid.Resource.Drawable.Avatar2;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar20 = global::CourierBA.Droid.Resource.Drawable.Avatar20;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar21 = global::CourierBA.Droid.Resource.Drawable.Avatar21;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar22 = global::CourierBA.Droid.Resource.Drawable.Avatar22;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar23 = global::CourierBA.Droid.Resource.Drawable.Avatar23;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar24 = global::CourierBA.Droid.Resource.Drawable.Avatar24;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar25 = global::CourierBA.Droid.Resource.Drawable.Avatar25;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar26 = global::CourierBA.Droid.Resource.Drawable.Avatar26;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar27 = global::CourierBA.Droid.Resource.Drawable.Avatar27;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar28 = global::CourierBA.Droid.Resource.Drawable.Avatar28;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar29 = global::CourierBA.Droid.Resource.Drawable.Avatar29;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar3 = global::CourierBA.Droid.Resource.Drawable.Avatar3;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar30 = global::CourierBA.Droid.Resource.Drawable.Avatar30;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar4 = global::CourierBA.Droid.Resource.Drawable.Avatar4;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar5 = global::CourierBA.Droid.Resource.Drawable.Avatar5;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar6 = global::CourierBA.Droid.Resource.Drawable.Avatar6;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar7 = global::CourierBA.Droid.Resource.Drawable.Avatar7;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar8 = global::CourierBA.Droid.Resource.Drawable.Avatar8;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.Avatar9 = global::CourierBA.Droid.Resource.Drawable.Avatar9;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.input_layout_drop_down_icon = global::CourierBA.Droid.Resource.Drawable.input_layout_drop_down_icon;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.inputlayout_togglecollapseicon = global::CourierBA.Droid.Resource.Drawable.inputlayout_togglecollapseicon;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.inputlayout_togglevisibleicon = global::CourierBA.Droid.Resource.Drawable.inputlayout_togglevisibleicon;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.clear_button_icon = global::CourierBA.Droid.Resource.Drawable.clear_button_icon;
+			global::Syncfusion.XForms.Android.TreeView.Resource.Drawable.NodeExpand = global::CourierBA.Droid.Resource.Drawable.NodeExpand;
+			global::Syncfusion.XForms.Android.TreeView.Resource.Drawable.NodeCollapse = global::CourierBA.Droid.Resource.Drawable.NodeCollapse;
+			global::Syncfusion.XForms.Android.TreeView.Resource.Layout.borderlayout = global::CourierBA.Droid.Resource.Layout.borderlayout;
+			global::Syncfusion.XForms.Android.TreeView.Resource.Id.BorderView = global::CourierBA.Droid.Resource.Id.BorderView;
 			global::Xamarin.Essentials.Resource.Attribute.alpha = global::CourierBA.Droid.Resource.Attribute.alpha;
 			global::Xamarin.Essentials.Resource.Attribute.coordinatorLayoutStyle = global::CourierBA.Droid.Resource.Attribute.coordinatorLayoutStyle;
 			global::Xamarin.Essentials.Resource.Attribute.font = global::CourierBA.Droid.Resource.Attribute.font;
@@ -11115,145 +11153,253 @@ namespace CourierBA.Droid
 			public const int abc_vector_test = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int avd_hide_password = 2130837588;
-			
-			// aapt resource value: 0x7f02007d
-			public const int avd_hide_password_1 = 2130837629;
-			
-			// aapt resource value: 0x7f02007e
-			public const int avd_hide_password_2 = 2130837630;
-			
-			// aapt resource value: 0x7f02007f
-			public const int avd_hide_password_3 = 2130837631;
+			public const int Avatar1 = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int avd_show_password = 2130837589;
-			
-			// aapt resource value: 0x7f020080
-			public const int avd_show_password_1 = 2130837632;
-			
-			// aapt resource value: 0x7f020081
-			public const int avd_show_password_2 = 2130837633;
-			
-			// aapt resource value: 0x7f020082
-			public const int avd_show_password_3 = 2130837634;
+			public const int Avatar10 = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int buscar_icon = 2130837590;
+			public const int Avatar11 = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int camara_blue_icon = 2130837591;
+			public const int Avatar12 = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int camara_icon = 2130837592;
+			public const int Avatar13 = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int design_bottom_navigation_item_background = 2130837593;
+			public const int Avatar14 = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int design_fab_background = 2130837594;
+			public const int Avatar15 = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int design_ic_visibility = 2130837595;
+			public const int Avatar16 = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int design_ic_visibility_off = 2130837596;
+			public const int Avatar17 = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int design_password_eye = 2130837597;
+			public const int Avatar18 = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int design_snackbar_background = 2130837598;
+			public const int Avatar19 = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int eliminar_icon = 2130837599;
+			public const int Avatar2 = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int Empresa = 2130837600;
+			public const int Avatar20 = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int guardar_icon = 2130837601;
+			public const int Avatar21 = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int ic_errorstatus = 2130837602;
+			public const int Avatar22 = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int ic_mtrl_chip_checked_black = 2130837603;
+			public const int Avatar23 = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int ic_mtrl_chip_checked_circle = 2130837604;
+			public const int Avatar24 = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int ic_mtrl_chip_close_circle = 2130837605;
+			public const int Avatar25 = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int ic_successstatus = 2130837606;
+			public const int Avatar26 = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int logo_demosoft = 2130837607;
+			public const int Avatar27 = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int mas_icon = 2130837608;
+			public const int Avatar28 = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int mtrl_snackbar_background = 2130837609;
+			public const int Avatar29 = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int mtrl_tabs_default_indicator = 2130837610;
+			public const int Avatar3 = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int navigation_empty_icon = 2130837611;
+			public const int Avatar30 = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int notification_action_background = 2130837612;
+			public const int Avatar4 = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int notification_bg = 2130837613;
+			public const int Avatar5 = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int notification_bg_low = 2130837614;
+			public const int Avatar6 = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int notification_bg_low_normal = 2130837615;
+			public const int Avatar7 = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int notification_bg_low_pressed = 2130837616;
+			public const int Avatar8 = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int notification_bg_normal = 2130837617;
+			public const int Avatar9 = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int notification_bg_normal_pressed = 2130837618;
+			public const int avd_hide_password = 2130837618;
+			
+			// aapt resource value: 0x7f0200a1
+			public const int avd_hide_password_1 = 2130837665;
+			
+			// aapt resource value: 0x7f0200a2
+			public const int avd_hide_password_2 = 2130837666;
+			
+			// aapt resource value: 0x7f0200a3
+			public const int avd_hide_password_3 = 2130837667;
 			
 			// aapt resource value: 0x7f020073
-			public const int notification_icon_background = 2130837619;
+			public const int avd_show_password = 2130837619;
 			
-			// aapt resource value: 0x7f02007b
-			public const int notification_template_icon_bg = 2130837627;
+			// aapt resource value: 0x7f0200a4
+			public const int avd_show_password_1 = 2130837668;
 			
-			// aapt resource value: 0x7f02007c
-			public const int notification_template_icon_low_bg = 2130837628;
+			// aapt resource value: 0x7f0200a5
+			public const int avd_show_password_2 = 2130837669;
+			
+			// aapt resource value: 0x7f0200a6
+			public const int avd_show_password_3 = 2130837670;
 			
 			// aapt resource value: 0x7f020074
-			public const int notification_tile_bg = 2130837620;
+			public const int buscar_icon = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int notify_panel_notification_icon_bg = 2130837621;
+			public const int camara_blue_icon = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int pbox = 2130837622;
+			public const int camara_icon = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int roundedbg = 2130837623;
+			public const int clear_button_icon = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int roundedbgdark = 2130837624;
+			public const int design_bottom_navigation_item_background = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int tooltip_frame_dark = 2130837625;
+			public const int design_fab_background = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int tooltip_frame_light = 2130837626;
+			public const int design_ic_visibility = 2130837626;
+			
+			// aapt resource value: 0x7f02007b
+			public const int design_ic_visibility_off = 2130837627;
+			
+			// aapt resource value: 0x7f02007c
+			public const int design_password_eye = 2130837628;
+			
+			// aapt resource value: 0x7f02007d
+			public const int design_snackbar_background = 2130837629;
+			
+			// aapt resource value: 0x7f02007e
+			public const int eliminar_icon = 2130837630;
+			
+			// aapt resource value: 0x7f02007f
+			public const int Empresa = 2130837631;
+			
+			// aapt resource value: 0x7f020080
+			public const int guardar_icon = 2130837632;
+			
+			// aapt resource value: 0x7f020081
+			public const int ic_errorstatus = 2130837633;
+			
+			// aapt resource value: 0x7f020082
+			public const int ic_mtrl_chip_checked_black = 2130837634;
+			
+			// aapt resource value: 0x7f020083
+			public const int ic_mtrl_chip_checked_circle = 2130837635;
+			
+			// aapt resource value: 0x7f020084
+			public const int ic_mtrl_chip_close_circle = 2130837636;
+			
+			// aapt resource value: 0x7f020085
+			public const int ic_successstatus = 2130837637;
+			
+			// aapt resource value: 0x7f020086
+			public const int input_layout_drop_down_icon = 2130837638;
+			
+			// aapt resource value: 0x7f020087
+			public const int inputlayout_togglecollapseicon = 2130837639;
+			
+			// aapt resource value: 0x7f020088
+			public const int inputlayout_togglevisibleicon = 2130837640;
+			
+			// aapt resource value: 0x7f020089
+			public const int logo_demosoft = 2130837641;
+			
+			// aapt resource value: 0x7f02008a
+			public const int mas_icon = 2130837642;
+			
+			// aapt resource value: 0x7f02008b
+			public const int mtrl_snackbar_background = 2130837643;
+			
+			// aapt resource value: 0x7f02008c
+			public const int mtrl_tabs_default_indicator = 2130837644;
+			
+			// aapt resource value: 0x7f02008d
+			public const int navigation_empty_icon = 2130837645;
+			
+			// aapt resource value: 0x7f02008e
+			public const int NodeCollapse = 2130837646;
+			
+			// aapt resource value: 0x7f02008f
+			public const int NodeExpand = 2130837647;
+			
+			// aapt resource value: 0x7f020090
+			public const int notification_action_background = 2130837648;
+			
+			// aapt resource value: 0x7f020091
+			public const int notification_bg = 2130837649;
+			
+			// aapt resource value: 0x7f020092
+			public const int notification_bg_low = 2130837650;
+			
+			// aapt resource value: 0x7f020093
+			public const int notification_bg_low_normal = 2130837651;
+			
+			// aapt resource value: 0x7f020094
+			public const int notification_bg_low_pressed = 2130837652;
+			
+			// aapt resource value: 0x7f020095
+			public const int notification_bg_normal = 2130837653;
+			
+			// aapt resource value: 0x7f020096
+			public const int notification_bg_normal_pressed = 2130837654;
+			
+			// aapt resource value: 0x7f020097
+			public const int notification_icon_background = 2130837655;
+			
+			// aapt resource value: 0x7f02009f
+			public const int notification_template_icon_bg = 2130837663;
+			
+			// aapt resource value: 0x7f0200a0
+			public const int notification_template_icon_low_bg = 2130837664;
+			
+			// aapt resource value: 0x7f020098
+			public const int notification_tile_bg = 2130837656;
+			
+			// aapt resource value: 0x7f020099
+			public const int notify_panel_notification_icon_bg = 2130837657;
+			
+			// aapt resource value: 0x7f02009a
+			public const int pbox = 2130837658;
+			
+			// aapt resource value: 0x7f02009b
+			public const int roundedbg = 2130837659;
+			
+			// aapt resource value: 0x7f02009c
+			public const int roundedbgdark = 2130837660;
+			
+			// aapt resource value: 0x7f02009d
+			public const int tooltip_frame_dark = 2130837661;
+			
+			// aapt resource value: 0x7f02009e
+			public const int tooltip_frame_light = 2130837662;
 			
 			static Drawable()
 			{
@@ -11271,6 +11417,9 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c0039
 			public const int ALT = 2131492921;
 			
+			// aapt resource value: 0x7f0c009d
+			public const int BorderView = 2131493021;
+			
 			// aapt resource value: 0x7f0c003a
 			public const int CTRL = 2131492922;
 			
@@ -11286,8 +11435,8 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c003e
 			public const int SYM = 2131492926;
 			
-			// aapt resource value: 0x7f0c00b9
-			public const int action0 = 2131493049;
+			// aapt resource value: 0x7f0c00ba
+			public const int action0 = 2131493050;
 			
 			// aapt resource value: 0x7f0c008d
 			public const int action_bar = 2131493005;
@@ -11310,17 +11459,17 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c0069
 			public const int action_bar_title = 2131492969;
 			
-			// aapt resource value: 0x7f0c00b6
-			public const int action_container = 2131493046;
+			// aapt resource value: 0x7f0c00b7
+			public const int action_container = 2131493047;
 			
 			// aapt resource value: 0x7f0c008e
 			public const int action_context_bar = 2131493006;
 			
-			// aapt resource value: 0x7f0c00bd
-			public const int action_divider = 2131493053;
+			// aapt resource value: 0x7f0c00be
+			public const int action_divider = 2131493054;
 			
-			// aapt resource value: 0x7f0c00b7
-			public const int action_image = 2131493047;
+			// aapt resource value: 0x7f0c00b8
+			public const int action_image = 2131493048;
 			
 			// aapt resource value: 0x7f0c0003
 			public const int action_menu_divider = 2131492867;
@@ -11337,11 +11486,11 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c006b
 			public const int action_mode_close_button = 2131492971;
 			
-			// aapt resource value: 0x7f0c00b8
-			public const int action_text = 2131493048;
+			// aapt resource value: 0x7f0c00b9
+			public const int action_text = 2131493049;
 			
-			// aapt resource value: 0x7f0c00c6
-			public const int actions = 2131493062;
+			// aapt resource value: 0x7f0c00c7
+			public const int actions = 2131493063;
 			
 			// aapt resource value: 0x7f0c006c
 			public const int activity_chooser_view_content = 2131492972;
@@ -11373,32 +11522,32 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c0044
 			public const int bottom = 2131492932;
 			
-			// aapt resource value: 0x7f0c009d
-			public const int bottomtab_navarea = 2131493021;
-			
 			// aapt resource value: 0x7f0c009e
-			public const int bottomtab_tabbar = 2131493022;
-			
-			// aapt resource value: 0x7f0c00a0
-			public const int browser_actions_header_text = 2131493024;
-			
-			// aapt resource value: 0x7f0c00a2
-			public const int browser_actions_menu_item_icon = 2131493026;
-			
-			// aapt resource value: 0x7f0c00a3
-			public const int browser_actions_menu_item_text = 2131493027;
-			
-			// aapt resource value: 0x7f0c00a1
-			public const int browser_actions_menu_items = 2131493025;
+			public const int bottomtab_navarea = 2131493022;
 			
 			// aapt resource value: 0x7f0c009f
-			public const int browser_actions_menu_view = 2131493023;
+			public const int bottomtab_tabbar = 2131493023;
+			
+			// aapt resource value: 0x7f0c00a1
+			public const int browser_actions_header_text = 2131493025;
+			
+			// aapt resource value: 0x7f0c00a3
+			public const int browser_actions_menu_item_icon = 2131493027;
+			
+			// aapt resource value: 0x7f0c00a4
+			public const int browser_actions_menu_item_text = 2131493028;
+			
+			// aapt resource value: 0x7f0c00a2
+			public const int browser_actions_menu_items = 2131493026;
+			
+			// aapt resource value: 0x7f0c00a0
+			public const int browser_actions_menu_view = 2131493024;
 			
 			// aapt resource value: 0x7f0c0072
 			public const int buttonPanel = 2131492978;
 			
-			// aapt resource value: 0x7f0c00ba
-			public const int cancel_action = 2131493050;
+			// aapt resource value: 0x7f0c00bb
+			public const int cancel_action = 2131493051;
 			
 			// aapt resource value: 0x7f0c004c
 			public const int center = 2131492940;
@@ -11412,8 +11561,8 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c0086
 			public const int checkbox = 2131492998;
 			
-			// aapt resource value: 0x7f0c00c2
-			public const int chronometer = 2131493058;
+			// aapt resource value: 0x7f0c00c3
+			public const int chronometer = 2131493059;
 			
 			// aapt resource value: 0x7f0c0061
 			public const int clip_horizontal = 2131492961;
@@ -11424,20 +11573,20 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c0040
 			public const int collapseActionView = 2131492928;
 			
-			// aapt resource value: 0x7f0c00a6
-			public const int container = 2131493030;
+			// aapt resource value: 0x7f0c00a7
+			public const int container = 2131493031;
 			
 			// aapt resource value: 0x7f0c0082
 			public const int content = 2131492994;
 			
-			// aapt resource value: 0x7f0c00d1
-			public const int contentFrame = 2131493073;
+			// aapt resource value: 0x7f0c00d2
+			public const int contentFrame = 2131493074;
 			
 			// aapt resource value: 0x7f0c0075
 			public const int contentPanel = 2131492981;
 			
-			// aapt resource value: 0x7f0c00a7
-			public const int coordinator = 2131493031;
+			// aapt resource value: 0x7f0c00a8
+			public const int coordinator = 2131493032;
 			
 			// aapt resource value: 0x7f0c007c
 			public const int custom = 2131492988;
@@ -11451,20 +11600,20 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c006f
 			public const int default_activity_button = 2131492975;
 			
-			// aapt resource value: 0x7f0c00a9
-			public const int design_bottom_sheet = 2131493033;
+			// aapt resource value: 0x7f0c00aa
+			public const int design_bottom_sheet = 2131493034;
+			
+			// aapt resource value: 0x7f0c00af
+			public const int design_menu_item_action_area = 2131493039;
 			
 			// aapt resource value: 0x7f0c00ae
-			public const int design_menu_item_action_area = 2131493038;
+			public const int design_menu_item_action_area_stub = 2131493038;
 			
 			// aapt resource value: 0x7f0c00ad
-			public const int design_menu_item_action_area_stub = 2131493037;
+			public const int design_menu_item_text = 2131493037;
 			
 			// aapt resource value: 0x7f0c00ac
-			public const int design_menu_item_text = 2131493036;
-			
-			// aapt resource value: 0x7f0c00ab
-			public const int design_navigation_view = 2131493035;
+			public const int design_navigation_view = 2131493036;
 			
 			// aapt resource value: 0x7f0c0027
 			public const int disableHome = 2131492903;
@@ -11475,8 +11624,8 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c0037
 			public const int end = 2131492919;
 			
-			// aapt resource value: 0x7f0c00c8
-			public const int end_padder = 2131493064;
+			// aapt resource value: 0x7f0c00c9
+			public const int end_padder = 2131493065;
 			
 			// aapt resource value: 0x7f0c0046
 			public const int enterAlways = 2131492934;
@@ -11508,11 +11657,11 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c005c
 			public const int @fixed = 2131492956;
 			
-			// aapt resource value: 0x7f0c00b0
-			public const int flyoutcontent_appbar = 2131493040;
-			
 			// aapt resource value: 0x7f0c00b1
-			public const int flyoutcontent_recycler = 2131493041;
+			public const int flyoutcontent_appbar = 2131493041;
+			
+			// aapt resource value: 0x7f0c00b2
+			public const int flyoutcontent_recycler = 2131493042;
 			
 			// aapt resource value: 0x7f0c0067
 			public const int forever = 2131492967;
@@ -11532,8 +11681,8 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c0071
 			public const int icon = 2131492977;
 			
-			// aapt resource value: 0x7f0c00c7
-			public const int icon_group = 2131493063;
+			// aapt resource value: 0x7f0c00c8
+			public const int icon_group = 2131493064;
 			
 			// aapt resource value: 0x7f0c0041
 			public const int ifRoom = 2131492929;
@@ -11541,8 +11690,8 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c006e
 			public const int image = 2131492974;
 			
-			// aapt resource value: 0x7f0c00c3
-			public const int info = 2131493059;
+			// aapt resource value: 0x7f0c00c4
+			public const int info = 2131493060;
 			
 			// aapt resource value: 0x7f0c0068
 			public const int italic = 2131492968;
@@ -11553,8 +11702,8 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c004e
 			public const int labeled = 2131492942;
 			
-			// aapt resource value: 0x7f0c00a5
-			public const int largeLabel = 2131493029;
+			// aapt resource value: 0x7f0c00a6
+			public const int largeLabel = 2131493030;
 			
 			// aapt resource value: 0x7f0c0054
 			public const int left = 2131492948;
@@ -11571,32 +11720,32 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c0070
 			public const int list_item = 2131492976;
 			
-			// aapt resource value: 0x7f0c00b4
-			public const int loadingImage = 2131493044;
-			
-			// aapt resource value: 0x7f0c00b2
-			public const int loadingProgressBar = 2131493042;
-			
 			// aapt resource value: 0x7f0c00b5
-			public const int loadingProgressWheel = 2131493045;
+			public const int loadingImage = 2131493045;
 			
-			// aapt resource value: 0x7f0c00c9
-			public const int main_appbar = 2131493065;
+			// aapt resource value: 0x7f0c00b3
+			public const int loadingProgressBar = 2131493043;
 			
-			// aapt resource value: 0x7f0c00cb
-			public const int main_tablayout = 2131493067;
+			// aapt resource value: 0x7f0c00b6
+			public const int loadingProgressWheel = 2131493046;
 			
 			// aapt resource value: 0x7f0c00ca
-			public const int main_toolbar = 2131493066;
+			public const int main_appbar = 2131493066;
 			
 			// aapt resource value: 0x7f0c00cc
-			public const int main_viewpager = 2131493068;
+			public const int main_tablayout = 2131493068;
 			
-			// aapt resource value: 0x7f0c00d3
-			public const int masked = 2131493075;
+			// aapt resource value: 0x7f0c00cb
+			public const int main_toolbar = 2131493067;
 			
-			// aapt resource value: 0x7f0c00bc
-			public const int media_actions = 2131493052;
+			// aapt resource value: 0x7f0c00cd
+			public const int main_viewpager = 2131493069;
+			
+			// aapt resource value: 0x7f0c00d4
+			public const int masked = 2131493076;
+			
+			// aapt resource value: 0x7f0c00bd
+			public const int media_actions = 2131493053;
 			
 			// aapt resource value: 0x7f0c009c
 			public const int message = 2131493020;
@@ -11616,8 +11765,8 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c002f
 			public const int multiply = 2131492911;
 			
-			// aapt resource value: 0x7f0c00aa
-			public const int navigation_header_container = 2131493034;
+			// aapt resource value: 0x7f0c00ab
+			public const int navigation_header_container = 2131493035;
 			
 			// aapt resource value: 0x7f0c0042
 			public const int never = 2131492930;
@@ -11628,14 +11777,14 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c0025
 			public const int normal = 2131492901;
 			
-			// aapt resource value: 0x7f0c00c5
-			public const int notification_background = 2131493061;
+			// aapt resource value: 0x7f0c00c6
+			public const int notification_background = 2131493062;
+			
+			// aapt resource value: 0x7f0c00c0
+			public const int notification_main_column = 2131493056;
 			
 			// aapt resource value: 0x7f0c00bf
-			public const int notification_main_column = 2131493055;
-			
-			// aapt resource value: 0x7f0c00be
-			public const int notification_main_column_container = 2131493054;
+			public const int notification_main_column_container = 2131493055;
 			
 			// aapt resource value: 0x7f0c0060
 			public const int outline = 2131492960;
@@ -11664,11 +11813,11 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c0055
 			public const int right = 2131492949;
 			
-			// aapt resource value: 0x7f0c00c4
-			public const int right_icon = 2131493060;
+			// aapt resource value: 0x7f0c00c5
+			public const int right_icon = 2131493061;
 			
-			// aapt resource value: 0x7f0c00c0
-			public const int right_side = 2131493056;
+			// aapt resource value: 0x7f0c00c1
+			public const int right_side = 2131493057;
 			
 			// aapt resource value: 0x7f0c000c
 			public const int save_image_matrix = 2131492876;
@@ -11733,11 +11882,11 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c004f
 			public const int selected = 2131492943;
 			
-			// aapt resource value: 0x7f0c00cd
-			public const int shellcontent_appbar = 2131493069;
-			
 			// aapt resource value: 0x7f0c00ce
-			public const int shellcontent_toolbar = 2131493070;
+			public const int shellcontent_appbar = 2131493070;
+			
+			// aapt resource value: 0x7f0c00cf
+			public const int shellcontent_toolbar = 2131493071;
 			
 			// aapt resource value: 0x7f0c0083
 			public const int shortcut = 2131492995;
@@ -11751,11 +11900,11 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c002c
 			public const int showTitle = 2131492908;
 			
-			// aapt resource value: 0x7f0c00cf
-			public const int sliding_tabs = 2131493071;
+			// aapt resource value: 0x7f0c00d0
+			public const int sliding_tabs = 2131493072;
 			
-			// aapt resource value: 0x7f0c00a4
-			public const int smallLabel = 2131493028;
+			// aapt resource value: 0x7f0c00a5
+			public const int smallLabel = 2131493029;
 			
 			// aapt resource value: 0x7f0c0016
 			public const int snackbar_action = 2131492886;
@@ -11787,8 +11936,8 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c0056
 			public const int start = 2131492950;
 			
-			// aapt resource value: 0x7f0c00bb
-			public const int status_bar_latest_event_content = 2131493051;
+			// aapt resource value: 0x7f0c00bc
+			public const int status_bar_latest_event_content = 2131493052;
 			
 			// aapt resource value: 0x7f0c005b
 			public const int stretch = 2131492955;
@@ -11826,11 +11975,11 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c005a
 			public const int textStart = 2131492954;
 			
-			// aapt resource value: 0x7f0c00b3
-			public const int textViewStatus = 2131493043;
+			// aapt resource value: 0x7f0c00b4
+			public const int textViewStatus = 2131493044;
 			
-			// aapt resource value: 0x7f0c00af
-			public const int text_input_password_toggle = 2131493039;
+			// aapt resource value: 0x7f0c00b0
+			public const int text_input_password_toggle = 2131493040;
 			
 			// aapt resource value: 0x7f0c0018
 			public const int textinput_counter = 2131492888;
@@ -11841,8 +11990,8 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c001a
 			public const int textinput_helper_text = 2131492890;
 			
-			// aapt resource value: 0x7f0c00c1
-			public const int time = 2131493057;
+			// aapt resource value: 0x7f0c00c2
+			public const int time = 2131493058;
 			
 			// aapt resource value: 0x7f0c0023
 			public const int title = 2131492899;
@@ -11853,8 +12002,8 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c007e
 			public const int title_template = 2131492990;
 			
-			// aapt resource value: 0x7f0c00d0
-			public const int toolbar = 2131493072;
+			// aapt resource value: 0x7f0c00d1
+			public const int toolbar = 2131493073;
 			
 			// aapt resource value: 0x7f0c0045
 			public const int top = 2131492933;
@@ -11862,8 +12011,8 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c007d
 			public const int topPanel = 2131492989;
 			
-			// aapt resource value: 0x7f0c00a8
-			public const int touch_outside = 2131493032;
+			// aapt resource value: 0x7f0c00a9
+			public const int touch_outside = 2131493033;
 			
 			// aapt resource value: 0x7f0c000f
 			public const int transition_current_scene = 2131492879;
@@ -11895,8 +12044,8 @@ namespace CourierBA.Droid
 			// aapt resource value: 0x7f0c001b
 			public const int view_offset_helper = 2131492891;
 			
-			// aapt resource value: 0x7f0c00d2
-			public const int visible = 2131493074;
+			// aapt resource value: 0x7f0c00d3
+			public const int visible = 2131493075;
 			
 			// aapt resource value: 0x7f0c0043
 			public const int withText = 2131492931;
@@ -12085,148 +12234,151 @@ namespace CourierBA.Droid
 			public const int abc_tooltip = 2130968603;
 			
 			// aapt resource value: 0x7f04001c
-			public const int BottomTabLayout = 2130968604;
+			public const int borderlayout = 2130968604;
 			
 			// aapt resource value: 0x7f04001d
-			public const int browser_actions_context_menu_page = 2130968605;
+			public const int BottomTabLayout = 2130968605;
 			
 			// aapt resource value: 0x7f04001e
-			public const int browser_actions_context_menu_row = 2130968606;
+			public const int browser_actions_context_menu_page = 2130968606;
 			
 			// aapt resource value: 0x7f04001f
-			public const int design_bottom_navigation_item = 2130968607;
+			public const int browser_actions_context_menu_row = 2130968607;
 			
 			// aapt resource value: 0x7f040020
-			public const int design_bottom_sheet_dialog = 2130968608;
+			public const int design_bottom_navigation_item = 2130968608;
 			
 			// aapt resource value: 0x7f040021
-			public const int design_layout_snackbar = 2130968609;
+			public const int design_bottom_sheet_dialog = 2130968609;
 			
 			// aapt resource value: 0x7f040022
-			public const int design_layout_snackbar_include = 2130968610;
+			public const int design_layout_snackbar = 2130968610;
 			
 			// aapt resource value: 0x7f040023
-			public const int design_layout_tab_icon = 2130968611;
+			public const int design_layout_snackbar_include = 2130968611;
 			
 			// aapt resource value: 0x7f040024
-			public const int design_layout_tab_text = 2130968612;
+			public const int design_layout_tab_icon = 2130968612;
 			
 			// aapt resource value: 0x7f040025
-			public const int design_menu_item_action_area = 2130968613;
+			public const int design_layout_tab_text = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public const int design_navigation_item = 2130968614;
+			public const int design_menu_item_action_area = 2130968614;
 			
 			// aapt resource value: 0x7f040027
-			public const int design_navigation_item_header = 2130968615;
+			public const int design_navigation_item = 2130968615;
 			
 			// aapt resource value: 0x7f040028
-			public const int design_navigation_item_separator = 2130968616;
+			public const int design_navigation_item_header = 2130968616;
 			
 			// aapt resource value: 0x7f040029
-			public const int design_navigation_item_subheader = 2130968617;
+			public const int design_navigation_item_separator = 2130968617;
 			
 			// aapt resource value: 0x7f04002a
-			public const int design_navigation_menu = 2130968618;
+			public const int design_navigation_item_subheader = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int design_navigation_menu_item = 2130968619;
+			public const int design_navigation_menu = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int design_text_input_password_icon = 2130968620;
+			public const int design_navigation_menu_item = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int FlyoutContent = 2130968621;
+			public const int design_text_input_password_icon = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int loading = 2130968622;
+			public const int FlyoutContent = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int loadingimage = 2130968623;
+			public const int loading = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int loadingprogress = 2130968624;
+			public const int loadingimage = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int mtrl_layout_snackbar = 2130968625;
+			public const int loadingprogress = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int mtrl_layout_snackbar_include = 2130968626;
+			public const int mtrl_layout_snackbar = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int notification_action = 2130968627;
+			public const int mtrl_layout_snackbar_include = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int notification_action_tombstone = 2130968628;
+			public const int notification_action = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int notification_media_action = 2130968629;
+			public const int notification_action_tombstone = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int notification_media_cancel_action = 2130968630;
+			public const int notification_media_action = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int notification_template_big_media = 2130968631;
+			public const int notification_media_cancel_action = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int notification_template_big_media_custom = 2130968632;
+			public const int notification_template_big_media = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int notification_template_big_media_narrow = 2130968633;
+			public const int notification_template_big_media_custom = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int notification_template_big_media_narrow_custom = 2130968634;
+			public const int notification_template_big_media_narrow = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int notification_template_custom_big = 2130968635;
+			public const int notification_template_big_media_narrow_custom = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int notification_template_icon_group = 2130968636;
+			public const int notification_template_custom_big = 2130968636;
 			
 			// aapt resource value: 0x7f04003d
-			public const int notification_template_lines_media = 2130968637;
+			public const int notification_template_icon_group = 2130968637;
 			
 			// aapt resource value: 0x7f04003e
-			public const int notification_template_media = 2130968638;
+			public const int notification_template_lines_media = 2130968638;
 			
 			// aapt resource value: 0x7f04003f
-			public const int notification_template_media_custom = 2130968639;
+			public const int notification_template_media = 2130968639;
 			
 			// aapt resource value: 0x7f040040
-			public const int notification_template_part_chronometer = 2130968640;
+			public const int notification_template_media_custom = 2130968640;
 			
 			// aapt resource value: 0x7f040041
-			public const int notification_template_part_time = 2130968641;
+			public const int notification_template_part_chronometer = 2130968641;
 			
 			// aapt resource value: 0x7f040042
-			public const int RootLayout = 2130968642;
+			public const int notification_template_part_time = 2130968642;
 			
 			// aapt resource value: 0x7f040043
-			public const int select_dialog_item_material = 2130968643;
+			public const int RootLayout = 2130968643;
 			
 			// aapt resource value: 0x7f040044
-			public const int select_dialog_multichoice_material = 2130968644;
+			public const int select_dialog_item_material = 2130968644;
 			
 			// aapt resource value: 0x7f040045
-			public const int select_dialog_singlechoice_material = 2130968645;
+			public const int select_dialog_multichoice_material = 2130968645;
 			
 			// aapt resource value: 0x7f040046
-			public const int ShellContent = 2130968646;
+			public const int select_dialog_singlechoice_material = 2130968646;
 			
 			// aapt resource value: 0x7f040047
-			public const int support_simple_spinner_dropdown_item = 2130968647;
+			public const int ShellContent = 2130968647;
 			
 			// aapt resource value: 0x7f040048
-			public const int Tabbar = 2130968648;
+			public const int support_simple_spinner_dropdown_item = 2130968648;
 			
 			// aapt resource value: 0x7f040049
-			public const int Toolbar = 2130968649;
+			public const int Tabbar = 2130968649;
 			
 			// aapt resource value: 0x7f04004a
-			public const int zxingscanneractivitylayout = 2130968650;
+			public const int Toolbar = 2130968650;
 			
 			// aapt resource value: 0x7f04004b
-			public const int zxingscannerfragmentlayout = 2130968651;
+			public const int zxingscanneractivitylayout = 2130968651;
+			
+			// aapt resource value: 0x7f04004c
+			public const int zxingscannerfragmentlayout = 2130968652;
 			
 			static Layout()
 			{

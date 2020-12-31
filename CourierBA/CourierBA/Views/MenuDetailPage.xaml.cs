@@ -1,4 +1,5 @@
 ﻿using Acr.UserDialogs;
+using CourierBA.ViewModels;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -15,20 +16,16 @@ namespace CourierBA.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MenuDetailPage : MasterDetailPage
     {
+        MenuViewModel VM = new MenuViewModel();
         private List<Models.AplicionUserModel> AplicionUserModels;
         private List<Models.PA_bsc_User_Display_2Model> pA_Bsc_User_Display_2Models;
-
+        string _user = null;
         public MenuDetailPage(string items, string user)
         {
+            _user = user;
             InitializeComponent();
+            BindingContext = VM;
             home();
-
-            //Aplicacion 
-            Models.Aplicacion myDeserializedClassAplication = JsonConvert.DeserializeObject<Models.Aplicacion>(items);
-            var tableString = JsonConvert.SerializeObject(myDeserializedClassAplication.Table);
-            AplicionUserModels = JsonConvert.DeserializeObject<List<Models.AplicionUserModel>>(tableString);
-            listMenu.ItemsSource = AplicionUserModels;
-
         }
 
         private void home()
@@ -40,7 +37,7 @@ namespace CourierBA.Views
         {
             await Navigation.PushModalAsync(new LoginPage());
             
-            
+            /*
             var existingPages = Navigation.NavigationStack.ToList();
             //get all the pages in the stack
             foreach (var page in existingPages)
@@ -56,61 +53,15 @@ namespace CourierBA.Views
             
            
            await Navigation.PopToRootAsync();
-
+            */
         }
 
-        //Aplication select
-        int? aplicationSelect = null;
-        private async void listMenu_ItemTapped(object sender, ItemTappedEventArgs e)
+       
+        protected override void OnAppearing()
         {
-
-            //var apliaction = e.Item as Models.AplicionUserModel;
-            //aplicationSelect = apliaction.Application.Value;
-
-            //api display
-            UserDialogs.Instance.ShowLoading(title: "Cargando...");
-            try
-            {
-                
-                //consumo api rest
-                HttpClient client = new HttpClient();
-                client.BaseAddress = Global.GlobalVariables.Servidor;
-                string url = string.Format("/api/PA_bsc_User_Display_2"); //URL API
-                var response = await client.GetAsync(url);
-                var  result = response.Content.ReadAsStringAsync().Result;
-
-                //listar datos
-                Models.PA_bsc_User_Display_2 myDeserializedClass = 
-                    JsonConvert.DeserializeObject<Models.PA_bsc_User_Display_2>(result);
-                var tableString = JsonConvert.SerializeObject(myDeserializedClass.Table);
-                pA_Bsc_User_Display_2Models = 
-                    JsonConvert.DeserializeObject<List<Models.PA_bsc_User_Display_2Model>>(tableString);
-
-
-
-
-
-//               listMenu.ItemsSource = AplicionUserModels;
-
-
-
-
-                UserDialogs.Instance.HideLoading();
-
-               
-            }
-            catch
-            {
-                UserDialogs.Instance.HideLoading();
-                await DisplayAlert("Error", "No se ha podido conectar con el servidor", "Aceptar");
-                return;
-
-            }
-
-           
-
-
-
+            base.OnAppearing();
+            VM._user = _user;
+            VM.LoadData();
         }
     }
 }
