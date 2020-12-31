@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-12-23T14:23:40.560</Modified>
+      <Modified>2020-12-30T15:07:42.814</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.UWP\bin\x86\Debug\CourierBA.UWP.exe">
       <PackagePath>entrypoint\CourierBA.UWP.exe</PackagePath>
-      <Modified>2020-12-23T14:23:36.242</Modified>
+      <Modified>2020-12-30T15:07:12.348</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\acr.userdialogs\7.1.0.470\lib\uap10.0.16299\Acr.UserDialogs.dll">
       <PackagePath>Acr.UserDialogs.dll</PackagePath>
@@ -61,6 +61,10 @@
     <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\win2d.uwp\1.20.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2016-11-30T08:58:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\xam.plugin.media\5.0.1\lib\uap10.0.16299\Plugin.Media.dll">
+      <PackagePath>Plugin.Media.dll</PackagePath>
+      <Modified>2020-04-02T00:52:02.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\xamarin.essentials\1.6.0\lib\uap10.0.16299\Xamarin.Essentials.dll">
       <PackagePath>Xamarin.Essentials.dll</PackagePath>
@@ -96,7 +100,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA\bin\Debug\netstandard2.0\CourierBA.dll">
       <PackagePath>CourierBA.dll</PackagePath>
-      <Modified>2020-12-23T14:22:25.634</Modified>
+      <Modified>2020-12-30T15:06:35.637</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -299,11 +303,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-12-23T14:23:36.133</Modified>
+      <Modified>2020-12-30T15:07:11.494</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-12-23T14:23:36.133</Modified>
+      <Modified>2020-12-30T15:07:11.496</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -319,11 +323,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-12-23T14:18:38.648</Modified>
+      <Modified>2020-12-30T15:07:28.862</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.UWP\bin\x86\Debug\Core\CourierBA.UWP.exe">
       <PackagePath>CourierBA.UWP.exe</PackagePath>
-      <Modified>2020-12-23T14:23:40.499</Modified>
+      <Modified>2020-12-30T15:07:42.244</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

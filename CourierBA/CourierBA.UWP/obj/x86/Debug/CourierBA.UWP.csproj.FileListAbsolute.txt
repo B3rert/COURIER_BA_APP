@@ -77,3 +77,6 @@ C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\Co
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.UWP\bin\x86\Debug\ZXingNetMobile.dll
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.UWP\bin\x86\Debug\zxing.portable.dll
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.UWP\obj\x86\Debug\ZXingNetMobile.pri.xml
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.UWP\bin\x86\Debug\Plugin.Media.dll
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.UWP\bin\x86\Debug\Plugin.Media.pdb
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.UWP\obj\x86\Debug\Plugin.Media.pri.xml
