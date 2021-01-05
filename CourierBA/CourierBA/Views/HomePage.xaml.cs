@@ -101,11 +101,11 @@ namespace CourierBA.Views
 
 
                 collectionImages.ItemsSource = imageList;
-            lblNameFileSelect.Text = "Archivos selecionados: 1";
+                lblNameFileSelect.Text = "Archivos selecionados: 1";
 
-            //
-                   //  cameraImage.Source = ImageSource.FromStream(() => { return photo.GetStream(); });
-                //lblNameFileSelect.Text = "Archivos selecionados: 1";
+            //  cameraImage.Source = ImageSource.FromStream(() => { return photo.GetStream(); });
+            //lblNameFileSelect.Text = "Archivos selecionados: 1";
+
             }
         }
     }

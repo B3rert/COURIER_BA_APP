@@ -1,5 +1,4 @@
 ﻿using CourierBA.Models;
-using CourierBA.Services;
 using Newtonsoft.Json;
 using Prism.Commands;
 using Prism.Mvvm;
@@ -8,7 +7,6 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms.Internals;
 
@@ -74,7 +72,7 @@ namespace CourierBA.ViewModels
         {
             try
             {
-                var response = await GetMenu(item);
+                var response = await GetMenu(item, _user);
                 if (!response.IsSuccess)
                 {
                     return new ObservableCollection<Menu>();
@@ -132,11 +130,16 @@ namespace CourierBA.ViewModels
         {
             if (item.Children.Count > 0 )
             {
+
+                
                 return;
                 //await _dialogService.DisplayAlertAsync("Con Hijos", "Yo tengo hijos, solo puedes navegar en mis hijos", "OK");
             }
             else
             {
+              
+                
+                
                 return;
                 //await _dialogService.DisplayAlertAsync("Sin Hijos", "Yo no tengo hijos, puedes mandar a otra pagina o hacer alguna otra cosa", "OK");
             }
@@ -144,14 +147,14 @@ namespace CourierBA.ViewModels
         }
 
         #region API
-        public async Task<Response<ResponseApi>> GetMenu(int id)
+        public async Task<Response<ResponseApi>> GetMenu(int id, string user)
         {
             try
             {
 
                 var client = new HttpClient();
 
-                var url = $"http://190.149.177.249:81/api/PA_bsc_User_Display_2?user=sa&application={id}";
+                var url = $"http://190.149.177.249:81/api/PA_bsc_User_Display_2?user={user}&application={id}";
                 UriBuilder builder = new UriBuilder(url);
                 //builder.Query = request.IdCliente <= 0 ? string.Format("id={0}", request.id) : string.Format("idCliente={0}", request.IdCliente);
 

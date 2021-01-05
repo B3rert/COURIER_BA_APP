@@ -1,12 +1,6 @@
-﻿using Acr.UserDialogs;
-using CourierBA.ViewModels;
-using Newtonsoft.Json;
+﻿using CourierBA.ViewModels;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -17,10 +11,9 @@ namespace CourierBA.Views
     public partial class MenuDetailPage : MasterDetailPage
     {
         MenuViewModel VM = new MenuViewModel();
-        private List<Models.AplicionUserModel> AplicionUserModels;
-        private List<Models.PA_bsc_User_Display_2Model> pA_Bsc_User_Display_2Models;
         string _user = null;
-        public MenuDetailPage(string items, string user)
+
+        public MenuDetailPage( string user)
         {
             _user = user;
             InitializeComponent();
