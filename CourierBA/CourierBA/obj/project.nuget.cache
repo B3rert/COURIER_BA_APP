@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+0ol6zXvymHHjD/UxEFpUbzn5JNm7sNVRy2EfffQ71vhEBlP1sSS/nHNm6Tu+SbG/XeF6VrMcl8rg2fMXwx8Iw==",
+  "dgSpecHash": "nkJ9qb0KaKsv6KHkbCfc5YjcpV4q91Qryv8VDf75dRDt2TVOJCqjUKe9aVk9NRrS8o1Ct9W2o+SDpNpLZt0/+Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Andres\\Desktop\\DEMOSOFT\\Proyectos\\_CourierBA_app\\CourierBA\\CourierBA\\CourierBA\\CourierBA.csproj",
   "expectedPackageFiles": [
@@ -13,9 +13,10 @@
     "C:\\Users\\Andres\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\prism.dryioc.forms\\8.0.0.1909\\prism.dryioc.forms.8.0.0.1909.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\prism.forms\\8.0.0.1909\\prism.forms.8.0.0.1909.nupkg.sha512",
-    "C:\\Users\\Andres\\.nuget\\packages\\syncfusion.licensing\\18.4.0.32\\syncfusion.licensing.18.4.0.32.nupkg.sha512",
-    "C:\\Users\\Andres\\.nuget\\packages\\syncfusion.xamarin.core\\18.4.0.32\\syncfusion.xamarin.core.18.4.0.32.nupkg.sha512",
+    "C:\\Users\\Andres\\.nuget\\packages\\syncfusion.licensing\\18.4.0.33\\syncfusion.licensing.18.4.0.33.nupkg.sha512",
+    "C:\\Users\\Andres\\.nuget\\packages\\syncfusion.xamarin.core\\18.4.0.33\\syncfusion.xamarin.core.18.4.0.33.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\syncfusion.xamarin.gridcommon\\18.4.0.32\\syncfusion.xamarin.gridcommon.18.4.0.32.nupkg.sha512",
+    "C:\\Users\\Andres\\.nuget\\packages\\syncfusion.xamarin.sfautocomplete\\18.4.0.33\\syncfusion.xamarin.sfautocomplete.18.4.0.33.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\syncfusion.xamarin.sftreeview\\18.4.0.32\\syncfusion.xamarin.sftreeview.18.4.0.32.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

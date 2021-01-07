@@ -55,17 +55,29 @@
     <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.11\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.licensing\18.4.0.32\lib\uap10.0\Syncfusion.Licensing.dll">
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.licensing\18.4.0.33\lib\uap10.0\Syncfusion.Licensing.dll">
       <PackagePath>Syncfusion.Licensing.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.xamarin.core\18.4.0.32\lib\uap10.0\Syncfusion.Core.XForms.UWP.dll">
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.sfinput.uwp\18.4.0.33\lib\uap10.0\Syncfusion.SfInput.UWP.dll">
+      <PackagePath>Syncfusion.SfInput.UWP.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.sfshared.uwp\18.4.0.33\lib\uap10.0\Syncfusion.SfShared.UWP.dll">
+      <PackagePath>Syncfusion.SfShared.UWP.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.xamarin.core\18.4.0.33\lib\uap10.0\Syncfusion.Core.XForms.UWP.dll">
       <PackagePath>Syncfusion.Core.XForms.UWP.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.xamarin.core\18.4.0.32\lib\uap10.0\Syncfusion.Core.XForms.dll">
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.xamarin.core\18.4.0.33\lib\uap10.0\Syncfusion.Core.XForms.dll">
       <PackagePath>Syncfusion.Core.XForms.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.xamarin.gridcommon\18.4.0.32\lib\uap10.0\Syncfusion.GridCommon.Portable.dll">
       <PackagePath>Syncfusion.GridCommon.Portable.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.xamarin.sfautocomplete\18.4.0.33\lib\uap10.0\Syncfusion.SfAutoComplete.XForms.UWP.dll">
+      <PackagePath>Syncfusion.SfAutoComplete.XForms.UWP.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.xamarin.sfautocomplete\18.4.0.33\lib\uap10.0\Syncfusion.SfAutoComplete.XForms.dll">
+      <PackagePath>Syncfusion.SfAutoComplete.XForms.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.xamarin.sftreeview\18.4.0.32\lib\uap10.0\Syncfusion.SfTreeView.XForms.UWP.dll">
       <PackagePath>Syncfusion.SfTreeView.XForms.UWP.dll</PackagePath>
@@ -121,7 +133,19 @@
     <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\coding4fun.toolkit.controls\2.1.8\lib\netcore451\Coding4Fun.Toolkit.Controls\Coding4Fun.Toolkit.Controls.xr.xml">
       <PackagePath>Coding4Fun.Toolkit.Controls\Coding4Fun.Toolkit.Controls.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.xamarin.core\18.4.0.32\lib\uap10.0\Syncfusion.Core.XForms.UWP\Syncfusion.Core.XForms.UWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.sfinput.uwp\18.4.0.33\lib\uap10.0\Syncfusion.SfInput.UWP\Syncfusion.SfInput.UWP.xr.xml">
+      <PackagePath>Syncfusion.SfInput.UWP\Syncfusion.SfInput.UWP.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.sfinput.uwp\18.4.0.33\lib\uap10.0\Syncfusion.SfInput.UWP\Properties\Syncfusion.SfInput.UWP.rd.xml">
+      <PackagePath>Syncfusion.SfInput.UWP\Properties\Syncfusion.SfInput.UWP.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.sfshared.uwp\18.4.0.33\lib\uap10.0\Syncfusion.SfShared.UWP\Syncfusion.SfShared.UWP.xr.xml">
+      <PackagePath>Syncfusion.SfShared.UWP\Syncfusion.SfShared.UWP.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.sfshared.uwp\18.4.0.33\lib\uap10.0\Syncfusion.SfShared.UWP\Properties\Syncfusion.SfShared.UWP.rd.xml">
+      <PackagePath>Syncfusion.SfShared.UWP\Properties\Syncfusion.SfShared.UWP.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.xamarin.core\18.4.0.33\lib\uap10.0\Syncfusion.Core.XForms.UWP\Syncfusion.Core.XForms.UWP.xr.xml">
       <PackagePath>Syncfusion.Core.XForms.UWP\Syncfusion.Core.XForms.UWP.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Andres\.nuget\packages\syncfusion.xamarin.sftreeview\18.4.0.32\lib\uap10.0\Syncfusion.SfTreeView.XForms.UWP\Syncfusion.SfTreeView.XForms.UWP.xr.xml">

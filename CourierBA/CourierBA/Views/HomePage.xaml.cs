@@ -41,7 +41,7 @@ namespace CourierBA.Views
                     return;
                 }
             }
-            catch (Exception ex)
+            catch
             {
                 await DisplayAlert("Error", "No se ha podigo escanear el codigo de barras", "Aceptar");
                 return;

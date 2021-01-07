@@ -229,7 +229,7 @@ namespace CourierBA.Views
                             if (_result == "201")
                             {
                                 UserDialogs.Instance.HideLoading();
-                                await Navigation.PushModalAsync(new MenuDetailPage(UserEntry.Text));
+                                await Navigation.PushModalAsync(new MenuDetailPage(UserEntry.Text, selectedEmpresa));
                                 PassEntry.Text = string.Empty;
                             }
                             else

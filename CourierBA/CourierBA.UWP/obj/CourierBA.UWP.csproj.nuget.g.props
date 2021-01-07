@@ -35,6 +35,7 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_UI_Xaml Condition=" '$(PkgMicrosoft_UI_Xaml)' == '' ">C:\Users\Andres\.nuget\packages\microsoft.ui.xaml\2.4.2</PkgMicrosoft_UI_Xaml>
+    <PkgSyncfusion_SfInput_UWP Condition=" '$(PkgSyncfusion_SfInput_UWP)' == '' ">C:\Users\Andres\.nuget\packages\syncfusion.sfinput.uwp\18.4.0.33</PkgSyncfusion_SfInput_UWP>
     <Pkgruntime_win10-x86_Microsoft_Net_UWPCoreRuntimeSdk Condition=" '$(Pkgruntime_win10-x86_Microsoft_Net_UWPCoreRuntimeSdk)' == '' ">C:\Users\Andres\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11</Pkgruntime_win10-x86_Microsoft_Net_UWPCoreRuntimeSdk>
     <Pkgruntime_win10-x86_Microsoft_Net_Native_SharedLibrary Condition=" '$(Pkgruntime_win10-x86_Microsoft_Net_Native_SharedLibrary)' == '' ">C:\Users\Andres\.nuget\packages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.8-rel-29512-01</Pkgruntime_win10-x86_Microsoft_Net_Native_SharedLibrary>
     <Pkgruntime_win10-x86_Microsoft_Net_Native_Compiler Condition=" '$(Pkgruntime_win10-x86_Microsoft_Net_Native_Compiler)' == '' ">C:\Users\Andres\.nuget\packages\runtime.win10-x86.microsoft.net.native.compiler\2.2.9-rel-29512-01</Pkgruntime_win10-x86_Microsoft_Net_Native_Compiler>

@@ -100,7 +100,7 @@
           "lib/netstandard2.0/Prism.Forms.dll": {}
         }
       },
-      "Syncfusion.Licensing/18.4.0.32": {
+      "Syncfusion.Licensing/18.4.0.33": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Syncfusion.Licensing.dll": {}
@@ -109,10 +109,10 @@
           "lib/netstandard2.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/18.4.0.32": {
+      "Syncfusion.Xamarin.Core/18.4.0.33": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.32",
+          "Syncfusion.Licensing": "18.4.0.33",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -129,6 +129,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/Syncfusion.GridCommon.Portable.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfAutoComplete/18.4.0.33": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "18.4.0.33",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.SfAutoComplete.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.SfAutoComplete.XForms.dll": {}
         }
       },
       "Syncfusion.Xamarin.SfTreeView/18.4.0.32": {
@@ -634,10 +647,10 @@
         "prism.forms.nuspec"
       ]
     },
-    "Syncfusion.Licensing/18.4.0.32": {
-      "sha512": "tAY3jbIR7bsfm1Gcyb0qBN2JCVfeoewVKJk6z7pHvMAbSaZdBaAYuPJU0NnspYH5+dTOYQ2qb9vQtt/DE3kFbg==",
+    "Syncfusion.Licensing/18.4.0.33": {
+      "sha512": "FtXAYtRMPaDvUGsMWQx1diSoDS0UZEWDu2xxwzPtirsX4GGDqqvxsMc/rA4J7FcDU2Y0riotc4Qp6bNMaTz1Lw==",
       "type": "package",
-      "path": "syncfusion.licensing/18.4.0.32",
+      "path": "syncfusion.licensing/18.4.0.33",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -659,14 +672,14 @@
         "lib/netstandard2.0/Syncfusion.Licensing.dll",
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
         "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.18.4.0.32.nupkg.sha512",
+        "syncfusion.licensing.18.4.0.33.nupkg.sha512",
         "syncfusion.licensing.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.Core/18.4.0.32": {
-      "sha512": "Hwg5SWHKq5WRdJomq2tL74Q/l9MDHbylOX/F+UYMWEsLB2qkJ1WKe9GCDAad2Y8fkRs4f46rHx3EUPHINlI0FQ==",
+    "Syncfusion.Xamarin.Core/18.4.0.33": {
+      "sha512": "LCaVhLR0cEmI+IurqcvxtyNSLg7TZb/436mCp/78gCy310rCxcZoO9R+aIBO9I+FqVxguuMQAGGzytn2qL/BIg==",
       "type": "package",
-      "path": "syncfusion.xamarin.core/18.4.0.32",
+      "path": "syncfusion.xamarin.core/18.4.0.33",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -694,7 +707,7 @@
         "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleVisibleIcon.xaml",
         "lib/uap10.0/Syncfusion.Core.XForms.dll",
         "lib/uap10.0/Syncfusion.Core.XForms.xml",
-        "syncfusion.xamarin.core.18.4.0.32.nupkg.sha512",
+        "syncfusion.xamarin.core.18.4.0.33.nupkg.sha512",
         "syncfusion.xamarin.core.nuspec"
       ]
     },
@@ -721,6 +734,34 @@
         "lib/uap10.0/Syncfusion.GridCommon.Portable.dll",
         "syncfusion.xamarin.gridcommon.18.4.0.32.nupkg.sha512",
         "syncfusion.xamarin.gridcommon.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.SfAutoComplete/18.4.0.33": {
+      "sha512": "Zzjsdi2FOcJTNOKNPO4djs3irK5ZSeOypBiP8p1/QWGYimwSPJOx5hisIWnI33HAT+rKBfKPpXTnDduoDHS25Q==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfautocomplete/18.4.0.33",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10.0/Syncfusion.SfAutoComplete.XForms.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfAutoComplete.XForms.XML",
+        "lib/MonoAndroid10.0/Syncfusion.SfAutoComplete.XForms.dll",
+        "lib/MonoAndroid90/Syncfusion.SfAutoComplete.XForms.Android.dll",
+        "lib/MonoAndroid90/Syncfusion.SfAutoComplete.XForms.XML",
+        "lib/MonoAndroid90/Syncfusion.SfAutoComplete.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.XForms.XML",
+        "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfAutoComplete.XForms.iOS.dll",
+        "lib/netstandard2.0/Syncfusion.SfAutoComplete.XForms.XML",
+        "lib/netstandard2.0/Syncfusion.SfAutoComplete.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfAutoComplete.XForms.XML",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfAutoComplete.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.XML",
+        "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.dll",
+        "syncfusion.xamarin.sfautocomplete.18.4.0.33.nupkg.sha512",
+        "syncfusion.xamarin.sfautocomplete.nuspec"
       ]
     },
     "Syncfusion.Xamarin.SfTreeView/18.4.0.32": {
@@ -1793,6 +1834,7 @@
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 12.0.3",
       "Prism.DryIoc.Forms >= 8.0.0.1909",
+      "Syncfusion.Xamarin.SfAutoComplete >= 18.4.0.33",
       "Syncfusion.Xamarin.SfTreeView >= 18.4.0.32",
       "Xam.Plugin.Media >= 5.0.1",
       "Xamarin.Essentials >= 1.6.0",
@@ -1862,6 +1904,10 @@
           "Prism.DryIoc.Forms": {
             "target": "Package",
             "version": "[8.0.0.1909, )"
+          },
+          "Syncfusion.Xamarin.SfAutoComplete": {
+            "target": "Package",
+            "version": "[18.4.0.33, )"
           },
           "Syncfusion.Xamarin.SfTreeView": {
             "target": "Package",

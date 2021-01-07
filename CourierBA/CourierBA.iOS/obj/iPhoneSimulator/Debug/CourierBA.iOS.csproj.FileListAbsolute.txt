@@ -80,3 +80,5 @@ C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\Co
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.iOS\bin\iPhoneSimulator\Debug\Plugin.Media.dll
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.iOS\bin\iPhoneSimulator\Debug\Plugin.Media.pdb
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.iOS\bin\iPhoneSimulator\Debug\Essential.Interfaces.dll
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.iOS\bin\iPhoneSimulator\Debug\Syncfusion.SfAutoComplete.XForms.dll
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.iOS\bin\iPhoneSimulator\Debug\Syncfusion.SfAutoComplete.XForms.iOS.dll

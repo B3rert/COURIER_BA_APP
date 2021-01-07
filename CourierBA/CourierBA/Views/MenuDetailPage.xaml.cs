@@ -12,9 +12,11 @@ namespace CourierBA.Views
     {
         MenuViewModel VM = new MenuViewModel();
         string _user = null;
+        int? _empresa = 0;
 
-        public MenuDetailPage( string user)
+        public MenuDetailPage( string user, int? empresa)
         {
+            _empresa = empresa;
             _user = user;
             InitializeComponent();
             BindingContext = VM;
@@ -23,7 +25,7 @@ namespace CourierBA.Views
 
         private void home()
         {
-            Detail = new NavigationPage(new HomePage());
+            Detail = new NavigationPage(new GuiaReferenciaPage(_empresa));
         }
 
         private async void btnLogout_Clicked(object sender, EventArgs e)

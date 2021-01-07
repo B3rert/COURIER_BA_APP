@@ -1,11 +1,10 @@
 package mono;
 public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
-		/* We need to ensure that "CourierBA.Android.dll" comes first in this list. */
-		"CourierBA.Android.dll",
+		/* We need to ensure that "CourierBA.dll" comes first in this list. */
+		"CourierBA.dll",
 		"Acr.UserDialogs.dll",
 		"AndHUD.dll",
-		"CourierBA.dll",
 		"DryIoc.dll",
 		"Essential.Interfaces.dll",
 		"FastAndroidCamera.dll",
@@ -20,6 +19,8 @@ public class MonoPackageManager_Resources {
 		"Syncfusion.Core.XForms.dll",
 		"Syncfusion.GridCommon.Portable.dll",
 		"Syncfusion.Licensing.dll",
+		"Syncfusion.SfAutoComplete.XForms.Android.dll",
+		"Syncfusion.SfAutoComplete.XForms.dll",
 		"Syncfusion.SfTreeView.XForms.Android.dll",
 		"Syncfusion.SfTreeView.XForms.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",

@@ -13,6 +13,7 @@
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "12.0.3",
           "Prism.DryIoc.Forms": "8.0.0.1909",
+          "Syncfusion.Xamarin.SfAutoComplete": "18.4.0.33",
           "Syncfusion.Xamarin.SfTreeView": "18.4.0.32",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.0",
@@ -90,23 +91,23 @@
           }
         }
       },
-      "Syncfusion.Licensing/18.4.0.32": {
+      "Syncfusion.Licensing/18.4.0.33": {
         "runtime": {
           "lib/netstandard2.0/Syncfusion.Licensing.dll": {
-            "assemblyVersion": "18.4.0.32",
-            "fileVersion": "18.4.0.32"
+            "assemblyVersion": "18.4.0.33",
+            "fileVersion": "18.4.0.33"
           }
         }
       },
-      "Syncfusion.Xamarin.Core/18.4.0.32": {
+      "Syncfusion.Xamarin.Core/18.4.0.33": {
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.32",
+          "Syncfusion.Licensing": "18.4.0.33",
           "Xamarin.Forms": "4.8.0.1821"
         },
         "runtime": {
           "lib/netstandard2.0/Syncfusion.Core.XForms.dll": {
-            "assemblyVersion": "18.4451.0.32",
-            "fileVersion": "18.4451.0.32"
+            "assemblyVersion": "18.4451.0.33",
+            "fileVersion": "18.4451.0.33"
           }
         }
       },
@@ -118,9 +119,21 @@
           }
         }
       },
+      "Syncfusion.Xamarin.SfAutoComplete/18.4.0.33": {
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "18.4.0.33",
+          "Xamarin.Forms": "4.8.0.1821"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.SfAutoComplete.XForms.dll": {
+            "assemblyVersion": "18.4451.0.33",
+            "fileVersion": "18.4451.0.33"
+          }
+        }
+      },
       "Syncfusion.Xamarin.SfTreeView/18.4.0.32": {
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.4.0.32",
+          "Syncfusion.Xamarin.Core": "18.4.0.33",
           "Syncfusion.Xamarin.GridCommon": "18.4.0.32",
           "Xamarin.Forms": "4.8.0.1821"
         },
@@ -347,19 +360,19 @@
       "path": "prism.forms/8.0.0.1909",
       "hashPath": "prism.forms.8.0.0.1909.nupkg.sha512"
     },
-    "Syncfusion.Licensing/18.4.0.32": {
+    "Syncfusion.Licensing/18.4.0.33": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tAY3jbIR7bsfm1Gcyb0qBN2JCVfeoewVKJk6z7pHvMAbSaZdBaAYuPJU0NnspYH5+dTOYQ2qb9vQtt/DE3kFbg==",
-      "path": "syncfusion.licensing/18.4.0.32",
-      "hashPath": "syncfusion.licensing.18.4.0.32.nupkg.sha512"
+      "sha512": "sha512-FtXAYtRMPaDvUGsMWQx1diSoDS0UZEWDu2xxwzPtirsX4GGDqqvxsMc/rA4J7FcDU2Y0riotc4Qp6bNMaTz1Lw==",
+      "path": "syncfusion.licensing/18.4.0.33",
+      "hashPath": "syncfusion.licensing.18.4.0.33.nupkg.sha512"
     },
-    "Syncfusion.Xamarin.Core/18.4.0.32": {
+    "Syncfusion.Xamarin.Core/18.4.0.33": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Hwg5SWHKq5WRdJomq2tL74Q/l9MDHbylOX/F+UYMWEsLB2qkJ1WKe9GCDAad2Y8fkRs4f46rHx3EUPHINlI0FQ==",
-      "path": "syncfusion.xamarin.core/18.4.0.32",
-      "hashPath": "syncfusion.xamarin.core.18.4.0.32.nupkg.sha512"
+      "sha512": "sha512-LCaVhLR0cEmI+IurqcvxtyNSLg7TZb/436mCp/78gCy310rCxcZoO9R+aIBO9I+FqVxguuMQAGGzytn2qL/BIg==",
+      "path": "syncfusion.xamarin.core/18.4.0.33",
+      "hashPath": "syncfusion.xamarin.core.18.4.0.33.nupkg.sha512"
     },
     "Syncfusion.Xamarin.GridCommon/18.4.0.32": {
       "type": "package",
@@ -367,6 +380,13 @@
       "sha512": "sha512-Kxrk4SW+Mh6cGYEFgFOD8x/glF/f5TCXv3beg17V8euU04FqNjUqMS0VwqI9jRYX2QMuvprJ+MXy/ttlTKAAmw==",
       "path": "syncfusion.xamarin.gridcommon/18.4.0.32",
       "hashPath": "syncfusion.xamarin.gridcommon.18.4.0.32.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.SfAutoComplete/18.4.0.33": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Zzjsdi2FOcJTNOKNPO4djs3irK5ZSeOypBiP8p1/QWGYimwSPJOx5hisIWnI33HAT+rKBfKPpXTnDduoDHS25Q==",
+      "path": "syncfusion.xamarin.sfautocomplete/18.4.0.33",
+      "hashPath": "syncfusion.xamarin.sfautocomplete.18.4.0.33.nupkg.sha512"
     },
     "Syncfusion.Xamarin.SfTreeView/18.4.0.32": {
       "type": "package",

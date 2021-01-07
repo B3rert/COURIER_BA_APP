@@ -58,6 +58,10 @@
               "target": "Package",
               "version": "[8.0.0.1909, )"
             },
+            "Syncfusion.Xamarin.SfAutoComplete": {
+              "target": "Package",
+              "version": "[18.4.0.33, )"
+            },
             "Syncfusion.Xamarin.SfTreeView": {
               "target": "Package",
               "version": "[18.4.0.32, )"
@@ -143,6 +147,10 @@
             "Prism.DryIoc.Forms": {
               "target": "Package",
               "version": "[8.0.0.1909, )"
+            },
+            "Syncfusion.Xamarin.SfAutoComplete": {
+              "target": "Package",
+              "version": "[18.4.0.33, )"
             },
             "Syncfusion.Xamarin.SfTreeView": {
               "target": "Package",

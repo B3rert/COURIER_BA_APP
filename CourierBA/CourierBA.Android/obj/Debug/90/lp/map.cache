@@ -5,6 +5,7 @@ FormsViewGroup
 Plugin.CurrentActivity
 Plugin.Media
 Syncfusion.Core.XForms.Android
+Syncfusion.SfAutoComplete.XForms.Android
 Syncfusion.SfTreeView.XForms.Android
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Core.Runtime

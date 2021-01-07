@@ -98,6 +98,8 @@ namespace CourierBA.Views
 
             #region Procedimientos de actualizacion en db configuracion local
 
+            UserDialogs.Instance.ShowLoading(title: "Cargando...");
+
             if ((selectedEstacion == 0 || selectedEstacion == null) || (selectedEmpresa == null || selectedEmpresa == 0))
             {
                 UserDialogs.Instance.HideLoading();
@@ -185,7 +187,7 @@ namespace CourierBA.Views
                     var response = await client.PostAsync(url, content);
                     var postResult = response.Content.ReadAsStringAsync().Result;
 
-                    await Navigation.PushModalAsync(new MenuDetailPage(_usuario));
+                    await Navigation.PushModalAsync(new MenuDetailPage(_usuario, selectedEmpresa));
                     UserDialogs.Instance.HideLoading();
 
                 }
