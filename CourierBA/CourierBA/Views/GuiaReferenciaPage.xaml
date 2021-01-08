@@ -6,63 +6,142 @@
              x:Class="CourierBA.Views.GuiaReferenciaPage">
     <ContentPage.Content>
         <Grid>
-
             <ScrollView>
                 <StackLayout Padding="20">
+                    <Frame Padding="20,5">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="30"/>
+                            </Grid.ColumnDefinitions>
+                            <ImageButton HeightRequest="16"
+                                         x:Name="btnBuscarCodigo"
+                                         Source="buscar_icon.png"
+                                         BackgroundColor="Transparent"
+                                         HorizontalOptions="Start"
+                                         VerticalOptions="Center"/>
 
-                    <Label Text="Id Tracking"
-                       FontSize="20"/>
+                            <autocomplete:SfAutoComplete
+                                x:Name="txtCodigo"
+                                Grid.Column="1"
+                                HorizontalOptions="FillAndExpand"
+                                ShowBorder="False"
+                                VerticalOptions="Center"
+                                Watermark="Id Tracking">
+                            </autocomplete:SfAutoComplete>
+
+                            <ImageButton Grid.Column="2"
+                                         HorizontalOptions="End"
+                                        VerticalOptions="Center"
+                                        WidthRequest="18"
+                                        x:Name="btnEscanearCodigo"
+                                        Source="camara_icon.png"
+                                        BackgroundColor="Transparent"
+                                       Clicked="btnEscanearCodigo_Clicked"/>
+                        </Grid>
+                    </Frame>
 
                     <StackLayout Orientation="Horizontal"
                              FlowDirection="LeftToRight">
                         <Label Text="Observacion" 
                            Style="{DynamicResource SmallLabelStyle}"
                            Margin="0,15,0,0"/>
-                        <Entry HorizontalOptions="FillAndExpand"
-                            VerticalOptions="End"
-                             ClearButtonVisibility="WhileEditing"/>
-
-                    </StackLayout>
-
-                    <StackLayout Orientation="Horizontal"
-                             FlowDirection="LeftToRight">
-                        <Label Text="Peso" 
-                           Style="{DynamicResource SmallLabelStyle}"
-                           Margin="0,15,0,0"/>
-                        <Entry Text="1"
-                             ClearButtonVisibility="WhileEditing"
-                        HorizontalOptions="FillAndExpand"
-                            VerticalOptions="End"/>
-
-                        <Label Text="Pieza(s)" 
-                           Style="{DynamicResource SmallLabelStyle}"
-                           Margin="0,15,0,0"/>
-                        <Entry
-                            ClearButtonVisibility="WhileEditing"
-                            Text="1"
+                        <Entry 
+                            x:Name="txtObservacion"
                             HorizontalOptions="FillAndExpand"
-                            VerticalOptions="End"/>
+                            VerticalOptions="End"
+                            ClearButtonVisibility="WhileEditing"/>
+
                     </StackLayout>
 
-                    <StackLayout Orientation="Horizontal"
-                             FlowDirection="LeftToRight">
-                        <Label Text="Valor(Monto)" 
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="50*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackLayout Orientation="Horizontal"
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    FlowDirection="LeftToRight">
+                            <Label Text="Peso" 
                            Style="{DynamicResource SmallLabelStyle}"
                            Margin="0,15,0,0"/>
-                        <Entry Text="1" 
+                            <Entry Text="1"
+                                   HorizontalTextAlignment="Center"
+                                   x:Name="txtPeso"
+                                   Keyboard="Numeric"
+                                   ClearButtonVisibility="WhileEditing"
+                                   HorizontalOptions="FillAndExpand"
+                                   VerticalOptions="End"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal"
+                                      Grid.Row="0"
+                                      Grid.Column="1"
+                                      FlowDirection="LeftToRight">
+                            <Label Text="Pieza(s)" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                            <Entry
+                                 x:Name="txtPieza"
+                                HorizontalTextAlignment="Center"
+                                ClearButtonVisibility="WhileEditing"
+                                Text="1"
+                                 Keyboard="Numeric"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="End"/>
+
+                        </StackLayout>
+                    </Grid>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="50*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackLayout Orientation="Horizontal"
+                                     FlowDirection="LeftToRight"
+                                     Grid.Row="0"
+                                     Grid.Column="0">
+                            <Label Text="Valor(Monto)" 
+                           Style="{DynamicResource SmallLabelStyle}"
+                           Margin="0,15,0,0"/>
+                            <Entry Text="1" 
+                               x:Name="txtMonto"
+                                HorizontalTextAlignment="Center"
+                                Keyboard="Numeric"
                                ClearButtonVisibility="WhileEditing"
                                HorizontalOptions="FillAndExpand"
-                            VerticalOptions="End"/>
+                                 VerticalOptions="End"/>
+                        </StackLayout>
 
-                        <Label Text="Moneda" 
-                           Style="{DynamicResource SmallLabelStyle}"
-                           Margin="0,15,0,0"/>
-                        <Picker HorizontalOptions="FillAndExpand"
-                            VerticalOptions="End"
-                            x:Name="pickMoneda"
-                           
-                            ItemDisplayBinding="{Binding Nombre}"/>
-                    </StackLayout>
+                        <StackLayout Orientation="Horizontal"
+                                     Grid.Row="0"
+                                     Grid.Column="1"
+                                     FlowDirection="LeftToRight">
+                            <Label Text="Moneda" 
+                                   Style="{DynamicResource SmallLabelStyle}"
+                                   Margin="0,15,0,0"/>
+                            <Picker HorizontalOptions="FillAndExpand"
+                                     HorizontalTextAlignment="Center"
+                                    VerticalOptions="End"
+                                    x:Name="pickMoneda"
+                                    ItemDisplayBinding="{Binding Nombre}"
+                                    SelectedIndexChanged="pickMoneda_SelectedIndexChanged"/>
+                        </StackLayout>
+                    </Grid>
 
                     <StackLayout Orientation="Horizontal"
                              FlowDirection="LeftToRight">
@@ -75,29 +154,84 @@
                    x:Name="searchBar"
                    SearchCommandParameter="{Binding Text, Source={x:Reference searchBar}}"/>-->
 
-
-                        <autocomplete:SfAutoComplete HeightRequest="40"
-                                                 HorizontalOptions="FillAndExpand"
-                                     DataSource="{Binding ProductoUsos}"
-                                     DisplayMemberPath="Descripcion"
-                                     SelectionChanged="SfAutoComplete_SelectionChanged"/>
+                        <autocomplete:SfAutoComplete 
+                            x:Name="txtProducto"
+                            SuggestionMode="Contains"
+                            HeightRequest="40"
+                            HorizontalOptions="FillAndExpand"
+                            DataSource="{Binding ProductoUsos}"
+                            DisplayMemberPath="Descripcion"
+                            SelectionChanged="SfAutoComplete_SelectionChanged">
+                        </autocomplete:SfAutoComplete>
+                        
                     </StackLayout>
 
-                    <StackLayout Orientation="Horizontal" 
+                    <StackLayout Orientation="Horizontal"
                              FlowDirection="LeftToRight">
-
-                        <Label Text="Id Tracking" 
+                        <Label
+                            x:Name="lblNameFileSelect"
+                            Text="No se elegió ningun archivo" 
                            Style="{DynamicResource SmallLabelStyle}"
                            Margin="0,15,0,0"/>
+                        <Button
+                            x:Name="btnSelectFile"
+                            Text="Seleccionar archivo"
+                            FontSize="17"
+                            HorizontalOptions="FillAndExpand"
+                            Clicked="btnSelectFile_Clicked"/>
+                        <ImageButton 
+                            VerticalOptions="FillAndExpand"
+                            WidthRequest="18"
+                            x:Name="btnTomarFoto"
+                            Source="camara_blue_icon.png"
+                            BackgroundColor="Transparent"
+                            Clicked="btnTomarFoto_Clicked"
+                            Margin="10,0,10,0"/>
 
-                        <Entry 
-                            ClearButtonVisibility="WhileEditing" 
-                           HorizontalOptions="FillAndExpand"/>
-
-                        <ImageButton Source="mas_icon.png"
-                                 BackgroundColor="Transparent"
-                                 Padding="10,0,0,0"/>
+                        <ImageButton x:Name="btnClearImage"
+                                     Clicked="btnClearImage_Clicked"
+                                     Source="eliminar_icon.png"
+                                     BackgroundColor="Transparent"
+                                     HorizontalOptions="End"
+                                     HeightRequest="20"/>
                     </StackLayout>
+                    <StackLayout HeightRequest="150" 
+                                 Padding="0,0,0,10">
+                        <CollectionView x:Name="collectionImages"
+                                         ItemsLayout="HorizontalList">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate >
+                                    <StackLayout>
+                                        <Image Source="{Binding .}"
+                                               HeightRequest="140"
+                                               HorizontalOptions="CenterAndExpand" 
+                                               VerticalOptions="Center" 
+                                               Margin="10"/>
+                                    </StackLayout>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </StackLayout>
+
+                    <Button Text="Añadir"
+                            x:Name="btnAgreagar"
+                            Clicked="btnAgreagar_Clicked"/>
+
+                    <StackLayout>
+                        <CollectionView x:Name="collectionTracking"
+                                        HeightRequest="250">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackLayout Orientation="Horizontal"
+                                                 FlowDirection="LeftToRight">
+                                        <Label Text="Tracking:"/>
+                                        <Label Text="{Binding Descripcion}"/>
+                                    </StackLayout>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </StackLayout>
+                   
 
                 </StackLayout>
             </ScrollView>
@@ -107,22 +241,16 @@
                   BackgroundColor="Black">
                 <StackLayout VerticalOptions="Center">
                     <ActivityIndicator IsRunning="True"
-                                   HorizontalOptions="Center"/>
+                                        HorizontalOptions="Center"/>
 
                     <Label Text="Recuperando datos..."
                            FontSize="Subtitle"
-                       HorizontalOptions="Center"/>
+                             HorizontalOptions="Center"/>
                     <Label Text="Por favor espere"
                             FontSize="Subtitle"
-                       HorizontalOptions="Center"/>
-
+                             HorizontalOptions="Center"/>
                 </StackLayout>
-
             </Grid>
-            
         </Grid>
-
-       
-        
     </ContentPage.Content>
 </ContentPage>

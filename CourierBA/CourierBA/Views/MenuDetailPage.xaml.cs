@@ -25,7 +25,7 @@ namespace CourierBA.Views
 
         private void home()
         {
-            Detail = new NavigationPage(new GuiaReferenciaPage(_empresa));
+            Detail = new NavigationPage(new GuiaReferenciaPage(_empresa, _user));
         }
 
         private async void btnLogout_Clicked(object sender, EventArgs e)

@@ -12,9 +12,10 @@ namespace CourierBA.Helpers
         public async Task<T> GetRestServiceDataAsync(string ServiceAdress)
         {
             var client = new HttpClient();
-            client.BaseAddress = new Uri(ServiceAdress);
+            client.BaseAddress = Global.GlobalVariables.Servidor;
+            string url = string.Format(ServiceAdress);
             var response =
-                await client.GetAsync(client.BaseAddress);
+                await client.GetAsync(url);
             response.EnsureSuccessStatusCode();
             var jsonResult =
                 await response.Content.ReadAsStringAsync();

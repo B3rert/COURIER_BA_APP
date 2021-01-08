@@ -28,7 +28,7 @@ namespace CourierBA.ViewModels
         {
             IsBusy = true;
 
-            var url = "http://190.149.177.249:81/api/PA_bsc_Producto_Uso_2";
+            var url = "/api/PA_bsc_Producto_Uso_2";
             var service =
                 new HttpHelper<ProductosUso>();
             var productos = await service.GetRestServiceDataAsync(url);

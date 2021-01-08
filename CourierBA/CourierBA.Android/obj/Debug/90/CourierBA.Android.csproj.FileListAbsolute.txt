@@ -571,5 +571,7 @@ C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\Co
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.Android\obj\Debug\90\android\src\crc64ad20ae01ed2194e1\SfAutoComplete.java
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.Android\obj\Debug\90\android\src\crc64ad20ae01ed2194e1\TokenViewGroup.java
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.Android\obj\Debug\90\android\src\crc64ad20ae01ed2194e1\ViewHolder.java
-C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.Android\obj\Debug\90\CourierBA.dll
-C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.Android\obj\Debug\90\CourierBA.pdb
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.Android\bin\Debug\CourierBA.Android.dll
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.Android\bin\Debug\CourierBA.Android.pdb
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.Android\obj\Debug\90\CourierBA.Android.dll
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.Android\obj\Debug\90\CourierBA.Android.pdb

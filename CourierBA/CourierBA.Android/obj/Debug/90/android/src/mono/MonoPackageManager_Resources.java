@@ -1,10 +1,11 @@
 package mono;
 public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
-		/* We need to ensure that "CourierBA.dll" comes first in this list. */
-		"CourierBA.dll",
+		/* We need to ensure that "CourierBA.Android.dll" comes first in this list. */
+		"CourierBA.Android.dll",
 		"Acr.UserDialogs.dll",
 		"AndHUD.dll",
+		"CourierBA.dll",
 		"DryIoc.dll",
 		"Essential.Interfaces.dll",
 		"FastAndroidCamera.dll",
