@@ -58,10 +58,11 @@ namespace CourierBA.Views
             string resultEmpresa = null;
             string resultEstacion = null;
 
+            UserDialogs.Instance.ShowLoading(title: "Cargando...");
             try
             {
                 //API usuario
-                UserDialogs.Instance.ShowLoading(title: "Cargando...");
+                
 
                 HttpClient client = new HttpClient();
                 client.BaseAddress = Global.GlobalVariables.Servidor;
@@ -229,7 +230,7 @@ namespace CourierBA.Views
                             if (_result == "201")
                             {
                                 UserDialogs.Instance.HideLoading();
-                                await Navigation.PushModalAsync(new MenuDetailPage(UserEntry.Text, selectedEmpresa));
+                                await Navigation.PushAsync(new MenuDetailPage(UserEntry.Text, selectedEmpresa));
                                 PassEntry.Text = string.Empty;
                             }
                             else
@@ -249,8 +250,9 @@ namespace CourierBA.Views
                     else
                     {
                         UserDialogs.Instance.HideLoading();
-                        await Navigation.PushModalAsync(new LocalConfigPage(resultEmpresa, resultEstacion, UserEntry.Text, result));
+                        await Navigation.PushAsync(new LocalConfigPage(resultEmpresa, resultEstacion, UserEntry.Text, result));
                         PassEntry.Text = string.Empty;
+                      //  Navigation.RemovePage(this);
                     }
                 }
                 catch

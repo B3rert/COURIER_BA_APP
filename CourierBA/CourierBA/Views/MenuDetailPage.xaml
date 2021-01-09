@@ -5,7 +5,8 @@
              xmlns:shimmer="clr-namespace:Syncfusion.XForms.Shimmer;assembly=Syncfusion.Core.XForms"
              xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
              xmlns:local="clr-namespace:CourierBA.ViewModels"
-             x:Class="CourierBA.Views.MenuDetailPage">
+             x:Class="CourierBA.Views.MenuDetailPage"
+                  NavigationPage.HasNavigationBar="False">
     <MasterDetailPage.Master>
         <ContentPage Title="Menu">
             <StackLayout>

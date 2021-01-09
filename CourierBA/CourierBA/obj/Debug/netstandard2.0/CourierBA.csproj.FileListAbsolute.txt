@@ -2,7 +2,6 @@ C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\Co
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA\bin\Debug\netstandard2.0\CourierBA.dll
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA\bin\Debug\netstandard2.0\ref\CourierBA.dll
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA\bin\Debug\netstandard2.0\CourierBA.pdb
-C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA\obj\Debug\netstandard2.0\CourierBA.csprojAssemblyReference.cache
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA\obj\Debug\netstandard2.0\Themes\DarkTheme.xaml.g.cs

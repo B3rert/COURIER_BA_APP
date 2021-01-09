@@ -30,25 +30,10 @@ namespace CourierBA.Views
 
         private async void btnLogout_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new LoginPage());
-            
-            /*
-            var existingPages = Navigation.NavigationStack.ToList();
-            //get all the pages in the stack
-            foreach (var page in existingPages)
-            {
-                //Check they type of the page if its not the 
-                //same type as the newly created one remove it
-                if (page.GetType() == typeof(LoginPage))
+              bool answer = await DisplayAlert("Cerrar sesión", "¿Estás seguro?", "ACEPTAR", "CANCELAR");
 
-                    continue;
-
-                Navigation.RemovePage(page);
-            }
-            
-           
-           await Navigation.PopToRootAsync();
-            */
+           if (answer)
+                await Navigation.PopToRootAsync();
         }
 
        

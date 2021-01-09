@@ -187,7 +187,7 @@ namespace CourierBA.Views
                     var response = await client.PostAsync(url, content);
                     var postResult = response.Content.ReadAsStringAsync().Result;
 
-                    await Navigation.PushModalAsync(new MenuDetailPage(_usuario, selectedEmpresa));
+                    await Navigation.PushAsync(new MenuDetailPage(_usuario, selectedEmpresa));
                     UserDialogs.Instance.HideLoading();
 
                 }

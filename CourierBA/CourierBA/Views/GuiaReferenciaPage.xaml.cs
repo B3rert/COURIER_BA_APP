@@ -181,17 +181,21 @@ namespace CourierBA.Views
 
             if (string.IsNullOrEmpty(txtCodigo.Text))
             {
+                
                 await DisplayAlert("","Campo Id Tracking  obligatorio","Aceptar");
+                txtCodigo.Focus();
                 return;
             }
             if(string.IsNullOrEmpty(txtObservacion.Text))
             {
                 await DisplayAlert("", "Campo Observación obligatorio", "Aceptar");
+                txtObservacion.Focus();
                 return;
             }
             if (string.IsNullOrEmpty(txtProducto.Text))
             {
                 await DisplayAlert("", "Campo Tipo producto obligatorio", "Aceptar");
+                txtProducto.Focus();
                 return;
             }
 
