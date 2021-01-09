@@ -18,3 +18,4 @@ C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\Co
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA\obj\Debug\netstandard2.0\CourierBA.dll
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA\obj\Debug\netstandard2.0\ref\CourierBA.dll
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA\obj\Debug\netstandard2.0\CourierBA.pdb
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA\obj\Debug\netstandard2.0\CourierBA.csprojAssemblyReference.cache

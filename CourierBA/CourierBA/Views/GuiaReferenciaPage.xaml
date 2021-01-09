@@ -219,13 +219,20 @@
 
                     <StackLayout>
                         <CollectionView x:Name="collectionTracking"
-                                        HeightRequest="250">
+                                        HeightRequest="175">
                             <CollectionView.ItemTemplate>
                                 <DataTemplate>
                                     <StackLayout Orientation="Horizontal"
                                                  FlowDirection="LeftToRight">
-                                        <Label Text="Tracking:"/>
-                                        <Label Text="{Binding Descripcion}"/>
+                                        <Label
+                                           VerticalOptions="CenterAndExpand"
+                                           FontSize="16"
+                                               Text="Tracking:"/>
+                                       
+                                        <!-- <Label Text="{Binding Descripcion}"/>-->
+                                        <Label Text="{Binding .}"
+                                           VerticalOptions="CenterAndExpand"
+                                           FontSize="16"/>
                                     </StackLayout>
                                 </DataTemplate>
                             </CollectionView.ItemTemplate>

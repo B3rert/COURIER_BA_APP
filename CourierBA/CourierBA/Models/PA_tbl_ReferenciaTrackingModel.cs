@@ -5,11 +5,7 @@ using System.Text;
 namespace CourierBA.Models
 {
 
-    public class Trackings
-    {
-        public Tracking[] Table { get; set; }
-    }
-
+    // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse); 
     public class Tracking
     {
         public int Referencia { get; set; }
@@ -32,7 +28,7 @@ namespace CourierBA.Models
         public object Fecha_Evento { get; set; }
         public bool Importacion { get; set; }
         public object Cuenta_Correntista { get; set; }
-        public float Monto_1 { get; set; }
+        public double Monto_1 { get; set; }
         public object Monto_2 { get; set; }
         public bool Caja_Chica { get; set; }
         public object Cargo { get; set; }
@@ -42,7 +38,7 @@ namespace CourierBA.Models
         public object HAWB_HBL { get; set; }
         public object Suplidor { get; set; }
         public object Consignatario { get; set; }
-        public float Peso { get; set; }
+        public double Peso { get; set; }
         public object Volumen { get; set; }
         public object Contenedor { get; set; }
         public string Pieza { get; set; }
@@ -55,7 +51,7 @@ namespace CourierBA.Models
         public object Recepcion_Nombre { get; set; }
         public object Recepcion_Id { get; set; }
         public object Tipo_Pago { get; set; }
-        public float Cantidad { get; set; }
+        public double Cantidad { get; set; }
         public int Producto { get; set; }
         public object Unidad_Medida { get; set; }
         public object Observacion_2 { get; set; }
@@ -80,5 +76,12 @@ namespace CourierBA.Models
         public object Opc_Detalle { get; set; }
         public int Referencia_Id_1 { get; set; }
     }
+
+    public class Trackings
+    {
+        public List<Tracking> Table { get; set; }
+    }
+
+
 
 }

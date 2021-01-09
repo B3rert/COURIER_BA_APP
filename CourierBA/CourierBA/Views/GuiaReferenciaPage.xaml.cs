@@ -21,18 +21,26 @@ namespace CourierBA.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class GuiaReferenciaPage : ContentPage
     {
-        public GuiaReferenciaViewModel ViewModel { get; set; }
-        public ObservableCollection<Tracking> TrackingModels { get; set; }
 
+        #region Variables Globales
+        public GuiaReferenciaViewModel ViewModel { get; set; }
+        private List<Tracking> trackings;
+        private List<string> listasT = new List<string>();
         private List<PA_bsc_Moneda_2Model> monedaModels;
         private List<PA_tbl_ReferenciaGuiaModel> referenciaGuiaModels;
         int? _Empresa;
         string _NameUSer;
         int _TipoProducto = 0;
         int _SelectMoneda;
+        string trackingsList = null;
+        int referenciaPadre = 0;
+
+        #endregion
+
 
         public GuiaReferenciaPage(int? _empresa, string nameUer)
         {
+            
             InitializeComponent();
             cargarDatos(_empresa);
             _Empresa = _empresa;
@@ -40,12 +48,23 @@ namespace CourierBA.Views
             
         }
 
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            ViewModel = new GuiaReferenciaViewModel();
+            await ViewModel.LoadProductos();
+            this.BindingContext = ViewModel;
+
+        }
+
+
+        #region Cargar Monedas
         private async  void cargarDatos(int? empresa)
         {
 
             UserDialogs.Instance.ShowLoading(title: "Cargando...");
 
-            #region Cargar Monedas
+           
 
             try
             {
@@ -71,26 +90,22 @@ namespace CourierBA.Views
                 await DisplayAlert("", "No se han podido cargar algunos datos", "Aceptar");
             }
 
-            #endregion
-
+           
             UserDialogs.Instance.HideLoading();
         }
+        #endregion
 
-        protected override async void OnAppearing()
-        {
-            base.OnAppearing();
-            ViewModel = new GuiaReferenciaViewModel();
-            await ViewModel.LoadProductos();
-            this.BindingContext = ViewModel;
+        #region Tipo producto seleccionado
 
-        }
-
-        private  void SfAutoComplete_SelectionChanged(object sender, Syncfusion.SfAutoComplete.XForms.SelectionChangedEventArgs e)
+        private void SfAutoComplete_SelectionChanged(object sender, Syncfusion.SfAutoComplete.XForms.SelectionChangedEventArgs e)
         {
             var Producto = e.Value as ProductoUso;
             _TipoProducto = Producto.Producto;
             //  await DisplayAlert("",Producto.Descripcion,"OK");
         }
+        #endregion
+
+        #region Escaner de codigos qr barra
 
         private async void btnEscanearCodigo_Clicked(object sender, EventArgs e)
         {
@@ -115,6 +130,10 @@ namespace CourierBA.Views
             }
         }
 
+        #endregion
+
+        #region Adjuntar archivos
+
         private async void btnSelectFile_Clicked(object sender, EventArgs e)
         {
             var pickResult = await FilePicker.PickMultipleAsync(new PickOptions
@@ -137,7 +156,9 @@ namespace CourierBA.Views
                 lblNameFileSelect.Text = "Archivos selecionados: " + pickResult.Count().ToString();
             }
         }
+        #endregion
 
+        #region Tomar fotos
         private async void btnTomarFoto_Clicked(object sender, EventArgs e)
         {
             var cameraOptions = new StoreCameraMediaOptions();
@@ -165,7 +186,9 @@ namespace CourierBA.Views
             }
 
         }
+        #endregion
 
+        #region Borrar Imagenes seleccionadas
         private void btnClearImage_Clicked(object sender, EventArgs e)
         {
             UserDialogs.Instance.ShowLoading(title: "Cargando...");
@@ -174,6 +197,7 @@ namespace CourierBA.Views
             UserDialogs.Instance.HideLoading();
 
         }
+        #endregion
 
         private async void btnAgreagar_Clicked(object sender, EventArgs e)
         {
@@ -202,58 +226,128 @@ namespace CourierBA.Views
 
             UserDialogs.Instance.ShowLoading(title: "Cargando...");
 
-            try
+
+            //Falta validar una sola guia por tracking
+            
+            if (listasT.Count == 0)
             {
-
-                HttpClient client = new HttpClient();
-                client.BaseAddress = Global.GlobalVariables.Servidor;
-                string urlReferenciaGuia = string.Format($"/api/PA_tbl_Referencia?empresa={_Empresa}&userName={_NameUSer}");
-                var responseReferenciaGuia = await client.GetAsync(urlReferenciaGuia);
-                var resultGuiaReferencia = responseReferenciaGuia.Content.ReadAsStringAsync().Result;
-
-                Models.PA_tbl_ReferenciaGuia myDeserializedClassGuia =
-                    JsonConvert.DeserializeObject<Models.PA_tbl_ReferenciaGuia>(resultGuiaReferencia);
-                var tableString = JsonConvert.SerializeObject(myDeserializedClassGuia.Table);
-
-                referenciaGuiaModels = JsonConvert.DeserializeObject<List<PA_tbl_ReferenciaGuiaModel>>(tableString);
-
-                int referenciaPadre = 0;
-
-                foreach (var item in referenciaGuiaModels)
-                {
-                    referenciaPadre = item.Referencia;
-                }
-
+                //await DisplayAlert("", "Se crea una guia", "ok");
                 try
                 {
-                    var url = $"/api/PA_tbl_Referencia2?empresa={_Empresa}" +
+
+                    HttpClient client = new HttpClient();
+                    client.BaseAddress = Global.GlobalVariables.Servidor;
+                    string urlReferenciaGuia = string.Format($"/api/PA_tbl_Referencia?empresa={_Empresa}&userName={_NameUSer}");
+                    var responseReferenciaGuia = await client.GetAsync(urlReferenciaGuia);
+                    var resultGuiaReferencia = responseReferenciaGuia.Content.ReadAsStringAsync().Result;
+
+                    Models.PA_tbl_ReferenciaGuia myDeserializedClassGuia =
+                        JsonConvert.DeserializeObject<Models.PA_tbl_ReferenciaGuia>(resultGuiaReferencia);
+                    var tableString = JsonConvert.SerializeObject(myDeserializedClassGuia.Table);
+
+                    referenciaGuiaModels = JsonConvert.DeserializeObject<List<PA_tbl_ReferenciaGuiaModel>>(tableString);
+
+                   
+
+                    foreach (var item in referenciaGuiaModels)
+                    {
+                        referenciaPadre = item.Referencia;
+                    }
+
+                    try
+                    {
+
+                        string urlReferenciaTracking = string.Format($"/api/PA_tbl_Referencia2?empresa={_Empresa}" +
+                            $"&descripcion={txtCodigo.Text}&referenciPadre={referenciaPadre}" +
+                            $"&observacion={txtObservacion.Text}&userName={_NameUSer}" +
+                            $"&monto={txtMonto.Text}&peso={txtPeso.Text}" +
+                            $"&pieza={txtPieza.Text}&producto={_TipoProducto}&moneda={_SelectMoneda}");
+
+                        var responseReferenciaTracking = await client.GetAsync(urlReferenciaTracking);
+                        var resultTrackingReferencia = responseReferenciaTracking.Content.ReadAsStringAsync().Result;
+
+                        Models.Trackings myDeserializedClassTracking =
+                            JsonConvert.DeserializeObject<Models.Trackings>(resultTrackingReferencia);
+                        var tableStringTracking = JsonConvert.SerializeObject(myDeserializedClassTracking.Table);
+
+                        trackings = JsonConvert.DeserializeObject<List<Tracking>>(tableStringTracking);
+
+                        foreach (var item in trackings)
+                        {
+                            trackingsList = item.Descripcion;
+
+
+                            //  listaTrackings.Add(detailes);
+                        }
+
+                    }
+                    catch (Exception)
+                    {
+
+                        UserDialogs.Instance.HideLoading();
+                        await DisplayAlert("Error", "No se ha podido conectar con el servidor", "Aceptar");
+                        return;
+                    }
+
+                    UserDialogs.Instance.HideLoading();
+                }
+                catch (Exception)
+                {
+                    UserDialogs.Instance.HideLoading();
+                    await DisplayAlert("Error", "No se ha podido conectar con el servidor", "Aceptar");
+                    return;
+                }
+
+            }
+            else
+            {
+                //await DisplayAlert("", "No se crea otra guia", "ok");
+                try
+                {
+                    HttpClient client = new HttpClient();
+                    client.BaseAddress = Global.GlobalVariables.Servidor;
+
+                    string urlReferenciaTracking = string.Format($"/api/PA_tbl_Referencia2?empresa={_Empresa}" +
                         $"&descripcion={txtCodigo.Text}&referenciPadre={referenciaPadre}" +
                         $"&observacion={txtObservacion.Text}&userName={_NameUSer}" +
                         $"&monto={txtMonto.Text}&peso={txtPeso.Text}" +
-                        $"&pieza={txtPieza.Text}&producto={_TipoProducto}&moneda={_SelectMoneda}";
-                    var service =
-                        new HttpHelper<Trackings>();
-                    var tracking = await service.GetRestServiceDataAsync(url);
+                        $"&pieza={txtPieza.Text}&producto={_TipoProducto}&moneda={_SelectMoneda}");
 
-                    TrackingModels = 
-                        new ObservableCollection<Tracking>(tracking.Table);
+                    var responseReferenciaTracking = await client.GetAsync(urlReferenciaTracking);
+                    var resultTrackingReferencia = responseReferenciaTracking.Content.ReadAsStringAsync().Result;
 
-                    collectionTracking.ItemsSource = TrackingModels;
+                    Models.Trackings myDeserializedClassTracking =
+                        JsonConvert.DeserializeObject<Models.Trackings>(resultTrackingReferencia);
+                    var tableStringTracking = JsonConvert.SerializeObject(myDeserializedClassTracking.Table);
+
+                    trackings = JsonConvert.DeserializeObject<List<Tracking>>(tableStringTracking);
+
+                    foreach (var item in trackings)
+                    {
+                        trackingsList = item.Descripcion;
+
+
+                        //  listaTrackings.Add(detailes);
+                    }
+
                 }
                 catch (Exception)
                 {
 
-                    throw;
+                    UserDialogs.Instance.HideLoading();
+                    await DisplayAlert("Error", "No se ha podido conectar con el servidor", "Aceptar");
+                    return;
                 }
+
 
                 UserDialogs.Instance.HideLoading();
             }
-            catch (Exception)
-            {
-                UserDialogs.Instance.HideLoading();
-                await DisplayAlert("Error", "No se ha podido conectar con el servidor", "Aceptar");
-                return;
-            }
+
+            listasT.Add(trackingsList);
+            //await DisplayAlert("", trackingsList, "Ok");
+            collectionTracking.ItemsSource = null;
+            collectionTracking.ItemsSource = listasT;
+
 
         }
 
