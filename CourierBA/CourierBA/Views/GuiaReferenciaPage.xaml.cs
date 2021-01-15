@@ -187,19 +187,15 @@ namespace CourierBA.Views
             {
 
                 var stream = await pickResult.OpenReadAsync();
-
-                var imgByte = ReadFully(stream);
-                var imgByteString = ByteArrayToString(imgByte);
-
-                 listaByte.Add(imgByteString);
-
+                var _stream = await pickResult.OpenReadAsync();
                 imageList.Add(ImageSource.FromStream(() => stream));
                 collectionImages.ItemsSource = imageList;
 
                 var nameImage = pickResult.FileName;
                 nameImageList.Add(nameImage);
 
-              
+               streamImage(_stream);
+
 
 
                 //lblNameFileSelect.Text = "Archivos selecionados: " + pickResult.Count().ToString();
@@ -207,6 +203,14 @@ namespace CourierBA.Views
             }
         }
         #endregion
+
+        private void streamImage(Stream stream)
+        {
+            var imgByte = ReadFully(stream);
+            var imgByteString = ByteArrayToString(imgByte);
+
+            listaByte.Add(imgByteString);
+        }
 
         #region Tomar fotos
         private async void btnTomarFoto_Clicked(object sender, EventArgs e)
@@ -276,7 +280,6 @@ namespace CourierBA.Views
 
             if (string.IsNullOrEmpty(txtCodigo.Text))
             {
-                
                 await DisplayAlert("","Campo Id Tracking  obligatorio","Aceptar");
                 txtCodigo.Focus();
                 return;
@@ -293,9 +296,14 @@ namespace CourierBA.Views
                 txtProducto.Focus();
                 return;
             }
+            if (imageList.Count == 0)
+            {
+                await DisplayAlert("", "No hay ninguna imagen adjunta", "Aceptar");
+                return;
+            }
 
 
-            UserDialogs.Instance.ShowLoading(title: "Cargando...");
+            UserDialogs.Instance.ShowLoading(title: "Creando Tracking...");
 
 
             //Falta validar una sola guia por tracking
@@ -331,7 +339,7 @@ namespace CourierBA.Views
                         string urlReferenciaTracking = string.Format($"/api/PA_tbl_Referencia2?empresa={_Empresa}" +
                             $"&descripcion={txtCodigo.Text}&referenciPadre={referenciaPadre}" +
                             $"&observacion={txtObservacion.Text}&userName={_NameUSer}" +
-                            $"&monto={txtMonto.Text}&peso={txtPeso.Text}" +
+                            $"&monto={txtMonto.Text}&peso={0}" +
                             $"&pieza={txtPieza.Text}&producto={_TipoProducto}&moneda={_SelectMoneda}");
 
                         var responseReferenciaTracking = await client.GetAsync(urlReferenciaTracking);
@@ -381,7 +389,7 @@ namespace CourierBA.Views
                     string urlReferenciaTracking = string.Format($"/api/PA_tbl_Referencia2?empresa={_Empresa}" +
                         $"&descripcion={txtCodigo.Text}&referenciPadre={referenciaPadre}" +
                         $"&observacion={txtObservacion.Text}&userName={_NameUSer}" +
-                        $"&monto={txtMonto.Text}&peso={txtPeso.Text}" +
+                        $"&monto={txtMonto.Text}&peso={0}" +
                         $"&pieza={txtPieza.Text}&producto={_TipoProducto}&moneda={_SelectMoneda}");
 
                     var responseReferenciaTracking = await client.GetAsync(urlReferenciaTracking);
@@ -491,6 +499,8 @@ namespace CourierBA.Views
                             var postResult = response.Content.ReadAsStringAsync().Result;
 
                             UserDialogs.Instance.HideLoading();
+                            await DisplayAlert("", "Tracking creado", "Aceptar");
+
                         }
                         catch
                         {
@@ -505,6 +515,7 @@ namespace CourierBA.Views
             }
 
             UserDialogs.Instance.HideLoading();
+          // await DisplayAlert("","Tracking creado con éxito","Aceptar");
 
 
         }

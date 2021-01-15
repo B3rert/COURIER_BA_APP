@@ -45,138 +45,128 @@
                         </Grid>
                     </Frame>
 
-                    <StackLayout Orientation="Horizontal"
-                             FlowDirection="LeftToRight">
-                        <Label Text="Observacion" 
-                           Style="{DynamicResource SmallLabelStyle}"
-                           Margin="0,15,0,0"/>
-                        <Entry 
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="75*"/>
+                        </Grid.ColumnDefinitions>
+                        
+                        
+                        <StackLayout Grid.Row="0"
+                                     Grid.Column="0">
+                            <Label Text="Observacion" 
+                                   Style="{DynamicResource SmallLabelStyle}"
+                                   Margin="0,15,0,0"/>
+                        </StackLayout>
+
+                        <StackLayout   Grid.Row="0"
+                                    Grid.Column="1">
+                            <Entry 
+                                
                             x:Name="txtObservacion"
+                                 HorizontalTextAlignment="Center"
                             HorizontalOptions="FillAndExpand"
                             VerticalOptions="End"
                             ClearButtonVisibility="WhileEditing"/>
-
-                    </StackLayout>
-
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="40"/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="50*"/>
-                            <ColumnDefinition Width="50*"/>
-                        </Grid.ColumnDefinitions>
-
-                        <StackLayout Orientation="Horizontal"
-                                    Grid.Row="0"
-                                    Grid.Column="0"
-                                    FlowDirection="LeftToRight">
-                            <Label Text="Peso" 
-                           Style="{DynamicResource SmallLabelStyle}"
-                           Margin="0,15,0,0"/>
-                            <Entry Text="1"
-                                   HorizontalTextAlignment="Center"
-                                   x:Name="txtPeso"
-                                   Keyboard="Numeric"
-                                   ClearButtonVisibility="WhileEditing"
-                                   HorizontalOptions="FillAndExpand"
-                                   VerticalOptions="End"/>
                         </StackLayout>
 
-                        <StackLayout Orientation="Horizontal"
-                                      Grid.Row="0"
-                                      Grid.Column="1"
-                                      FlowDirection="LeftToRight">
+                        <StackLayout  Grid.Row="1"
+                                      Grid.Column="0">
                             <Label Text="Pieza(s)" 
-                           Style="{DynamicResource SmallLabelStyle}"
-                           Margin="0,15,0,0"/>
+                                   Style="{DynamicResource SmallLabelStyle}"
+                                   Margin="0,15,0,0"/>
+                        </StackLayout>
+                        
+                        <StackLayout  Grid.Row="1"
+                                      Grid.Column="1">
                             <Entry
-                                 x:Name="txtPieza"
+                                x:Name="txtPieza"
                                 HorizontalTextAlignment="Center"
                                 ClearButtonVisibility="WhileEditing"
                                 Text="1"
-                                 Keyboard="Numeric"
+                                Keyboard="Numeric"
                                 HorizontalOptions="FillAndExpand"
                                 VerticalOptions="End"/>
-
                         </StackLayout>
-                    </Grid>
-
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="40"/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="50*"/>
-                            <ColumnDefinition Width="50*"/>
-                        </Grid.ColumnDefinitions>
-
-                        <StackLayout Orientation="Horizontal"
-                                     FlowDirection="LeftToRight"
-                                     Grid.Row="0"
-                                     Grid.Column="0">
+                        
+                        <StackLayout  Grid.Row="2"
+                                      Grid.Column="0">
                             <Label Text="Valor(Monto)" 
-                           Style="{DynamicResource SmallLabelStyle}"
-                           Margin="0,15,0,0"/>
+                                   Style="{DynamicResource SmallLabelStyle}"
+                                   Margin="0,15,0,0"/>
+                        </StackLayout> 
+                        
+                        <StackLayout  Grid.Row="2"
+                                      Grid.Column="1">
+
                             <Entry Text="1" 
-                               x:Name="txtMonto"
+                                x:Name="txtMonto"
                                 HorizontalTextAlignment="Center"
                                 Keyboard="Numeric"
-                               ClearButtonVisibility="WhileEditing"
-                               HorizontalOptions="FillAndExpand"
-                                 VerticalOptions="End"/>
-                        </StackLayout>
-
-                        <StackLayout Orientation="Horizontal"
-                                     Grid.Row="0"
-                                     Grid.Column="1"
-                                     FlowDirection="LeftToRight">
+                                ClearButtonVisibility="WhileEditing"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="End"/>
+                        </StackLayout> 
+                        
+                        <StackLayout  Grid.Row="3"
+                                    Grid.Column="0">
                             <Label Text="Moneda" 
                                    Style="{DynamicResource SmallLabelStyle}"
                                    Margin="0,15,0,0"/>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="3"
+                                     Grid.Column="1" >
                             <Picker HorizontalOptions="FillAndExpand"
                                      HorizontalTextAlignment="Center"
-                                    VerticalOptions="End"
-                                    x:Name="pickMoneda"
-                                    ItemDisplayBinding="{Binding Nombre}"
-                                    SelectedIndexChanged="pickMoneda_SelectedIndexChanged"/>
+                                     VerticalOptions="End"
+                                     x:Name="pickMoneda"
+                                     ItemDisplayBinding="{Binding Nombre}"
+                                     SelectedIndexChanged="pickMoneda_SelectedIndexChanged"/>
+                        </StackLayout>
+
+
+                        <StackLayout  Grid.Row="4"
+                                      Grid.Column="0">
+                            <Label Text="Tipo producto" 
+                                   Style="{DynamicResource SmallLabelStyle}"
+                                   Margin="0,15,0,0"/>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="4"
+                                    Grid.Column="1">
+                            <autocomplete:SfAutoComplete 
+                                    x:Name="txtProducto"
+                                    SuggestionMode="Contains"
+                                    HeightRequest="40"
+                                    HorizontalOptions="FillAndExpand"
+                                    DataSource="{Binding ProductoUsos}"
+                                    DisplayMemberPath="Descripcion"
+                                    SelectionChanged="SfAutoComplete_SelectionChanged">
+                            </autocomplete:SfAutoComplete>
                         </StackLayout>
                     </Grid>
 
                     <StackLayout Orientation="Horizontal"
-                             FlowDirection="LeftToRight">
-                        <Label Text="Tipo producto" 
-                           Style="{DynamicResource SmallLabelStyle}"
-                           Margin="0,15,0,0"/>
-
-                        <!--<SearchBar Placeholder="Busca tu amigo"
-                   SearchCommand="{Binding SerachCommand}"
-                   x:Name="searchBar"
-                   SearchCommandParameter="{Binding Text, Source={x:Reference searchBar}}"/>-->
-
-                        <autocomplete:SfAutoComplete 
-                            x:Name="txtProducto"
-                            SuggestionMode="Contains"
-                            HeightRequest="40"
-                            HorizontalOptions="FillAndExpand"
-                            DataSource="{Binding ProductoUsos}"
-                            DisplayMemberPath="Descripcion"
-                            SelectionChanged="SfAutoComplete_SelectionChanged">
-                        </autocomplete:SfAutoComplete>
-                        
-                    </StackLayout>
-
-                    <StackLayout Orientation="Horizontal"
-                             FlowDirection="LeftToRight">
+                             FlowDirection="LeftToRight"
+                                 Margin="5">
                         <Label
                             x:Name="lblNameFileSelect"
                             Text="No se elegió ningun archivo" 
                            Style="{DynamicResource SmallLabelStyle}"
                            Margin="0,15,0,0"/>
                         <Button
+                            HeightRequest="12.5"
                             x:Name="btnSelectFile"
                             Text="Seleccionar archivo"
-                            FontSize="17"
+                            FontSize="12"
                             HorizontalOptions="FillAndExpand"
                             Clicked="btnSelectFile_Clicked"/>
                         <ImageButton 
