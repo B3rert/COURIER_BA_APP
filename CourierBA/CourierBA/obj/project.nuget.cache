@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nkJ9qb0KaKsv6KHkbCfc5YjcpV4q91Qryv8VDf75dRDt2TVOJCqjUKe9aVk9NRrS8o1Ct9W2o+SDpNpLZt0/+Q==",
+  "dgSpecHash": "O74XktlwUt3BekLw2NS/3G24eRdwoK45xUPC4HRyp36BFnhXMFIYt530imnzyCY3K5qFeMTR5o8aYkWpO/Lo2g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Andres\\Desktop\\DEMOSOFT\\Proyectos\\_CourierBA_app\\CourierBA\\CourierBA\\CourierBA\\CourierBA.csproj",
+  "projectFilePath": "C:\\Users\\Andres\\Desktop\\DEMOSOFT\\Proyectos\\CourierBA_app\\CourierBA\\CourierBA\\CourierBA.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Andres\\.nuget\\packages\\acr.userdialogs\\7.1.0.470\\acr.userdialogs.7.1.0.470.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\dryioc.dll\\4.5.0\\dryioc.dll.4.5.0.nupkg.sha512",
@@ -13,6 +13,7 @@
     "C:\\Users\\Andres\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\prism.dryioc.forms\\8.0.0.1909\\prism.dryioc.forms.8.0.0.1909.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\prism.forms\\8.0.0.1909\\prism.forms.8.0.0.1909.nupkg.sha512",
+    "C:\\Users\\Andres\\.nuget\\packages\\restsharp\\106.11.7\\restsharp.106.11.7.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\syncfusion.licensing\\18.4.0.33\\syncfusion.licensing.18.4.0.33.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\syncfusion.xamarin.core\\18.4.0.33\\syncfusion.xamarin.core.18.4.0.33.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\syncfusion.xamarin.gridcommon\\18.4.0.32\\syncfusion.xamarin.gridcommon.18.4.0.32.nupkg.sha512",

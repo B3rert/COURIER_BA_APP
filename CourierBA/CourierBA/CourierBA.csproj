@@ -14,6 +14,7 @@
     <PackageReference Include="Acr.UserDialogs" Version="7.1.0.470" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="Prism.DryIoc.Forms" Version="8.0.0.1909" />
+    <PackageReference Include="RestSharp" Version="106.11.7" />
     <PackageReference Include="Syncfusion.Xamarin.SfAutoComplete" Version="18.4.0.33" />
     <PackageReference Include="Syncfusion.Xamarin.SfTreeView" Version="18.4.0.32" />
     <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />

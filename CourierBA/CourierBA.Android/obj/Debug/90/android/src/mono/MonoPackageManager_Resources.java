@@ -16,6 +16,7 @@ public class MonoPackageManager_Resources {
 		"Prism.dll",
 		"Prism.DryIoc.Forms.dll",
 		"Prism.Forms.dll",
+		"RestSharp.dll",
 		"Syncfusion.Core.XForms.Android.dll",
 		"Syncfusion.Core.XForms.dll",
 		"Syncfusion.GridCommon.Portable.dll",

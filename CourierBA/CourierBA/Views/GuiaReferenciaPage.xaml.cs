@@ -8,6 +8,7 @@ using Plugin.Media.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -26,8 +27,11 @@ namespace CourierBA.Views
         public GuiaReferenciaViewModel ViewModel { get; set; }
         private List<Tracking> trackings;
         private List<string> listasT = new List<string>();
+        private List<string> listaByte = new List<string>();
         private List<PA_bsc_Moneda_2Model> monedaModels;
         private List<PA_tbl_ReferenciaGuiaModel> referenciaGuiaModels;
+        private List<string> nameImageList = new List<string>();
+        private List<ImageSource> imageList = new List<ImageSource>();
         int? _Empresa;
         string _NameUSer;
         int _TipoProducto = 0;
@@ -134,26 +138,72 @@ namespace CourierBA.Views
 
         #region Adjuntar archivos
 
+        private byte[] ReadFully(Stream input)
+        {
+            byte[] buffer = new byte[16 * 1024];
+            using (MemoryStream ms = new MemoryStream())
+            {
+                int read;
+                while ((read = input.Read(buffer, 0, buffer.Length)) > 0)
+                {
+                    ms.Write(buffer, 0, read);
+                }
+                return ms.ToArray();
+            }
+        }
+
+        private string ByteArrayToString(byte[] arrayString)
+        {
+            StringBuilder cadena = new StringBuilder(arrayString.Length * 2);
+            foreach (byte b in arrayString)
+            {
+                cadena.AppendFormat("{0:x2}", b);
+
+            }
+            return cadena.ToString();
+        }
+
+
         private async void btnSelectFile_Clicked(object sender, EventArgs e)
         {
-            var pickResult = await FilePicker.PickMultipleAsync(new PickOptions
+            collectionImages.ItemsSource = null;
+
+            if (nameImageList.Count != 0)
+            {
+                nameImageList.Clear();
+                imageList.Clear();
+                listaByte.Clear();
+
+            }
+
+
+            var pickResult = await FilePicker.PickAsync(new PickOptions
             {
                 FileTypes = FilePickerFileType.Images,
-                PickerTitle = "Pick an image(s)"
+                PickerTitle = "Pick an image"
             });
 
             if (pickResult != null)
             {
-                collectionImages.ItemsSource = null;
-                var imageList = new List<ImageSource>();
-                foreach (var image in pickResult)
-                {
-                    var stream = await image.OpenReadAsync();
-                    imageList.Add(ImageSource.FromStream(() => stream));
 
-                }
+                var stream = await pickResult.OpenReadAsync();
+
+                var imgByte = ReadFully(stream);
+                var imgByteString = ByteArrayToString(imgByte);
+
+                 listaByte.Add(imgByteString);
+
+                imageList.Add(ImageSource.FromStream(() => stream));
                 collectionImages.ItemsSource = imageList;
-                lblNameFileSelect.Text = "Archivos selecionados: " + pickResult.Count().ToString();
+
+                var nameImage = pickResult.FileName;
+                nameImageList.Add(nameImage);
+
+              
+
+
+                //lblNameFileSelect.Text = "Archivos selecionados: " + pickResult.Count().ToString();
+                lblNameFileSelect.Text = "Archivos selecionados: 1";
             }
         }
         #endregion
@@ -161,30 +211,48 @@ namespace CourierBA.Views
         #region Tomar fotos
         private async void btnTomarFoto_Clicked(object sender, EventArgs e)
         {
-            var cameraOptions = new StoreCameraMediaOptions();
-            cameraOptions.PhotoSize = PhotoSize.Medium;
-            cameraOptions.SaveToAlbum = true;
-            var photo =
-                await Plugin.Media.CrossMedia.Current
-                      .TakePhotoAsync(cameraOptions);
+            collectionImages.ItemsSource = null;
 
-
-
-            if (photo != null)
+            if (nameImageList.Count != 0)
             {
-                collectionImages.ItemsSource = null;
-                var imageList = new List<ImageSource>();
-                imageList.Add(ImageSource.FromStream(() => { return photo.GetStream(); }));
-
-
-                collectionImages.ItemsSource = imageList;
-                lblNameFileSelect.Text = "Archivos selecionados: 1";
-
-                //  cameraImage.Source = ImageSource.FromStream(() => { return photo.GetStream(); });
-                //lblNameFileSelect.Text = "Archivos selecionados: 1";
+                nameImageList.Clear();
+                imageList.Clear();
+                listaByte.Clear();
 
             }
+            var cameraOptions = new StoreCameraMediaOptions();
+                cameraOptions.PhotoSize = PhotoSize.Medium;
+                cameraOptions.SaveToAlbum = true;
+                var photo =
+                    await Plugin.Media.CrossMedia.Current
+                          .TakePhotoAsync(cameraOptions);
 
+                if (photo != null)
+                {
+
+                  //  var imageList = new List<ImageSource>();
+                    imageList.Add(ImageSource.FromStream(() => { return photo.GetStream(); }));
+
+                    string[] root;
+                    root = photo.AlbumPath.Split('/');
+
+                    var nameImage = root[root.Length - 1];
+
+                    nameImageList.Add(nameImage);
+
+                    var imgByte = ReadFully(photo.GetStream());
+                    var imgByteString = ByteArrayToString(imgByte);
+
+                    listaByte.Add(imgByteString);
+
+                     collectionImages.ItemsSource = imageList;
+                    lblNameFileSelect.Text = "Archivos selecionados: 1";
+
+                    //  cameraImage.Source = ImageSource.FromStream(() => { return photo.GetStream(); });
+                    //lblNameFileSelect.Text = "Archivos selecionados: 1";
+
+                }
+            
         }
         #endregion
 
@@ -192,6 +260,9 @@ namespace CourierBA.Views
         private void btnClearImage_Clicked(object sender, EventArgs e)
         {
             UserDialogs.Instance.ShowLoading(title: "Cargando...");
+            nameImageList.Clear();
+            imageList.Clear();
+            listaByte.Clear();
             lblNameFileSelect.Text = "No se elegió ningun archivo";
             collectionImages.ItemsSource = null;
             UserDialogs.Instance.HideLoading();
@@ -289,7 +360,7 @@ namespace CourierBA.Views
                         return;
                     }
 
-                    UserDialogs.Instance.HideLoading();
+                  
                 }
                 catch (Exception)
                 {
@@ -340,13 +411,100 @@ namespace CourierBA.Views
                 }
 
 
-                UserDialogs.Instance.HideLoading();
+               
             }
 
             listasT.Add(trackingsList);
             //await DisplayAlert("", trackingsList, "Ok");
             collectionTracking.ItemsSource = null;
             collectionTracking.ItemsSource = listasT;
+
+
+            int count = 0;
+
+            if (imageList.Count != 0)
+            {
+                List<string> newName = new List<string>();
+
+                foreach (var name in nameImageList)
+                {
+                    DateTime dateTime = DateTime.Now;
+
+                    string[] ext;
+                    ext = name.Split('.');
+
+                    string newImgName = $"IMG{count.ToString()}{dateTime.ToString("yyyyMMddHHmm")}.{ext[1]}";
+                    newName.Add(newImgName);
+
+                    count++;
+
+
+                    //api imagen
+                    try
+                    {
+
+                        HttpClient client = new HttpClient();
+                        client.BaseAddress = Global.GlobalVariables.Servidor;
+
+                        string urlInsertImage = string.Format($"api/PA_tbl_Referencia_Objeto?" +
+                            $"pReferencia={referenciaPadre}" +
+                            $"&pUserName={_NameUSer}" +
+                            $"&pObjeto_Nombre={newImgName}" +
+                            $"&pObservacion_1={name}");
+
+                        var responseImg = await client.GetAsync(urlInsertImage);
+                        var resulltImg = responseImg.Content.ReadAsStringAsync().Result;
+
+
+                    }
+                    catch (Exception)
+                    {
+                        UserDialogs.Instance.HideLoading();
+                        await DisplayAlert("Error", "No se ha podido conectar con el servidor", "Aceptar");
+                        return;
+                    }
+
+                }
+
+
+                foreach (var _byte in listaByte)
+                {
+                    foreach (var _name in newName)
+                    {
+                        var detail = new UpoloadFileModel()
+                        {
+                            Name = _name,
+                            ArrayByte = _byte
+                        };
+
+                        //serializar objeto, los campos que se van a insertar en formato Json
+                        var jsonRequest = JsonConvert.SerializeObject(detail);
+                        var content = new StringContent(jsonRequest, Encoding.UTF8, "text/json");
+
+                        try
+                        {
+                            HttpClient client = new HttpClient();
+                            client.BaseAddress = Global.GlobalVariables.Servidor;
+                            //string url = string.Format("api/UploadFile"); //URL API
+                            string url = string.Format("api/UploadImage"); //URL API
+                            var response = await client.PostAsync(url, content);
+                            var postResult = response.Content.ReadAsStringAsync().Result;
+
+                            UserDialogs.Instance.HideLoading();
+                        }
+                        catch
+                        {
+                            UserDialogs.Instance.HideLoading();
+                            await DisplayAlert("Error", "No se ha podido conectar con el servidor", "Aceptar");
+                            return;
+                        }
+                    }
+                }
+
+                return;
+            }
+
+            UserDialogs.Instance.HideLoading();
 
 
         }
