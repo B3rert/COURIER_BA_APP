@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CourierBA.Views.TrackingStatusPage"
+             NavigationPage.HasNavigationBar="True"
+             xmlns:progressBar="clr-namespace:Syncfusion.XForms.ProgressBar;assembly=Syncfusion.SfProgressBar.XForms"
+             Title="Estado del Tracking">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+
+            
+
+            <StackLayout Orientation="Horizontal"
+                         FlowDirection="LeftToRight"
+                         Margin="0,20,0,20">
+                <Label 
+                       Text="Tracking:"
+                       FontSize="Large"/>
+                <Label x:Name="txtTracking"
+                           FontSize="Large"/>
+            </StackLayout>
+            
+            
+            <progressBar:SfStepProgressBar TitleAlignment="Start" 
+                                       BackgroundColor="Transparent"
+                                       Orientation="Vertical" 
+                                       x:Name="stepProgress" 
+                                       >
+                <progressBar:SfStepProgressBar.NotStartedStepStyle>
+                    <progressBar:StepStyle x:TypeArguments="progressBar:NotStartedStepState" 
+                                       MarkerShapeType="Circle" 
+                                       MarkerStrokeColor="Red" 
+                                       MarkerContentType="Cross" 
+                                       MarkerContentFillColor="Red"/>
+                </progressBar:SfStepProgressBar.NotStartedStepStyle>
+
+                <progressBar:SfStepProgressBar.InProgressStepStyle>
+                    <progressBar:StepStyle x:TypeArguments="progressBar:InProgressStepState" 
+                                       MarkerShapeType="Circle" MarkerContentType="None" 
+                                       MarkerFillColor="Transparent"/>
+                </progressBar:SfStepProgressBar.InProgressStepStyle>
+
+                <progressBar:SfStepProgressBar.CompletedStepStyle>
+                    <progressBar:StepStyle x:TypeArguments="progressBar:CompletedStepState" MarkerShapeType="Circle" MarkerContentType="Tick" MarkerContentFillColor="White" MarkerFillColor="Green"/>
+                </progressBar:SfStepProgressBar.CompletedStepStyle>
+
+                <progressBar:StepView x:Name="stepView1">
+                    <progressBar:StepView.PrimaryFormattedText>
+                        <FormattedString>
+                            <Span x:Name="span1" ClassId="1" Text="Entregado por Proveedor" FontSize="13" FontAttributes="Bold"/>
+                        </FormattedString>
+                    </progressBar:StepView.PrimaryFormattedText>
+                </progressBar:StepView>
+
+                <progressBar:StepView x:Name="stepView2">
+                    <progressBar:StepView.PrimaryFormattedText>
+                        <FormattedString>
+                            <Span x:Name="span21" ClassId="1" Text="Entregado en Miami" FontSize="13" FontAttributes="Bold" />
+                        </FormattedString>
+                    </progressBar:StepView.PrimaryFormattedText>
+                </progressBar:StepView>
+
+                <progressBar:StepView x:Name="stepView3" Status="InProgress" ProgressValue="50">
+                    <progressBar:StepView.PrimaryFormattedText>
+                        <FormattedString>
+                            <Span x:Name="span31" ClassId="1" Text="En Transito" FontSize="13" FontAttributes="Bold" />
+                        </FormattedString>
+                    </progressBar:StepView.PrimaryFormattedText>
+                </progressBar:StepView>
+
+                <progressBar:StepView x:Name="stepView4">
+                    <progressBar:StepView.PrimaryFormattedText>
+                        <FormattedString>
+                            <Span x:Name="span41" ClassId="1" Text="En Aeropuerto X" FontSize="13" FontAttributes="Bold" />
+                        </FormattedString>
+                    </progressBar:StepView.PrimaryFormattedText>
+                </progressBar:StepView>
+                
+                <progressBar:StepView x:Name="stepView5">
+                    <progressBar:StepView.PrimaryFormattedText>
+                        <FormattedString>
+                            <Span x:Name="span51" ClassId="1" Text="Disponible ya en oficinas" FontSize="13" FontAttributes="Bold" />
+                        </FormattedString>
+                    </progressBar:StepView.PrimaryFormattedText>
+                </progressBar:StepView>
+
+            </progressBar:SfStepProgressBar>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

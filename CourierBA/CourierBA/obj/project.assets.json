@@ -109,7 +109,7 @@
           "lib/netstandard2.0/RestSharp.dll": {}
         }
       },
-      "Syncfusion.Licensing/18.4.0.33": {
+      "Syncfusion.Licensing/18.4.0.34": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Syncfusion.Licensing.dll": {}
@@ -118,10 +118,10 @@
           "lib/netstandard2.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/18.4.0.33": {
+      "Syncfusion.Xamarin.Core/18.4.0.34": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.33",
+          "Syncfusion.Licensing": "18.4.0.34",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -151,6 +151,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/Syncfusion.SfAutoComplete.XForms.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfProgressBar/18.4.0.34": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "18.4.0.34",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.SfProgressBar.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.SfProgressBar.XForms.dll": {}
         }
       },
       "Syncfusion.Xamarin.SfTreeView/18.4.0.32": {
@@ -672,10 +685,10 @@
         "restsharp.png"
       ]
     },
-    "Syncfusion.Licensing/18.4.0.33": {
-      "sha512": "FtXAYtRMPaDvUGsMWQx1diSoDS0UZEWDu2xxwzPtirsX4GGDqqvxsMc/rA4J7FcDU2Y0riotc4Qp6bNMaTz1Lw==",
+    "Syncfusion.Licensing/18.4.0.34": {
+      "sha512": "a8BuTU3KGTAMs2h0j3TCTazYLh9tWLfiFH0BWOmtqnJSwIJu1hR9yhNtblT9/4QgWFFTzyJ/yp4udWVtj/QL+g==",
       "type": "package",
-      "path": "syncfusion.licensing/18.4.0.33",
+      "path": "syncfusion.licensing/18.4.0.34",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -697,14 +710,14 @@
         "lib/netstandard2.0/Syncfusion.Licensing.dll",
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
         "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.18.4.0.33.nupkg.sha512",
+        "syncfusion.licensing.18.4.0.34.nupkg.sha512",
         "syncfusion.licensing.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.Core/18.4.0.33": {
-      "sha512": "LCaVhLR0cEmI+IurqcvxtyNSLg7TZb/436mCp/78gCy310rCxcZoO9R+aIBO9I+FqVxguuMQAGGzytn2qL/BIg==",
+    "Syncfusion.Xamarin.Core/18.4.0.34": {
+      "sha512": "m28tcQ2MiFnGOFrwEHxkCey48CC4ZrZN/hMfsFAdPSeS1ynloouSJUhjqbrL9mjbObl+hU7fqWD+oq9x2M7bSA==",
       "type": "package",
-      "path": "syncfusion.xamarin.core/18.4.0.33",
+      "path": "syncfusion.xamarin.core/18.4.0.34",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -732,7 +745,7 @@
         "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleVisibleIcon.xaml",
         "lib/uap10.0/Syncfusion.Core.XForms.dll",
         "lib/uap10.0/Syncfusion.Core.XForms.xml",
-        "syncfusion.xamarin.core.18.4.0.33.nupkg.sha512",
+        "syncfusion.xamarin.core.18.4.0.34.nupkg.sha512",
         "syncfusion.xamarin.core.nuspec"
       ]
     },
@@ -787,6 +800,36 @@
         "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.dll",
         "syncfusion.xamarin.sfautocomplete.18.4.0.33.nupkg.sha512",
         "syncfusion.xamarin.sfautocomplete.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.SfProgressBar/18.4.0.34": {
+      "sha512": "dM4aQDhwbOXQVqyA6W1WCvHGNXyF/reowdaOxGkvC/YTFlPks+u3MWSejU/ayqeTYMUEOgA+IOKWktBXaUPn+Q==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfprogressbar/18.4.0.34",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10.0/Syncfusion.SfProgressBar.XForms.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfProgressBar.XForms.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfProgressBar.XForms.xml",
+        "lib/MonoAndroid90/Syncfusion.SfProgressBar.XForms.Android.dll",
+        "lib/MonoAndroid90/Syncfusion.SfProgressBar.XForms.dll",
+        "lib/MonoAndroid90/Syncfusion.SfProgressBar.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfProgressBar.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfProgressBar.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfProgressBar.XForms.xml",
+        "lib/netstandard2.0/Syncfusion.SfProgressBar.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.SfProgressBar.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfProgressBar.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfProgressBar.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfProgressBar.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfProgressBar.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfProgressBar.XForms.UWP.pri",
+        "lib/uap10.0/Syncfusion.SfProgressBar.XForms.UWP/Font Stepprogress icon.ttf",
+        "lib/uap10.0/Syncfusion.SfProgressBar.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfProgressBar.XForms.xml",
+        "syncfusion.xamarin.sfprogressbar.18.4.0.34.nupkg.sha512",
+        "syncfusion.xamarin.sfprogressbar.nuspec"
       ]
     },
     "Syncfusion.Xamarin.SfTreeView/18.4.0.32": {
@@ -1861,6 +1904,7 @@
       "Prism.DryIoc.Forms >= 8.0.0.1909",
       "RestSharp >= 106.11.7",
       "Syncfusion.Xamarin.SfAutoComplete >= 18.4.0.33",
+      "Syncfusion.Xamarin.SfProgressBar >= 18.4.0.34",
       "Syncfusion.Xamarin.SfTreeView >= 18.4.0.32",
       "Xam.Plugin.Media >= 5.0.1",
       "Xamarin.Essentials >= 1.6.0",
@@ -1938,6 +1982,10 @@
           "Syncfusion.Xamarin.SfAutoComplete": {
             "target": "Package",
             "version": "[18.4.0.33, )"
+          },
+          "Syncfusion.Xamarin.SfProgressBar": {
+            "target": "Package",
+            "version": "[18.4.0.34, )"
           },
           "Syncfusion.Xamarin.SfTreeView": {
             "target": "Package",

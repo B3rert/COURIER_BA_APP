@@ -37,9 +37,9 @@
                             <ImageButton Grid.Column="2"
                                          HorizontalOptions="End"
                                         VerticalOptions="Center"
-                                        WidthRequest="18"
+                                        WidthRequest="25"
                                         x:Name="btnEscanearCodigo"
-                                        Source="camara_icon.png"
+                                        Source="code_bar_icon.png"
                                         BackgroundColor="Transparent"
                                        Clicked="btnEscanearCodigo_Clicked"/>
                         </Grid>
@@ -47,7 +47,6 @@
 
                     <Grid>
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="40"/>
                             <RowDefinition Height="40"/>
                             <RowDefinition Height="40"/>
                             <RowDefinition Height="40"/>
@@ -133,26 +132,27 @@
                         </StackLayout>
 
 
-                        <StackLayout  Grid.Row="4"
-                                      Grid.Column="0">
-                            <Label Text="Tipo producto" 
-                                   Style="{DynamicResource SmallLabelStyle}"
-                                   Margin="0,15,0,0"/>
-                        </StackLayout>
+                       
+                    </Grid>
 
-                        <StackLayout Grid.Row="4"
-                                    Grid.Column="1">
-                            <autocomplete:SfAutoComplete 
+                    <StackLayout >
+                        <Label Text="Tipo producto" 
+                               HorizontalOptions="Start"
+                                   Style="{DynamicResource SmallLabelStyle}"
+                                   />
+                    </StackLayout>
+
+                    <StackLayout>
+                        <autocomplete:SfAutoComplete 
                                     x:Name="txtProducto"
+                                EnableAutoSize="True"
                                     SuggestionMode="Contains"
-                                    HeightRequest="40"
                                     HorizontalOptions="FillAndExpand"
                                     DataSource="{Binding ProductoUsos}"
                                     DisplayMemberPath="Descripcion"
                                     SelectionChanged="SfAutoComplete_SelectionChanged">
-                            </autocomplete:SfAutoComplete>
-                        </StackLayout>
-                    </Grid>
+                        </autocomplete:SfAutoComplete>
+                    </StackLayout>
 
                     <StackLayout Orientation="Horizontal"
                              FlowDirection="LeftToRight"
@@ -207,8 +207,34 @@
                             x:Name="btnAgreagar"
                             Clicked="btnAgreagar_Clicked"/>
 
+                    <StackLayout HeightRequest="175">
+                        <ListView x:Name="collectionTracking"
+                                        HeightRequest="175"
+                                  ItemTapped="collectionTracking_ItemTapped">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell Height="13">
+                                        <StackLayout Orientation="Horizontal"
+                                                 FlowDirection="LeftToRight"
+                                                     HeightRequest="15">
+                                            <Label
+                                           VerticalOptions="CenterAndExpand"
+                                           FontSize="13"
+                                               Text="Tracking:"/>
+
+                                            <!-- <Label Text="{Binding Descripcion}"/>-->
+                                            <Label Text="{Binding .}"
+                                           VerticalOptions="CenterAndExpand"
+                                           FontSize="12"/>
+                                        </StackLayout>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                    <!--
                     <StackLayout>
-                        <CollectionView x:Name="collectionTracking"
+                        <CollectionView x:Name="collectionTracking_1"
                                         HeightRequest="175">
                             <CollectionView.ItemTemplate>
                                 <DataTemplate>
@@ -219,7 +245,6 @@
                                            FontSize="16"
                                                Text="Tracking:"/>
                                        
-                                        <!-- <Label Text="{Binding Descripcion}"/>-->
                                         <Label Text="{Binding .}"
                                            VerticalOptions="CenterAndExpand"
                                            FontSize="16"/>
@@ -228,7 +253,7 @@
                             </CollectionView.ItemTemplate>
                         </CollectionView>
                     </StackLayout>
-                   
+                -->
 
                 </StackLayout>
             </ScrollView>

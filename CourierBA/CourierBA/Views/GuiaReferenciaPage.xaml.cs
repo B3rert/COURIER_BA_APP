@@ -38,6 +38,7 @@ namespace CourierBA.Views
         int _SelectMoneda;
         string trackingsList = null;
         int referenciaPadre = 0;
+        string messege = null;
 
         #endregion
 
@@ -163,6 +164,14 @@ namespace CourierBA.Views
             return cadena.ToString();
         }
 
+        private Stream ToStream(byte[] bytes)
+        {
+            return new MemoryStream(bytes)
+            {
+                Position = 0
+            };
+        }
+
 
         private async void btnSelectFile_Clicked(object sender, EventArgs e)
         {
@@ -181,6 +190,7 @@ namespace CourierBA.Views
             {
                 FileTypes = FilePickerFileType.Images,
                 PickerTitle = "Pick an image"
+                
             });
 
             if (pickResult != null)
@@ -302,6 +312,63 @@ namespace CourierBA.Views
                 return;
             }
 
+            if (referenciaPadre != 0)
+            {
+
+                try
+                {
+
+                    HttpClient client = new HttpClient();
+                    client.BaseAddress = Global.GlobalVariables.Servidor;
+
+                    string urlvalidarReferencia = string.Format($"/api/PA_Validar_Referencia?" +
+                        $"user={_NameUSer}" +
+                        $"&descripcion={txtCodigo.Text}" +
+                        $"&referencia={referenciaPadre}");
+
+                    var responseValidarReferencia = await client.GetAsync(urlvalidarReferencia);
+                    var resultValidarReferencia = responseValidarReferencia.Content.ReadAsStringAsync().Result;
+
+                    if (resultValidarReferencia == "1")
+                    {
+                        messege = null;
+                    }
+                    else if (resultValidarReferencia == "0")
+                    {
+                        messege = "YA EL TRACKING QUE ESTA INTENTANDO INGRESAR YA EXISTE EN ESTA MISMA GUIA";
+                    }
+                    else
+                    {
+                        PA_Validar_Referencia myDeserializedClassTracking =
+                       JsonConvert.DeserializeObject<PA_Validar_Referencia>(resultValidarReferencia);
+
+
+                        var tableStringTracking = JsonConvert.SerializeObject(myDeserializedClassTracking.Table);
+
+                        var ValidarMessege = new List<PA_Validar_ReferenciaModel>();
+
+                        ValidarMessege = JsonConvert.DeserializeObject<List<PA_Validar_ReferenciaModel>>(tableStringTracking);
+
+
+                        messege = ValidarMessege[0].Mensaje;
+
+                    }
+
+                }
+                catch (Exception ee)
+                {
+                    await DisplayAlert("Error", "No se ha podido conectar con el servidor", "Aceptar");
+                    return;
+                }
+
+            }
+
+            if (!string.IsNullOrEmpty(messege))
+            {
+                await DisplayAlert("", messege, "Aceptar");
+                return;
+            }
+
 
             UserDialogs.Instance.ShowLoading(title: "Creando Tracking...");
 
@@ -360,9 +427,9 @@ namespace CourierBA.Views
                         }
 
                     }
-                    catch (Exception)
+                    catch (Exception er)
                     {
-
+                        var test = er.Message;
                         UserDialogs.Instance.HideLoading();
                         await DisplayAlert("Error", "No se ha podido conectar con el servidor", "Aceptar");
                         return;
@@ -380,6 +447,8 @@ namespace CourierBA.Views
             }
             else
             {
+               
+
                 //await DisplayAlert("", "No se crea otra guia", "ok");
                 try
                 {
@@ -410,9 +479,9 @@ namespace CourierBA.Views
                     }
 
                 }
-                catch (Exception)
+                catch (Exception error)
                 {
-
+                    var test = error.Message;
                     UserDialogs.Instance.HideLoading();
                     await DisplayAlert("Error", "No se ha podido conectar con el servidor", "Aceptar");
                     return;
@@ -526,6 +595,13 @@ namespace CourierBA.Views
             int position = pickMoneda.SelectedIndex;
 
             _SelectMoneda = monedaModels[position].Moneda;
+
+        }
+
+        private async void collectionTracking_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            var tracking = e.Item;
+            await Navigation.PushAsync(new TrackingStatusPage(tracking.ToString()));
 
         }
     }

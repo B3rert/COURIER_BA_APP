@@ -62,6 +62,10 @@
               "target": "Package",
               "version": "[18.4.0.33, )"
             },
+            "Syncfusion.Xamarin.SfProgressBar": {
+              "target": "Package",
+              "version": "[18.4.0.34, )"
+            },
             "Syncfusion.Xamarin.SfTreeView": {
               "target": "Package",
               "version": "[18.4.0.32, )"
@@ -155,6 +159,10 @@
             "Syncfusion.Xamarin.SfAutoComplete": {
               "target": "Package",
               "version": "[18.4.0.33, )"
+            },
+            "Syncfusion.Xamarin.SfProgressBar": {
+              "target": "Package",
+              "version": "[18.4.0.34, )"
             },
             "Syncfusion.Xamarin.SfTreeView": {
               "target": "Package",

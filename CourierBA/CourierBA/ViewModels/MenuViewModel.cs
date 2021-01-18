@@ -126,7 +126,7 @@ namespace CourierBA.ViewModels
             }
         }
 
-        private async void SetAction(Menu item)
+        private  void SetAction(Menu item)
         {
             if (item.Children.Count > 0 )
             {

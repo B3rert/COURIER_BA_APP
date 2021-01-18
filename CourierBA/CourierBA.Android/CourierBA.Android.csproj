@@ -83,6 +83,9 @@
     <PackageReference Include="Syncfusion.Xamarin.SfAutoComplete">
       <Version>18.4.0.33</Version>
     </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfProgressBar">
+      <Version>18.4.0.34</Version>
+    </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfTreeView">
       <Version>18.4.0.32</Version>
     </PackageReference>
@@ -162,6 +165,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\camara_blue_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\code_bar_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>

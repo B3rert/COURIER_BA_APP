@@ -23,6 +23,8 @@ public class MonoPackageManager_Resources {
 		"Syncfusion.Licensing.dll",
 		"Syncfusion.SfAutoComplete.XForms.Android.dll",
 		"Syncfusion.SfAutoComplete.XForms.dll",
+		"Syncfusion.SfProgressBar.XForms.Android.dll",
+		"Syncfusion.SfProgressBar.XForms.dll",
 		"Syncfusion.SfTreeView.XForms.Android.dll",
 		"Syncfusion.SfTreeView.XForms.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",

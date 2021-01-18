@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xTmvvvvOHhez1B7yN1HWIqKtIWVifDZPIdrmd0TSvu8eyMsiaCxGF2HzbCj8sThHPTNz9p2Nqcxs58mi0E/Lxw==",
+  "dgSpecHash": "if3NK0WfIcu7VA7T+w8mUpuCUq2gpyQaKWrPKK7swxasbP+CnWMlIwbX7IKMb3elQ8QqamBvQdBgeoJbjGZVMA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Andres\\Desktop\\DEMOSOFT\\Proyectos\\CourierBA_app\\CourierBA\\CourierBA.UWP\\CourierBA.UWP.csproj",
   "expectedPackageFiles": [
@@ -52,12 +52,13 @@
     "C:\\Users\\Andres\\.nuget\\packages\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\\2.2.11\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.2.11.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.11\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.11.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\runtime.win7.system.private.uri\\4.3.0\\runtime.win7.system.private.uri.4.3.0.nupkg.sha512",
-    "C:\\Users\\Andres\\.nuget\\packages\\syncfusion.licensing\\18.4.0.33\\syncfusion.licensing.18.4.0.33.nupkg.sha512",
+    "C:\\Users\\Andres\\.nuget\\packages\\syncfusion.licensing\\18.4.0.34\\syncfusion.licensing.18.4.0.34.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\syncfusion.sfinput.uwp\\18.4.0.33\\syncfusion.sfinput.uwp.18.4.0.33.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\syncfusion.sfshared.uwp\\18.4.0.33\\syncfusion.sfshared.uwp.18.4.0.33.nupkg.sha512",
-    "C:\\Users\\Andres\\.nuget\\packages\\syncfusion.xamarin.core\\18.4.0.33\\syncfusion.xamarin.core.18.4.0.33.nupkg.sha512",
+    "C:\\Users\\Andres\\.nuget\\packages\\syncfusion.xamarin.core\\18.4.0.34\\syncfusion.xamarin.core.18.4.0.34.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\syncfusion.xamarin.gridcommon\\18.4.0.32\\syncfusion.xamarin.gridcommon.18.4.0.32.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\syncfusion.xamarin.sfautocomplete\\18.4.0.33\\syncfusion.xamarin.sfautocomplete.18.4.0.33.nupkg.sha512",
+    "C:\\Users\\Andres\\.nuget\\packages\\syncfusion.xamarin.sfprogressbar\\18.4.0.34\\syncfusion.xamarin.sfprogressbar.18.4.0.34.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\syncfusion.xamarin.sftreeview\\18.4.0.32\\syncfusion.xamarin.sftreeview.18.4.0.32.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",
     "C:\\Users\\Andres\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",

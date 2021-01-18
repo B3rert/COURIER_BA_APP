@@ -1153,3 +1153,16 @@ C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.And
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Debug\90\android\assets\Syncfusion.SfProgressBar.XForms.Android.dll
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Debug\90\android\assets\Syncfusion.SfProgressBar.XForms.dll
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Debug\90\android\src\crc64257c68118cdd75d6\ContentViewRender.java
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Debug\90\android\src\crc64257c68118cdd75d6\SfCircularProgressBarRenderer.java
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Debug\90\android\src\crc64257c68118cdd75d6\SfLinearProgressBarRenderer.java
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Debug\90\android\src\crc64257c68118cdd75d6\StepContent.java
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Debug\90\android\src\crc6468c5c34ff6a1ae2c\CircularLayout.java
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Debug\90\android\src\crc6468c5c34ff6a1ae2c\CircularView.java
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Debug\90\android\src\crc6468c5c34ff6a1ae2c\GradientShaderFactory.java
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Debug\90\android\src\crc6468c5c34ff6a1ae2c\ProgressBarBase.java
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Debug\90\android\src\crc6468c5c34ff6a1ae2c\SfCircularProgressBar.java
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Debug\90\android\src\crc6468c5c34ff6a1ae2c\SfLinearProgressBar.java
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Debug\90\res\drawable\code_bar_icon.png
