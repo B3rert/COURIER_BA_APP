@@ -132,6 +132,9 @@
     <PackageReference Include="Prism.DryIoc.Forms">
       <Version>8.0.0.1909</Version>
     </PackageReference>
+    <PackageReference Include="sqlite-net-pcl">
+      <Version>1.7.335</Version>
+    </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfAutoComplete">
       <Version>18.4.0.33</Version>
     </PackageReference>

@@ -97,6 +97,10 @@
             "ZXing.Net.Mobile": {
               "target": "Package",
               "version": "[2.4.1, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.7.335, )"
             }
           },
           "imports": [

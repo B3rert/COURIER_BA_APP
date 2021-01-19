@@ -4,6 +4,7 @@ FastAndroidCamera
 FormsViewGroup
 Plugin.CurrentActivity
 Plugin.Media
+SQLitePCLRaw.lib.e_sqlite3.android
 Syncfusion.Core.XForms.Android
 Syncfusion.SfAutoComplete.XForms.Android
 Syncfusion.SfProgressBar.XForms.Android

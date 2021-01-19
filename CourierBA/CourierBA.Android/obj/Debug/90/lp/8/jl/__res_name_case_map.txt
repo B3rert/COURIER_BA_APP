@@ -1,4 +1,5 @@
-values/Strings.xml;values/strings.xml
-drawable/sfprogressbar_determinate_linear.xml;drawable/sfprogressbar_determinate_linear.xml
-drawable/sfprogressbar_indeterminate_circular.xml;drawable/sfprogressbar_indeterminate_circular.xml
-drawable/sfprogressbar_indeterminate_linear.xml;drawable/sfprogressbar_indeterminate_linear.xml
+drawable/styleinfo.xml;drawable/styleinfo.xml
+drawable/sfclosebutton.png;drawable/sfclosebutton.png
+layout/CustomizedView.xml;layout/customizedview.xml
+layout/CustomizedView1.xml;layout/customizedview1.xml
+layout/sfautocomplete_layout.xml;layout/sfautocomplete_layout.xml

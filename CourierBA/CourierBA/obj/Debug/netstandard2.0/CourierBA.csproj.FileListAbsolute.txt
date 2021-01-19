@@ -41,3 +41,4 @@ C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA\obj
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA\obj\Debug\netstandard2.0\CourierBA.pdb
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA\obj\Debug\netstandard2.0\CourierBA.csprojAssemblyReference.cache
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA\obj\Debug\netstandard2.0\Views\TrackingStatusPage.xaml.g.cs
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA\obj\Debug\netstandard2.0\Views\TestDbLocalPage.xaml.g.cs

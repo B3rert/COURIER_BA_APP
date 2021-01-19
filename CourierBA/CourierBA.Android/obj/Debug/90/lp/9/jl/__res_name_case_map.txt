@@ -1,3 +1,4 @@
-Layout/borderlayout.xml;layout/borderlayout.xml
-drawable/NodeExpand.png;drawable/nodeexpand.png
-drawable/NodeCollapse.png;drawable/nodecollapse.png
+values/Strings.xml;values/strings.xml
+drawable/sfprogressbar_determinate_linear.xml;drawable/sfprogressbar_determinate_linear.xml
+drawable/sfprogressbar_indeterminate_circular.xml;drawable/sfprogressbar_indeterminate_circular.xml
+drawable/sfprogressbar_indeterminate_linear.xml;drawable/sfprogressbar_indeterminate_linear.xml

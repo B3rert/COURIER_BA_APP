@@ -191,6 +191,7 @@ namespace CourierBA.Views
                 FileTypes = FilePickerFileType.Images,
                 PickerTitle = "Pick an image"
                 
+                
             });
 
             if (pickResult != null)
