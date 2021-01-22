@@ -91,7 +91,7 @@ namespace CourierBA.Views
 
             if (result == "1")
             {
-                await DisplayAlert("Usuario creado", "Se ha enviado un correo electronico al correo proporcionado con sus credenciales.", "Aceptar");
+                await DisplayAlert("Usuario creado", "Se han enviado las credenciales al correo electrónico proporcionado.", "Aceptar");
                 await Navigation.PopToRootAsync();
             }
             else if (result == "0")
