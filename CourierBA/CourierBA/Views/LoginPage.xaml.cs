@@ -22,6 +22,9 @@ namespace CourierBA.Views
         private List<Models.EmpresaModel> empresaModels;
         private List<Models.EstacionModel> EstacionModels;
         private List<Models.PA_tbl_UserModel> UserModels;
+        private List<Models.UserLog> userLogs;
+        string User = null;
+        int valLog = 0;
         int? countEmpresa;
         int? countEstacion;
     
@@ -70,10 +73,30 @@ namespace CourierBA.Views
                 var response = await client.GetAsync(url);
                 result = response.Content.ReadAsStringAsync().Result;
 
+                Models.UserLogin userLogin = JsonConvert.DeserializeObject<Models.UserLogin>(result);
+                var userTableString = JsonConvert.SerializeObject(userLogin.Table);
+                userLogs = JsonConvert.DeserializeObject<List<Models.UserLog>>(userTableString);
+
+
+                valLog = userLogs[0].valor;
+                
+
+                if (valLog == 0)
+                {
+                    UserDialogs.Instance.HideLoading();
+                    await DisplayAlert("Error", "Usuario y/o contraseña incorrecta", "Aceptar");
+                    return;
+                }
+                else
+                {
+                    User = userLogs[0].UserName.ToString();
+                }
+
+
                 try
                 {
                     //Api Empresa
-                    string urlEmpresa = string.Format($"/api/PA_bsc_Empresa_1?user={UserEntry.Text}");
+                    string urlEmpresa = string.Format($"/api/PA_bsc_Empresa_1?user={User}");
                     var responseEmpresa = await client.GetAsync(urlEmpresa);
                     resultEmpresa = responseEmpresa.Content.ReadAsStringAsync().Result;
 
@@ -85,7 +108,7 @@ namespace CourierBA.Views
                     try
                     {
                         //Api estacion 
-                        string urlEstacion = string.Format($"/api/PA_bsc_Estacion_Trabajo_2?user={UserEntry.Text}");
+                        string urlEstacion = string.Format($"/api/PA_bsc_Estacion_Trabajo_2?user={User}");
                         var responseEstacion = await client.GetAsync(urlEstacion);
                         resultEstacion = responseEstacion.Content.ReadAsStringAsync().Result;
 
@@ -117,7 +140,7 @@ namespace CourierBA.Views
             }
 
             //Validar Resultado APP
-            if (string.IsNullOrEmpty(result) || result == "0")
+            if (string.IsNullOrEmpty(result) || valLog == 0)
             {
                 UserDialogs.Instance.HideLoading();
                 await DisplayAlert("Error", "Usuario y/o contraseña incorrecta", "Aceptar");
@@ -129,9 +152,14 @@ namespace CourierBA.Views
                 {
                     HttpClient client = new HttpClient();
                     client.BaseAddress = Global.GlobalVariables.Servidor;
-                    string url = string.Format($"/api/PA_tbl_User?userName={UserEntry.Text}"); //URL API
+                    string url = string.Format($"/api/PA_tbl_User?userName={User}"); //URL API
                     var response = await client.GetAsync(url);
-                    result = response.Content.ReadAsStringAsync().Result;
+                    var resultPA_tbl_User = response.Content.ReadAsStringAsync().Result;
+
+                    Models.PA_tbl_User myDeserializedClassPA_tbl_User = JsonConvert.DeserializeObject<Models.PA_tbl_User>(resultPA_tbl_User);
+                    var tableUsertbl = JsonConvert.SerializeObject(myDeserializedClassPA_tbl_User.Table);
+                    UserModels = JsonConvert.DeserializeObject<List<Models.PA_tbl_UserModel>>(tableUsertbl);
+
 
                     int? selectedEmpresa = null;
                     int? selectedEstacion = null;
@@ -230,7 +258,7 @@ namespace CourierBA.Views
                             if (_result == "201")
                             {
                                 UserDialogs.Instance.HideLoading();
-                                await Navigation.PushAsync(new MenuDetailPage(UserEntry.Text, selectedEmpresa));
+                                await Navigation.PushAsync(new MenuDetailPage(User, selectedEmpresa));
                                 PassEntry.Text = string.Empty;
                             }
                             else
@@ -250,13 +278,15 @@ namespace CourierBA.Views
                     else
                     {
                         UserDialogs.Instance.HideLoading();
-                        await Navigation.PushAsync(new LocalConfigPage(resultEmpresa, resultEstacion, UserEntry.Text, result));
+                        await Navigation.PushAsync(new LocalConfigPage(resultEmpresa, resultEstacion, User, result));
                         PassEntry.Text = string.Empty;
                       //  Navigation.RemovePage(this);
                     }
                 }
-                catch
+                catch(Exception err)
                 {
+                    var test = err.Message;
+
                     UserDialogs.Instance.HideLoading();
                     await DisplayAlert("Error", "Usuario y/o contraseña incorrecta", "Aceptar");
                     return;
@@ -264,6 +294,13 @@ namespace CourierBA.Views
             }
 
             #endregion
+        }
+
+        private async void RegisterBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new UserRegisterPage());
+
+            //await DisplayAlert("", "Siguiente página", "Ok");
         }
     }
 }

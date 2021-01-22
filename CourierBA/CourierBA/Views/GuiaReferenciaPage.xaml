@@ -135,6 +135,7 @@
                        
                     </Grid>
 
+                    <!--
                     <StackLayout >
                         <Label Text="Tipo producto" 
                                HorizontalOptions="Start"
@@ -142,6 +143,7 @@
                                    />
                     </StackLayout>
 
+                    
                     <StackLayout>
                         <autocomplete:SfAutoComplete 
                                     x:Name="txtProducto"
@@ -153,7 +155,8 @@
                                     SelectionChanged="SfAutoComplete_SelectionChanged">
                         </autocomplete:SfAutoComplete>
                     </StackLayout>
-
+-->
+                    
                     <StackLayout Orientation="Horizontal"
                              FlowDirection="LeftToRight"
                                  Margin="5">
@@ -257,7 +260,7 @@
 
                 </StackLayout>
             </ScrollView>
-            
+            <!--
             <Grid Opacity=".8"
                   IsVisible="{Binding IsBusy}"
                   BackgroundColor="Black">
@@ -271,8 +274,10 @@
                     <Label Text="Por favor espere"
                             FontSize="Subtitle"
                              HorizontalOptions="Center"/>
+                             HorizontalOptions="Center"/>
                 </StackLayout>
             </Grid>
+            -->
         </Grid>
     </ContentPage.Content>
 </ContentPage>

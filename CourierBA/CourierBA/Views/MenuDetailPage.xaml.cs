@@ -23,6 +23,13 @@ namespace CourierBA.Views
             home();
         }
 
+      public void NavigateToPage(Page page)
+        {
+            Detail = new NavigationPage(new Page());
+            IsPresented = false;
+
+        }
+
         private void home()
         {
             Detail = new NavigationPage(new GuiaReferenciaPage(_empresa, _user));

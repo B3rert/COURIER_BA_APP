@@ -1,4 +1,5 @@
 ﻿using CourierBA.Models;
+using CourierBA.Views;
 using Newtonsoft.Json;
 using Prism.Commands;
 using Prism.Mvvm;
@@ -8,6 +9,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 
 namespace CourierBA.ViewModels
@@ -22,17 +24,17 @@ namespace CourierBA.ViewModels
             set => SetProperty(ref _isRunning, value);
         }
 
-        private ObservableCollection<Menu> _menus;
+        private ObservableCollection<Models.Menu> _menus;
 
-        public ObservableCollection<Menu> Menus
+        public ObservableCollection<Models.Menu> Menus
         {
             get => _menus;
             set => SetProperty(ref _menus, value);
         }
 
-        private DelegateCommand<Menu> _executeCommand;
+        private DelegateCommand<Models.Menu> _executeCommand;
         public string _user { get; set; }
-        public DelegateCommand<Menu> ExecuteCommand => _executeCommand ?? (_executeCommand = new DelegateCommand<Menu>(SetAction));
+        public DelegateCommand<Models.Menu> ExecuteCommand => _executeCommand ?? (_executeCommand = new DelegateCommand<Models.Menu>(SetAction));
         public MenuViewModel()
         {
             
@@ -48,7 +50,7 @@ namespace CourierBA.ViewModels
                     return;
                 }
                 var options = response.Result.Table
-                    .Select(async s => new Menu
+                    .Select(async s => new Models.Menu
                     {
                         Icon = "",
                         Name = s.Name,
@@ -59,7 +61,7 @@ namespace CourierBA.ViewModels
                     .ToList();
 
                 var result = await Task.WhenAll(options);
-                Menus = new ObservableCollection<Menu>(result.ToList());
+                Menus = new ObservableCollection<Models.Menu>(result.ToList());
                 IsRunning = false;
             }
             catch (Exception e)
@@ -68,14 +70,14 @@ namespace CourierBA.ViewModels
                 IsRunning = false;
             }
         }
-        public async Task<ObservableCollection<Menu>> LoadChildrenData(int item)
+        public async Task<ObservableCollection<Models.Menu>> LoadChildrenData(int item)
         {
             try
             {
                 var response = await GetMenu(item, _user);
                 if (!response.IsSuccess)
                 {
-                    return new ObservableCollection<Menu>();
+                    return new ObservableCollection<Models.Menu>();
                 }
                 return GenerateGrupos(response.Result.Table.ToList());
 
@@ -83,18 +85,18 @@ namespace CourierBA.ViewModels
             catch (Exception e)
             {
                 var msg = e.Message;
-                return new ObservableCollection<Menu>();
+                return new ObservableCollection<Models.Menu>();
             }
         }
 
-        private ObservableCollection<Menu> GenerateGrupos(List<MenuResponse> data)
+        private ObservableCollection<Models.Menu> GenerateGrupos(List<MenuResponse> data)
         {
-            List<Menu> detalles = new List<Menu>();
+            List<Models.Menu> detalles = new List<Models.Menu>();
 
             //Se generan los padres
             data.Where(w => w.User_Display_Father == null).ForEach(d =>
             {
-                detalles.Add(new Menu
+                detalles.Add(new Models.Menu
                 {
                     Icon = "",
                     PageName = d.Name,
@@ -103,16 +105,16 @@ namespace CourierBA.ViewModels
                 });
             });
 
-            return new ObservableCollection<Menu>(detalles);
+            return new ObservableCollection<Models.Menu>(detalles);
 
         }
 
-        private ObservableCollection<Menu> GenerateChildren(int idPadre, List<MenuResponse> data)
+        private ObservableCollection<Models.Menu> GenerateChildren(int idPadre, List<MenuResponse> data)
         {
             var childrens = data.Where(w => w.User_Display_Father == idPadre).ToList();
             if (childrens.Count > 0)
             {
-                return new ObservableCollection<Menu>(childrens.Select(s => new Menu
+                return new ObservableCollection<Models.Menu>(childrens.Select(s => new Models.Menu
                 {
                     Icon = "",
                     PageName = s.Name,
@@ -122,24 +124,35 @@ namespace CourierBA.ViewModels
             }
             else
             {
-                return new ObservableCollection<Menu>();
+                return new ObservableCollection<Models.Menu>();
             }
         }
 
-        private  void SetAction(Menu item)
+        private  void SetAction(Models.Menu item)
         {
             if (item.Children.Count > 0 )
             {
-
+                
                 
                 return;
+
                 //await _dialogService.DisplayAlertAsync("Con Hijos", "Yo tengo hijos, solo puedes navegar en mis hijos", "OK");
             }
             else
             {
-              
-                
-                
+                /*
+                Device.BeginInvokeOnMainThread(() => {
+                    var _mp = Application.Current.MainPage as MasterDetailPage;
+                    _mp.Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(TestDetailPage)));
+
+                    //aquí tu navegación
+                });
+               0
+                */
+
+                //(Application.Current.MainPage as MasterDetailPage).Detail 
+                //  = new NavigationPage((Page)Activator.CreateInstance(TestDetailPage));
+
                 return;
                 //await _dialogService.DisplayAlertAsync("Sin Hijos", "Yo no tengo hijos, puedes mandar a otra pagina o hacer alguna otra cosa", "OK");
             }

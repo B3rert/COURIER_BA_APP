@@ -38,9 +38,6 @@ namespace CourierBA.Views {
         private global::Xamarin.Forms.Picker pickMoneda;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Syncfusion.SfAutoComplete.XForms.SfAutoComplete txtProducto;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Label lblNameFileSelect;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
@@ -71,7 +68,6 @@ namespace CourierBA.Views {
             txtPieza = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txtPieza");
             txtMonto = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txtMonto");
             pickMoneda = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "pickMoneda");
-            txtProducto = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Syncfusion.SfAutoComplete.XForms.SfAutoComplete>(this, "txtProducto");
             lblNameFileSelect = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "lblNameFileSelect");
             btnSelectFile = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "btnSelectFile");
             btnTomarFoto = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ImageButton>(this, "btnTomarFoto");

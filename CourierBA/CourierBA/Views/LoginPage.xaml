@@ -18,11 +18,12 @@
 
                 <StackLayout 
                          Padding="20,20,20,20"
-                         Margin="20"
+                         Margin="20,20,20,10"
                          BackgroundColor="WhiteSmoke">
                     <Entry 
                         x:Name="UserEntry"            
                         Placeholder="Usuario"
+                        Keyboard="Email"
                         ClearButtonVisibility="WhileEditing"
                     Margin="0,20,0,0"/>
                     <Entry                    
@@ -51,9 +52,17 @@
                         Style="{StaticResource ButtonStyle}" 
                         Clicked="LoginBtn_Clicked"/>
                 </StackLayout>
+                <Button
+                        x:Name="RegisterBtn"
+                        Grid.Row="2"
+                        Text="Crear usuario"
+                    FontAttributes="None"
+                        BackgroundColor="Transparent"
+                         TextColor="{DynamicResource SecondaryColor}"
+                        Clicked="RegisterBtn_Clicked"/>
                 <Image Source="logo_demosoft.png"
-                           WidthRequest="150"
-                           HeightRequest="110"/>
+                           WidthRequest="140"
+                           HeightRequest="105"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

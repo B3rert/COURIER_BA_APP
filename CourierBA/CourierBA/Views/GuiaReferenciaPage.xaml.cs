@@ -34,7 +34,7 @@ namespace CourierBA.Views
         private List<ImageSource> imageList = new List<ImageSource>();
         int? _Empresa;
         string _NameUSer;
-        int _TipoProducto = 0;
+        int _TipoProducto = 90;
         int _SelectMoneda;
         string trackingsList = null;
         int referenciaPadre = 0;
@@ -53,6 +53,7 @@ namespace CourierBA.Views
             
         }
 
+        /*
         protected override async void OnAppearing()
         {
             base.OnAppearing();
@@ -61,7 +62,7 @@ namespace CourierBA.Views
             this.BindingContext = ViewModel;
 
         }
-
+        */
 
         #region Cargar Monedas
         private async  void cargarDatos(int? empresa)
@@ -101,13 +102,14 @@ namespace CourierBA.Views
         #endregion
 
         #region Tipo producto seleccionado
-
+        /*
         private void SfAutoComplete_SelectionChanged(object sender, Syncfusion.SfAutoComplete.XForms.SelectionChangedEventArgs e)
         {
             var Producto = e.Value as ProductoUso;
             _TipoProducto = Producto.Producto;
             //  await DisplayAlert("",Producto.Descripcion,"OK");
         }
+        */
         #endregion
 
         #region Escaner de codigos qr barra
@@ -301,12 +303,14 @@ namespace CourierBA.Views
                 txtObservacion.Focus();
                 return;
             }
+            /*
             if (string.IsNullOrEmpty(txtProducto.Text))
             {
                 await DisplayAlert("", "Campo Tipo producto obligatorio", "Aceptar");
                 txtProducto.Focus();
                 return;
             }
+            */
             if (imageList.Count == 0)
             {
                 await DisplayAlert("", "No hay ninguna imagen adjunta", "Aceptar");
