@@ -34,6 +34,7 @@ namespace CourierBA.ViewModels
 
         private DelegateCommand<Models.Menu> _executeCommand;
         public string _user { get; set; }
+        public int? _empresa { get; set; }
         public DelegateCommand<Models.Menu> ExecuteCommand => _executeCommand ?? (_executeCommand = new DelegateCommand<Models.Menu>(SetAction));
         public MenuViewModel()
         {
@@ -117,7 +118,7 @@ namespace CourierBA.ViewModels
                 return new ObservableCollection<Models.Menu>(childrens.Select(s => new Models.Menu
                 {
                     Icon = "",
-                    PageName = s.Name,
+                    PageName = s.Display_URL_Alter,
                     Name = s.Name,
                     Children = GenerateChildren(s.User_Display, data)
                 }));
@@ -128,11 +129,10 @@ namespace CourierBA.ViewModels
             }
         }
 
-        private  void SetAction(Models.Menu item)
+        private async  void SetAction(Models.Menu item)
         {
             if (item.Children.Count > 0 )
             {
-                
                 
                 return;
 
@@ -140,11 +140,39 @@ namespace CourierBA.ViewModels
             }
             else
             {
+                var dp = Application.Current.MainPage;
+
+                if (item.PageName == "GuiaReferenciaPage")
+                {
+                    await dp.Navigation.PushAsync(new GuiaReferenciaPage(_empresa, _user));
+
+                }
+                else
+                {
+                    await dp.DisplayAlert("", "Modulo no disponible", "Aceptar");
+                }
+
+
+
+
+
+                var mp = dp as MasterDetailPage;
+
+
+
+
+
+
+
+
+
+                //  var _mp = Application.Current.MainPage as MasterDetailPage;
+                //_mp.Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(TestDetailPage)));
+
+
                 /*
                 Device.BeginInvokeOnMainThread(() => {
-                    var _mp = Application.Current.MainPage as MasterDetailPage;
-                    _mp.Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(TestDetailPage)));
-
+                   
                     //aquí tu navegación
                 });
                0

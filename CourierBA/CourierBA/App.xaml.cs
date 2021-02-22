@@ -29,7 +29,7 @@ namespace CourierBA
             InitializeComponent();
 
           MainPage = new NavigationPage(new Views.LoginPage());
-           // MainPage = new NavigationPage(new Views.TestDbLocalPage());
+          //  MainPage = new NavigationPage(new Views.DocumentoCourierPage());
         }
 
         protected override void OnStart()

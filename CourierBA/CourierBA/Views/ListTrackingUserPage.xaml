@@ -1,0 +1,578 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CourierBA.Views.ListTrackingUserPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="0,10,0,10">
+
+                <StackLayout>
+                    <Frame Margin="10,3,10,0"
+                       Padding="0">
+                        <Grid Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="15"/>
+                                <RowDefinition Height="20"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Text="Tracking: 89749687496874"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           Grid.Row="0"
+                           Grid.ColumnSpan="2"/>
+
+                            <Label Text="Correlativo: 874787"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource TertiaryTextColor}"
+                            FontSize="12"
+                            Grid.Row="1"
+                            Grid.Column="0"/>
+
+                            <Label Text="Estado: En proceso"
+                            VerticalOptions="Start"
+                            HorizontalOptions="End"       
+                            Grid.Row="2"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            Grid.Column="1"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+
+                <!--#region NewRegion -->
+
+                <StackLayout>
+                    <Frame Margin="10,3,10,0"
+                       Padding="0">
+                        <Grid Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="15"/>
+                                <RowDefinition Height="20"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Text="Tracking: 89749687496874"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           Grid.Row="0"
+                           Grid.ColumnSpan="2"/>
+
+                            <Label Text="Correlativo: 874787"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource TertiaryTextColor}"
+                            FontSize="12"
+                            Grid.Row="1"
+                            Grid.Column="0"/>
+
+                            <Label Text="Estado: En proceso"
+                            VerticalOptions="Start"
+                            HorizontalOptions="End"       
+                            Grid.Row="2"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            Grid.Column="1"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame Margin="10,3,10,0"
+                       Padding="0">
+                        <Grid Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="15"/>
+                                <RowDefinition Height="20"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Text="Tracking: 89749687496874"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           Grid.Row="0"
+                           Grid.ColumnSpan="2"/>
+
+                            <Label Text="Correlativo: 874787"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource TertiaryTextColor}"
+                            FontSize="12"
+                            Grid.Row="1"
+                            Grid.Column="0"/>
+
+                            <Label Text="Estado: En proceso"
+                            VerticalOptions="Start"
+                            HorizontalOptions="End"       
+                            Grid.Row="2"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            Grid.Column="1"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame Margin="10,3,10,0"
+                       Padding="0">
+                        <Grid Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="15"/>
+                                <RowDefinition Height="20"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Text="Tracking: 89749687496874"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           Grid.Row="0"
+                           Grid.ColumnSpan="2"/>
+
+                            <Label Text="Correlativo: 874787"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource TertiaryTextColor}"
+                            FontSize="12"
+                            Grid.Row="1"
+                            Grid.Column="0"/>
+
+                            <Label Text="Estado: En proceso"
+                            VerticalOptions="Start"
+                            HorizontalOptions="End"       
+                            Grid.Row="2"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            Grid.Column="1"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame Margin="10,3,10,0"
+                       Padding="0">
+                        <Grid Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="15"/>
+                                <RowDefinition Height="20"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Text="Tracking: 89749687496874"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           Grid.Row="0"
+                           Grid.ColumnSpan="2"/>
+
+                            <Label Text="Correlativo: 874787"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource TertiaryTextColor}"
+                            FontSize="12"
+                            Grid.Row="1"
+                            Grid.Column="0"/>
+
+                            <Label Text="Estado: En proceso"
+                            VerticalOptions="Start"
+                            HorizontalOptions="End"       
+                            Grid.Row="2"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            Grid.Column="1"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame Margin="10,3,10,0"
+                       Padding="0">
+                        <Grid Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="15"/>
+                                <RowDefinition Height="20"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Text="Tracking: 89749687496874"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           Grid.Row="0"
+                           Grid.ColumnSpan="2"/>
+
+                            <Label Text="Correlativo: 874787"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource TertiaryTextColor}"
+                            FontSize="12"
+                            Grid.Row="1"
+                            Grid.Column="0"/>
+
+                            <Label Text="Estado: En proceso"
+                            VerticalOptions="Start"
+                            HorizontalOptions="End"       
+                            Grid.Row="2"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            Grid.Column="1"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame Margin="10,3,10,0"
+                       Padding="0">
+                        <Grid Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="15"/>
+                                <RowDefinition Height="20"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Text="Tracking: 89749687496874"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           Grid.Row="0"
+                           Grid.ColumnSpan="2"/>
+
+                            <Label Text="Correlativo: 874787"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource TertiaryTextColor}"
+                            FontSize="12"
+                            Grid.Row="1"
+                            Grid.Column="0"/>
+
+                            <Label Text="Estado: En proceso"
+                            VerticalOptions="Start"
+                            HorizontalOptions="End"       
+                            Grid.Row="2"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            Grid.Column="1"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame Margin="10,3,10,0"
+                       Padding="0">
+                        <Grid Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="15"/>
+                                <RowDefinition Height="20"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Text="Tracking: 89749687496874"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           Grid.Row="0"
+                           Grid.ColumnSpan="2"/>
+
+                            <Label Text="Correlativo: 874787"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource TertiaryTextColor}"
+                            FontSize="12"
+                            Grid.Row="1"
+                            Grid.Column="0"/>
+
+                            <Label Text="Estado: En proceso"
+                            VerticalOptions="Start"
+                            HorizontalOptions="End"       
+                            Grid.Row="2"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            Grid.Column="1"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame Margin="10,3,10,0"
+                       Padding="0">
+                        <Grid Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="15"/>
+                                <RowDefinition Height="20"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Text="Tracking: 89749687496874"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           Grid.Row="0"
+                           Grid.ColumnSpan="2"/>
+
+                            <Label Text="Correlativo: 874787"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource TertiaryTextColor}"
+                            FontSize="12"
+                            Grid.Row="1"
+                            Grid.Column="0"/>
+
+                            <Label Text="Estado: En proceso"
+                            VerticalOptions="Start"
+                            HorizontalOptions="End"       
+                            Grid.Row="2"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            Grid.Column="1"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame Margin="10,3,10,0"
+                       Padding="0">
+                        <Grid Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="15"/>
+                                <RowDefinition Height="20"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Text="Tracking: 89749687496874"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           Grid.Row="0"
+                           Grid.ColumnSpan="2"/>
+
+                            <Label Text="Correlativo: 874787"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource TertiaryTextColor}"
+                            FontSize="12"
+                            Grid.Row="1"
+                            Grid.Column="0"/>
+
+                            <Label Text="Estado: En proceso"
+                            VerticalOptions="Start"
+                            HorizontalOptions="End"       
+                            Grid.Row="2"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            Grid.Column="1"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame Margin="10,3,10,0"
+                       Padding="0">
+                        <Grid Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="15"/>
+                                <RowDefinition Height="20"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Text="Tracking: 89749687496874"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           Grid.Row="0"
+                           Grid.ColumnSpan="2"/>
+
+                            <Label Text="Correlativo: 874787"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource TertiaryTextColor}"
+                            FontSize="12"
+                            Grid.Row="1"
+                            Grid.Column="0"/>
+
+                            <Label Text="Estado: En proceso"
+                            VerticalOptions="Start"
+                            HorizontalOptions="End"       
+                            Grid.Row="2"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            Grid.Column="1"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame Margin="10,3,10,0"
+                       Padding="0">
+                        <Grid Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="15"/>
+                                <RowDefinition Height="20"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Text="Tracking: 89749687496874"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           Grid.Row="0"
+                           Grid.ColumnSpan="2"/>
+
+                            <Label Text="Correlativo: 874787"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource TertiaryTextColor}"
+                            FontSize="12"
+                            Grid.Row="1"
+                            Grid.Column="0"/>
+
+                            <Label Text="Estado: En proceso"
+                            VerticalOptions="Start"
+                            HorizontalOptions="End"       
+                            Grid.Row="2"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            Grid.Column="1"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame Margin="10,3,10,0"
+                       Padding="0">
+                        <Grid Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="15"/>
+                                <RowDefinition Height="20"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Text="Tracking: 89749687496874"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           Grid.Row="0"
+                           Grid.ColumnSpan="2"/>
+
+                            <Label Text="Correlativo: 874787"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource TertiaryTextColor}"
+                            FontSize="12"
+                            Grid.Row="1"
+                            Grid.Column="0"/>
+
+                            <Label Text="Estado: En proceso"
+                            VerticalOptions="Start"
+                            HorizontalOptions="End"       
+                            Grid.Row="2"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            Grid.Column="1"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame Margin="10,3,10,0"
+                       Padding="0">
+                        <Grid Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="15"/>
+                                <RowDefinition Height="20"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Text="Tracking: 89749687496874"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           Grid.Row="0"
+                           Grid.ColumnSpan="2"/>
+
+                            <Label Text="Correlativo: 874787"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource TertiaryTextColor}"
+                            FontSize="12"
+                            Grid.Row="1"
+                            Grid.Column="0"/>
+
+                            <Label Text="Estado: En proceso"
+                            VerticalOptions="Start"
+                            HorizontalOptions="End"       
+                            Grid.Row="2"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            Grid.Column="1"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame Margin="10,3,10,0"
+                       Padding="0">
+                        <Grid Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="15"/>
+                                <RowDefinition Height="20"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Text="Tracking: 89749687496874"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           Grid.Row="0"
+                           Grid.ColumnSpan="2"/>
+
+                            <Label Text="Correlativo: 874787"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource TertiaryTextColor}"
+                            FontSize="12"
+                            Grid.Row="1"
+                            Grid.Column="0"/>
+
+                            <Label Text="Estado: En proceso"
+                            VerticalOptions="Start"
+                            HorizontalOptions="End"       
+                            Grid.Row="2"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            Grid.Column="1"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame Margin="10,3,10,0"
+                       Padding="0">
+                        <Grid Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="15"/>
+                                <RowDefinition Height="20"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Text="Tracking: 89749687496874"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           Grid.Row="0"
+                           Grid.ColumnSpan="2"/>
+
+                            <Label Text="Correlativo: 874787"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource TertiaryTextColor}"
+                            FontSize="12"
+                            Grid.Row="1"
+                            Grid.Column="0"/>
+
+                            <Label Text="Estado: En proceso"
+                            VerticalOptions="Start"
+                            HorizontalOptions="End"       
+                            Grid.Row="2"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            Grid.Column="1"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame Margin="10,3,10,0"
+                       Padding="0">
+                        <Grid Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="15"/>
+                                <RowDefinition Height="20"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Text="Tracking: 89749687496874"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           Grid.Row="0"
+                           Grid.ColumnSpan="2"/>
+
+                            <Label Text="Correlativo: 874787"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource TertiaryTextColor}"
+                            FontSize="12"
+                            Grid.Row="1"
+                            Grid.Column="0"/>
+
+                            <Label Text="Estado: En proceso"
+                            VerticalOptions="Start"
+                            HorizontalOptions="End"       
+                            Grid.Row="2"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            Grid.Column="1"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+                <!--#endregion-->
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

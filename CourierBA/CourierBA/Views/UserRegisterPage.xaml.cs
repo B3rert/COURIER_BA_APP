@@ -107,5 +107,10 @@ namespace CourierBA.Views
 
 
         }
+
+        private void btnActualizar_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

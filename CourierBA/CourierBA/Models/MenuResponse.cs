@@ -19,5 +19,6 @@ namespace CourierBA.Models
         public int Orden { get; set; }
         public string Display_URL { get; set; }
         public string Display_Menu { get; set; }
+        public string Display_URL_Alter { get; set; }
     }
 }

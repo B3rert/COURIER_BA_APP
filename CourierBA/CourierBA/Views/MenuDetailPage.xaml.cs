@@ -23,16 +23,12 @@ namespace CourierBA.Views
             home();
         }
 
-      public void NavigateToPage(Page page)
-        {
-            Detail = new NavigationPage(new Page());
-            IsPresented = false;
-
-        }
 
         private void home()
         {
-            Detail = new NavigationPage(new GuiaReferenciaPage(_empresa, _user));
+            Detail = new NavigationPage(new ListTrackingUserPage());
+           // Detail = new NavigationPage(new GuiaReferenciaPage(_empresa, _user));
+            //Detail = new NavigationPage(new TrackingListPage());
         }
 
         private async void btnLogout_Clicked(object sender, EventArgs e)
@@ -48,6 +44,7 @@ namespace CourierBA.Views
         {
             base.OnAppearing();
             VM._user = _user;
+            VM._empresa = _empresa;
             VM.LoadData();
         }
     }

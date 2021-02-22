@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             x:Class="CourierBA.Views.DocumentoCourierPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20">
+                <Frame Padding="20,5">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="30"/>
+                        </Grid.ColumnDefinitions>
+                        <ImageButton HeightRequest="16"
+                                         x:Name="btnBuscarCodigo"
+                                         Source="buscar_icon.png"
+                                         BackgroundColor="Transparent"
+                                         HorizontalOptions="Start"
+                                         VerticalOptions="Center"/>
+
+                        <autocomplete:SfAutoComplete
+                                x:Name="txtCodigo"
+                                Grid.Column="1"
+                                HorizontalOptions="FillAndExpand"
+                                ShowBorder="False"
+                                VerticalOptions="Center"
+                                Watermark="Id Tracking">
+                        </autocomplete:SfAutoComplete>
+
+                        <ImageButton Grid.Column="2"
+                                         HorizontalOptions="End"
+                                        VerticalOptions="Center"
+                                        WidthRequest="25"
+                                        x:Name="btnEscanearCodigo"
+                                        Source="code_bar_icon.png"
+                                        BackgroundColor="Transparent"/>
+                    </Grid>
+                </Frame>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30*"/>
+                        <ColumnDefinition Width="75*"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <StackLayout Grid.Row="0"
+                                     Grid.Column="0">
+                        <Label Text="Estante" 
+                                   Style="{DynamicResource SmallLabelStyle}"
+                                   Margin="0,15,0,0"/>
+                    </StackLayout>
+
+                    <StackLayout   Grid.Row="0"
+                                    Grid.Column="1">
+                        <Entry 
+                                
+                            x:Name="txtObservacion"
+                                 HorizontalTextAlignment="Center"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="End"
+                            ClearButtonVisibility="WhileEditing"/>
+                    </StackLayout>
+
+                    <StackLayout  Grid.Row="1"
+                                      Grid.Column="0">
+                        <Label Text="Peso" 
+                                   Style="{DynamicResource SmallLabelStyle}"
+                                   Margin="0,15,0,0"/>
+                    </StackLayout>
+
+                    <StackLayout  Grid.Row="1"
+                                      Grid.Column="1">
+                        <Entry
+                                x:Name="txtPieza"
+                                HorizontalTextAlignment="Center"
+                                ClearButtonVisibility="WhileEditing"
+                                Text="1"
+                                Keyboard="Numeric"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="End"/>
+                    </StackLayout>
+                    <!--|
+
+                    <StackLayout  Grid.Row="2"
+                                      Grid.Column="0">
+                        <Label Text="Valor(Monto)" 
+                                   Style="{DynamicResource SmallLabelStyle}"
+                                   Margin="0,15,0,0"/>
+                    </StackLayout>
+
+                    <StackLayout  Grid.Row="2"
+                                      Grid.Column="1">
+
+                        <Entry Text="1" 
+                                x:Name="txtMonto"
+                                HorizontalTextAlignment="Center"
+                                Keyboard="Numeric"
+                                ClearButtonVisibility="WhileEditing"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="End"/>
+                    </StackLayout>
+
+                    <StackLayout  Grid.Row="3"
+                                    Grid.Column="0">
+                        <Label Text="Moneda" 
+                                   Style="{DynamicResource SmallLabelStyle}"
+                                   Margin="0,15,0,0"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="3"
+                                     Grid.Column="1" >
+                        <Picker HorizontalOptions="FillAndExpand"
+                                     HorizontalTextAlignment="Center"
+                                     VerticalOptions="End"
+                                     x:Name="pickMoneda"
+                                     ItemDisplayBinding="{Binding Nombre}"
+                                     SelectedIndexChanged="pickMoneda_SelectedIndexChanged"/>
+                    </StackLayout>
+-->
+
+
+                </Grid>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -3,6 +3,7 @@ using CourierBA.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -53,11 +54,34 @@ namespace CourierBA.Views
             }
 
             UserDialogs.Instance.ShowLoading(title: "Restaurando contraseña");
-            await Task.Delay(3000);
-            await DisplayAlert("", "La nueva contraseña ha sido enviada al correo electrónico.", "Aceptar");
-            await Navigation.PopToRootAsync();
+
+
+
+            HttpClient client = new HttpClient();
+            client.BaseAddress = Global.GlobalVariables.Servidor;
+            string url = string.Format($"/api/PA_Recuperar_User?" +
+                $"Correo={txtCorreo.Text}"); //URL API
+            var response = await client.GetAsync(url);
+            var result = response.Content.ReadAsStringAsync().Result;
+
+
             UserDialogs.Instance.HideLoading();
 
+            if (result == "1")
+            {
+                await DisplayAlert("Contraseña restaurada", "Se ha enviado un correo con la informacion del usuario proporcionado.", "Aceptar");
+                await Navigation.PopToRootAsync();
+            }
+            else if (result == "0")
+            {
+                await DisplayAlert("", "Este usuario no se encuentra registrado.", "Aceptar");
+
+            }
+            else
+            {
+                await DisplayAlert("", "Erro de servidor", "Aceptar");
+
+            }
         }
     }
 }

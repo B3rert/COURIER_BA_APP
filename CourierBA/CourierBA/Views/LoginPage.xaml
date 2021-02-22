@@ -68,8 +68,8 @@
                          TextColor="{DynamicResource SecondaryColor}"
                         Clicked="RegisterBtn_Clicked"/>
                 <Image Source="logo_demosoft.png"
-                           WidthRequest="140"
-                           HeightRequest="105"/>
+                           WidthRequest="90"
+                           HeightRequest="65"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

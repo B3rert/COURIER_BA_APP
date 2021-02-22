@@ -225,10 +225,20 @@
                                            FontSize="13"
                                                Text="Tracking:"/>
 
-                                            <!-- <Label Text="{Binding Descripcion}"/>-->
-                                            <Label Text="{Binding .}"
-                                           VerticalOptions="CenterAndExpand"
+
+                                            <Label Text="{Binding Descripcion}"
+                                                    VerticalOptions="CenterAndExpand"
                                            FontSize="12"/>
+                                            <!-- <Label Text="{Binding .}"
+                                            VerticalOptions="CenterAndExpand"
+                                           FontSize="12"/>-->
+
+                                            <!--
+                                            <ImageButton Source="eliminar_bote_icon.png"
+                                                         BackgroundColor="Transparent"
+                                                         Clicked="ImageButton_Clicked"  
+                                                         HorizontalOptions="EndAndExpand"/>
+-->
                                         </StackLayout>
                                     </ViewCell>
                                 </DataTemplate>

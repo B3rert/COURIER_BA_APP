@@ -628,6 +628,7 @@ C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.And
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Debug\90\res\drawable\camara_blue_icon.png
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Debug\90\res\drawable\code_bar_icon.png
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Debug\90\res\drawable\cerrar_icon.png
+C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Debug\90\res\drawable\eliminar_bote_icon.png
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Debug\90\R.txt
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Debug\90\uploadflags.txt
 C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Debug\90\resolvedassemblies.hash

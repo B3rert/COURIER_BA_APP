@@ -17,6 +17,8 @@ using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+//DocumentoCourierPage
+
 namespace CourierBA.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -27,6 +29,7 @@ namespace CourierBA.Views
         public GuiaReferenciaViewModel ViewModel { get; set; }
         private List<Tracking> trackings;
         private List<string> listasT = new List<string>();
+        private List<Tracking> listasTObject = new List<Tracking>();
         private List<string> listaByte = new List<string>();
         private List<PA_bsc_Moneda_2Model> monedaModels;
         private List<PA_tbl_ReferenciaGuiaModel> referenciaGuiaModels;
@@ -360,7 +363,7 @@ namespace CourierBA.Views
                     }
 
                 }
-                catch (Exception ee)
+                catch (Exception)
                 {
                     await DisplayAlert("Error", "No se ha podido conectar con el servidor", "Aceptar");
                     return;
@@ -425,9 +428,80 @@ namespace CourierBA.Views
 
                         foreach (var item in trackings)
                         {
-                            trackingsList = item.Descripcion;
+                           // trackingsList = item.Descripcion;
 
+                            var detalles = new Tracking()
+                            {
+                                Referencia = item.Referencia,
+                                Empresa = item.Empresa,
+                                Descripcion = item.Descripcion,
+                                Referencia_Id = item.Referencia_Id,
+                                Raiz = item.Raiz,
+                                Nivel = item.Nivel,
+                                Referencia_Padre = item.Referencia_Padre,
+                                Observacion = item.Observacion,
+                                Pais = item.Pais,
+                                Fecha_Hora = item.Fecha_Hora,
+                                UserName = item.UserName,
+                                Fecha_Ini = item.Fecha_Ini,
+                                Fecha_Fin = item.Fecha_Fin,
+                                Tipo_Referencia = item.Tipo_Referencia,
+                                M_Fecha_Hora = item.M_Fecha_Hora,
+                                M_UserName = item.M_UserName,
+                                Estado = item.Estado,
+                                Fecha_Evento = item.Fecha_Evento,
+                                Importacion = item.Importacion,
+                                Cuenta_Correntista = item.Cuenta_Correntista,
+                                Monto_1 = item.Monto_1,
+                                Monto_2 = item.Monto_2,
+                                Caja_Chica = item.Caja_Chica,
+                                Cargo = item.Cargo,
+                                Abono = item.Abono,
+                                Nom_Pais = item.Nom_Pais,
+                                Nom_Cuenta_Correntista = item.Nom_Cuenta_Correntista,
+                                HAWB_HBL = item.HAWB_HBL,
+                                Suplidor = item.Suplidor,
+                                Consignatario = item.Consignatario,
+                                Peso = item.Peso,
+                                Volumen = item.Volumen,
+                                Contenedor = item.Contenedor,
+                                Pieza = item.Pieza,
+                                Tipo_Pieza = item.Tipo_Pieza,
+                                Contenido = item.Contenido,
+                                MAWB = item.MAWB,
+                                Pais_Destino = item.Pais_Destino,
+                                Cuenta_Correntista_Origen = item.Cuenta_Correntista_Origen,
+                                Id_Documento_Origen = item.Id_Documento_Origen,
+                                Recepcion_Nombre = item.Recepcion_Nombre,
+                                Recepcion_Id = item.Recepcion_Id,
+                                Tipo_Pago = item.Tipo_Pago,
+                                Cantidad = item.Cantidad,
+                                Producto = item.Producto,
+                                Unidad_Medida = item.Unidad_Medida,
+                                Observacion_2 = item.Observacion_2,
+                                Observacion_3 = item.Observacion_3,
+                                TEU = item.TEU,
+                                Elemento_Asignado = item.Elemento_Asignado,
+                                Banco = item.Banco,
+                                Monto_Cuota = item.Monto_Cuota,
+                                Monto_Financiar = item.Monto_Financiar,
+                                Monto_Enganche = item.Monto_Enganche,
+                                Id_Cuenta = item.Id_Cuenta,
+                                Actividad = item.Actividad,
+                                Categoria = item.Categoria,
+                                SubCategoria = item.SubCategoria,
+                                Ref_Serie = item.Ref_Serie,
+                                Hotel_Estado = item.Hotel_Estado,
+                                Permitir_CxC = item.Permitir_CxC,
+                                Orden = item.Orden,
+                                Moneda = item.Moneda,
+                                Cuenta_Cta = item.Cuenta_Cta,
+                                Bodega_Ubicacion = item.Bodega_Ubicacion,
+                                Opc_Detalle = item.Opc_Detalle,
+                                Referencia_Id_1 = item.Referencia_Id_1,
+                            };
 
+                            listasTObject.Add(detalles);
                             //  listaTrackings.Add(detailes);
                         }
 
@@ -477,9 +551,80 @@ namespace CourierBA.Views
 
                     foreach (var item in trackings)
                     {
-                        trackingsList = item.Descripcion;
+                        // trackingsList = item.Descripcion;
 
+                        var detalles = new Tracking()
+                        {
+                            Referencia = item.Referencia,
+                            Empresa = item.Empresa,
+                            Descripcion = item.Descripcion,
+                            Referencia_Id = item.Referencia_Id,
+                            Raiz = item.Raiz,
+                            Nivel = item.Nivel,
+                            Referencia_Padre = item.Referencia_Padre,
+                            Observacion = item.Observacion,
+                            Pais = item.Pais,
+                            Fecha_Hora = item.Fecha_Hora,
+                            UserName = item.UserName,
+                            Fecha_Ini = item.Fecha_Ini,
+                            Fecha_Fin = item.Fecha_Fin,
+                            Tipo_Referencia = item.Tipo_Referencia,
+                            M_Fecha_Hora = item.M_Fecha_Hora,
+                            M_UserName = item.M_UserName,
+                            Estado = item.Estado,
+                            Fecha_Evento = item.Fecha_Evento,
+                            Importacion = item.Importacion,
+                            Cuenta_Correntista = item.Cuenta_Correntista,
+                            Monto_1 = item.Monto_1,
+                            Monto_2 = item.Monto_2,
+                            Caja_Chica = item.Caja_Chica,
+                            Cargo = item.Cargo,
+                            Abono = item.Abono,
+                            Nom_Pais = item.Nom_Pais,
+                            Nom_Cuenta_Correntista = item.Nom_Cuenta_Correntista,
+                            HAWB_HBL = item.HAWB_HBL,
+                            Suplidor = item.Suplidor,
+                            Consignatario = item.Consignatario,
+                            Peso = item.Peso,
+                            Volumen = item.Volumen,
+                            Contenedor = item.Contenedor,
+                            Pieza = item.Pieza,
+                            Tipo_Pieza = item.Tipo_Pieza,
+                            Contenido = item.Contenido,
+                            MAWB = item.MAWB,
+                            Pais_Destino = item.Pais_Destino,
+                            Cuenta_Correntista_Origen = item.Cuenta_Correntista_Origen,
+                            Id_Documento_Origen = item.Id_Documento_Origen,
+                            Recepcion_Nombre = item.Recepcion_Nombre,
+                            Recepcion_Id = item.Recepcion_Id,
+                            Tipo_Pago = item.Tipo_Pago,
+                            Cantidad = item.Cantidad,
+                            Producto = item.Producto,
+                            Unidad_Medida = item.Unidad_Medida,
+                            Observacion_2 = item.Observacion_2,
+                            Observacion_3 = item.Observacion_3,
+                            TEU = item.TEU,
+                            Elemento_Asignado = item.Elemento_Asignado,
+                            Banco = item.Banco,
+                            Monto_Cuota = item.Monto_Cuota,
+                            Monto_Financiar = item.Monto_Financiar,
+                            Monto_Enganche = item.Monto_Enganche,
+                            Id_Cuenta = item.Id_Cuenta,
+                            Actividad = item.Actividad,
+                            Categoria = item.Categoria,
+                            SubCategoria = item.SubCategoria,
+                            Ref_Serie = item.Ref_Serie,
+                            Hotel_Estado = item.Hotel_Estado,
+                            Permitir_CxC = item.Permitir_CxC,
+                            Orden = item.Orden,
+                            Moneda = item.Moneda,
+                            Cuenta_Cta = item.Cuenta_Cta,
+                            Bodega_Ubicacion = item.Bodega_Ubicacion,
+                            Opc_Detalle = item.Opc_Detalle,
+                            Referencia_Id_1 = item.Referencia_Id_1,
+                        };
 
+                        listasTObject.Add(detalles);
                         //  listaTrackings.Add(detailes);
                     }
 
@@ -496,10 +641,9 @@ namespace CourierBA.Views
                
             }
 
-            listasT.Add(trackingsList);
+            //listasT.Add(trackingsList);
             //await DisplayAlert("", trackingsList, "Ok");
-            collectionTracking.ItemsSource = null;
-            collectionTracking.ItemsSource = listasT;
+           
 
 
             int count = 0;
@@ -574,6 +718,8 @@ namespace CourierBA.Views
 
                             UserDialogs.Instance.HideLoading();
                             await DisplayAlert("", "Tracking creado", "Aceptar");
+                            collectionTracking.ItemsSource = null;
+                            collectionTracking.ItemsSource = listasTObject;
 
                         }
                         catch
@@ -605,8 +751,238 @@ namespace CourierBA.Views
 
         private async void collectionTracking_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            var tracking = e.Item;
-            await Navigation.PushAsync(new TrackingStatusPage(tracking.ToString()));
+            var tracking = e.Item as Tracking;
+
+            bool answer = await DisplayAlert("", "¿Qué deseas hacer?", "Ver estado", "Eliminar");
+
+            if (answer) 
+            {
+                await Navigation.PushAsync(new TrackingStatusPage(tracking.Descripcion.ToString()));
+
+            }
+            else
+            {
+                bool _answer = await DisplayAlert("Eliminar Tracking", "¿Estás seguro?", "ACEPTAR", "CANCELAR");
+
+                if (_answer)
+                {
+                    UserDialogs.Instance.ShowLoading(title: "Eliminando Tracking...");
+
+
+                    HttpClient client = new HttpClient();
+                    client.BaseAddress = Global.GlobalVariables.Servidor;
+                    string url = string.Format($"/api/AnularReferencia?" +
+                        $"user={_NameUSer}" +
+                        $"&descripcion={tracking.Descripcion}" +
+                        $"&idReferencia={tracking.Referencia_Id}" +
+                        $"&referencia={tracking.Referencia}"); //URL API
+                    var response = await client.GetAsync(url);
+                    var result = response.Content.ReadAsStringAsync().Result;
+
+
+                   
+
+                    if (result == "1")
+                    {
+                        await DisplayAlert("", "Se ha eliminado el tracking", "Aceptar");
+
+                        var listasclone = new List<Tracking>();
+
+
+
+                        foreach (var item in listasTObject)
+                        {
+                            // trackingsList = item.Descripcion;
+
+                            var detalles = new Tracking()
+                            {
+                                Referencia = item.Referencia,
+                                Empresa = item.Empresa,
+                                Descripcion = item.Descripcion,
+                                Referencia_Id = item.Referencia_Id,
+                                Raiz = item.Raiz,
+                                Nivel = item.Nivel,
+                                Referencia_Padre = item.Referencia_Padre,
+                                Observacion = item.Observacion,
+                                Pais = item.Pais,
+                                Fecha_Hora = item.Fecha_Hora,
+                                UserName = item.UserName,
+                                Fecha_Ini = item.Fecha_Ini,
+                                Fecha_Fin = item.Fecha_Fin,
+                                Tipo_Referencia = item.Tipo_Referencia,
+                                M_Fecha_Hora = item.M_Fecha_Hora,
+                                M_UserName = item.M_UserName,
+                                Estado = item.Estado,
+                                Fecha_Evento = item.Fecha_Evento,
+                                Importacion = item.Importacion,
+                                Cuenta_Correntista = item.Cuenta_Correntista,
+                                Monto_1 = item.Monto_1,
+                                Monto_2 = item.Monto_2,
+                                Caja_Chica = item.Caja_Chica,
+                                Cargo = item.Cargo,
+                                Abono = item.Abono,
+                                Nom_Pais = item.Nom_Pais,
+                                Nom_Cuenta_Correntista = item.Nom_Cuenta_Correntista,
+                                HAWB_HBL = item.HAWB_HBL,
+                                Suplidor = item.Suplidor,
+                                Consignatario = item.Consignatario,
+                                Peso = item.Peso,
+                                Volumen = item.Volumen,
+                                Contenedor = item.Contenedor,
+                                Pieza = item.Pieza,
+                                Tipo_Pieza = item.Tipo_Pieza,
+                                Contenido = item.Contenido,
+                                MAWB = item.MAWB,
+                                Pais_Destino = item.Pais_Destino,
+                                Cuenta_Correntista_Origen = item.Cuenta_Correntista_Origen,
+                                Id_Documento_Origen = item.Id_Documento_Origen,
+                                Recepcion_Nombre = item.Recepcion_Nombre,
+                                Recepcion_Id = item.Recepcion_Id,
+                                Tipo_Pago = item.Tipo_Pago,
+                                Cantidad = item.Cantidad,
+                                Producto = item.Producto,
+                                Unidad_Medida = item.Unidad_Medida,
+                                Observacion_2 = item.Observacion_2,
+                                Observacion_3 = item.Observacion_3,
+                                TEU = item.TEU,
+                                Elemento_Asignado = item.Elemento_Asignado,
+                                Banco = item.Banco,
+                                Monto_Cuota = item.Monto_Cuota,
+                                Monto_Financiar = item.Monto_Financiar,
+                                Monto_Enganche = item.Monto_Enganche,
+                                Id_Cuenta = item.Id_Cuenta,
+                                Actividad = item.Actividad,
+                                Categoria = item.Categoria,
+                                SubCategoria = item.SubCategoria,
+                                Ref_Serie = item.Ref_Serie,
+                                Hotel_Estado = item.Hotel_Estado,
+                                Permitir_CxC = item.Permitir_CxC,
+                                Orden = item.Orden,
+                                Moneda = item.Moneda,
+                                Cuenta_Cta = item.Cuenta_Cta,
+                                Bodega_Ubicacion = item.Bodega_Ubicacion,
+                                Opc_Detalle = item.Opc_Detalle,
+                                Referencia_Id_1 = item.Referencia_Id_1,
+                            };
+
+                            listasclone.Add(detalles);
+                            //  listaTrackings.Add(detailes);
+                        }
+
+                        listasTObject.Clear();
+
+                        foreach (var item in listasclone)
+                        {
+                            if (item.Descripcion == tracking.Descripcion)
+                            {
+                                continue;
+                            }
+                            else
+                            {
+                                var detalles = new Tracking()
+                                {
+                                    Referencia = item.Referencia,
+                                    Empresa = item.Empresa,
+                                    Descripcion = item.Descripcion,
+                                    Referencia_Id = item.Referencia_Id,
+                                    Raiz = item.Raiz,
+                                    Nivel = item.Nivel,
+                                    Referencia_Padre = item.Referencia_Padre,
+                                    Observacion = item.Observacion,
+                                    Pais = item.Pais,
+                                    Fecha_Hora = item.Fecha_Hora,
+                                    UserName = item.UserName,
+                                    Fecha_Ini = item.Fecha_Ini,
+                                    Fecha_Fin = item.Fecha_Fin,
+                                    Tipo_Referencia = item.Tipo_Referencia,
+                                    M_Fecha_Hora = item.M_Fecha_Hora,
+                                    M_UserName = item.M_UserName,
+                                    Estado = item.Estado,
+                                    Fecha_Evento = item.Fecha_Evento,
+                                    Importacion = item.Importacion,
+                                    Cuenta_Correntista = item.Cuenta_Correntista,
+                                    Monto_1 = item.Monto_1,
+                                    Monto_2 = item.Monto_2,
+                                    Caja_Chica = item.Caja_Chica,
+                                    Cargo = item.Cargo,
+                                    Abono = item.Abono,
+                                    Nom_Pais = item.Nom_Pais,
+                                    Nom_Cuenta_Correntista = item.Nom_Cuenta_Correntista,
+                                    HAWB_HBL = item.HAWB_HBL,
+                                    Suplidor = item.Suplidor,
+                                    Consignatario = item.Consignatario,
+                                    Peso = item.Peso,
+                                    Volumen = item.Volumen,
+                                    Contenedor = item.Contenedor,
+                                    Pieza = item.Pieza,
+                                    Tipo_Pieza = item.Tipo_Pieza,
+                                    Contenido = item.Contenido,
+                                    MAWB = item.MAWB,
+                                    Pais_Destino = item.Pais_Destino,
+                                    Cuenta_Correntista_Origen = item.Cuenta_Correntista_Origen,
+                                    Id_Documento_Origen = item.Id_Documento_Origen,
+                                    Recepcion_Nombre = item.Recepcion_Nombre,
+                                    Recepcion_Id = item.Recepcion_Id,
+                                    Tipo_Pago = item.Tipo_Pago,
+                                    Cantidad = item.Cantidad,
+                                    Producto = item.Producto,
+                                    Unidad_Medida = item.Unidad_Medida,
+                                    Observacion_2 = item.Observacion_2,
+                                    Observacion_3 = item.Observacion_3,
+                                    TEU = item.TEU,
+                                    Elemento_Asignado = item.Elemento_Asignado,
+                                    Banco = item.Banco,
+                                    Monto_Cuota = item.Monto_Cuota,
+                                    Monto_Financiar = item.Monto_Financiar,
+                                    Monto_Enganche = item.Monto_Enganche,
+                                    Id_Cuenta = item.Id_Cuenta,
+                                    Actividad = item.Actividad,
+                                    Categoria = item.Categoria,
+                                    SubCategoria = item.SubCategoria,
+                                    Ref_Serie = item.Ref_Serie,
+                                    Hotel_Estado = item.Hotel_Estado,
+                                    Permitir_CxC = item.Permitir_CxC,
+                                    Orden = item.Orden,
+                                    Moneda = item.Moneda,
+                                    Cuenta_Cta = item.Cuenta_Cta,
+                                    Bodega_Ubicacion = item.Bodega_Ubicacion,
+                                    Opc_Detalle = item.Opc_Detalle,
+                                    Referencia_Id_1 = item.Referencia_Id_1,
+                                };
+
+                                listasTObject.Add(detalles);
+                            }
+
+                            
+                        }
+
+
+
+                        collectionTracking.ItemsSource = null;
+                        collectionTracking.ItemsSource = listasTObject;
+                        UserDialogs.Instance.HideLoading();
+
+
+                    }
+                    else if (result == "0")
+                    {
+                        await DisplayAlert("", "No se ha podido eliminado el tracking", "Aceptar");
+
+                    }
+                    else
+                    {
+                        await DisplayAlert("", "Ha ocurrido un error", "Aceptar");
+
+                    }
+
+
+
+                   
+                }
+
+
+
+        }
 
         }
     }
