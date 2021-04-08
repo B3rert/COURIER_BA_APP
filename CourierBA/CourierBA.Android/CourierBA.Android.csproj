@@ -69,10 +69,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Acr.UserDialogs">
-      <Version>7.1.0.470</Version>
+      <Version>7.1.0.483</Version>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json">
-      <Version>12.0.3</Version>
+      <Version>13.0.1</Version>
     </PackageReference>
     <PackageReference Include="Plugin.CurrentActivity">
       <Version>2.1.0.4</Version>
@@ -84,13 +84,13 @@
       <Version>1.7.335</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfAutoComplete">
-      <Version>18.4.0.33</Version>
+      <Version>18.4.0.49</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfProgressBar">
-      <Version>18.4.0.34</Version>
+      <Version>18.4.0.49</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfTreeView">
-      <Version>18.4.0.32</Version>
+      <Version>18.4.0.49</Version>
     </PackageReference>
     <PackageReference Include="Xam.Plugin.Media">
       <Version>5.0.1</Version>

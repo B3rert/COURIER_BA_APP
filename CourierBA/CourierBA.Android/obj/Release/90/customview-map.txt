@@ -104,6 +104,7 @@ RelativeLayout;C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierB
 RelativeLayout;C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Release\90\lp\1\jl\res\layout\loadingimage.xml
 RelativeLayout;C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Release\90\lp\1\jl\res\layout\loadingprogress.xml
 RelativeLayout;C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\CourierBA_app\CourierBA\CourierBA.Android\obj\Release\90\lp\49\jl\res\layout\sfautocomplete_layout.xml
+RelativeLayout;C:\Users\dsdev\OneDrive\Escritorio\currie\CourierBA\CourierBA.Android\obj\Release\90\lp\49\jl\res\layout\sfautocomplete_layout.xml
 resources;C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.Android\obj\Release\90\lp\1\jl\res\values\attrs.xml
 resources;C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.Android\obj\Release\90\lp\1\jl\res\values\strings.xml
 resources;C:\Users\Andres\Desktop\DEMOSOFT\Proyectos\_CourierBA_app\CourierBA\CourierBA\CourierBA.Android\obj\Release\90\lp\41\jl\res\values\attrs.xml

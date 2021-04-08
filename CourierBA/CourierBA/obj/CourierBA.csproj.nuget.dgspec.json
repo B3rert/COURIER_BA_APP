@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andres\\Desktop\\DEMOSOFT\\Proyectos\\CourierBA_app\\CourierBA\\CourierBA\\CourierBA.csproj": {}
+    "C:\\Users\\dsdev\\OneDrive\\Escritorio\\currie\\CourierBA\\CourierBA\\CourierBA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andres\\Desktop\\DEMOSOFT\\Proyectos\\CourierBA_app\\CourierBA\\CourierBA\\CourierBA.csproj": {
+    "C:\\Users\\dsdev\\OneDrive\\Escritorio\\currie\\CourierBA\\CourierBA\\CourierBA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andres\\Desktop\\DEMOSOFT\\Proyectos\\CourierBA_app\\CourierBA\\CourierBA\\CourierBA.csproj",
+        "projectUniqueName": "C:\\Users\\dsdev\\OneDrive\\Escritorio\\currie\\CourierBA\\CourierBA\\CourierBA.csproj",
         "projectName": "CourierBA",
-        "projectPath": "C:\\Users\\Andres\\Desktop\\DEMOSOFT\\Proyectos\\CourierBA_app\\CourierBA\\CourierBA\\CourierBA.csproj",
-        "packagesPath": "C:\\Users\\Andres\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andres\\Desktop\\DEMOSOFT\\Proyectos\\CourierBA_app\\CourierBA\\CourierBA\\obj\\",
+        "projectPath": "C:\\Users\\dsdev\\OneDrive\\Escritorio\\currie\\CourierBA\\CourierBA\\CourierBA.csproj",
+        "packagesPath": "C:\\Users\\dsdev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dsdev\\OneDrive\\Escritorio\\currie\\CourierBA\\CourierBA\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Andres\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dsdev\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -46,7 +46,7 @@
           "dependencies": {
             "Acr.UserDialogs": {
               "target": "Package",
-              "version": "[7.1.0.470, )"
+              "version": "[7.1.0.483, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -56,7 +56,7 @@
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[12.0.3, )"
+              "version": "[13.0.1, )"
             },
             "Prism.DryIoc.Forms": {
               "target": "Package",
@@ -68,15 +68,15 @@
             },
             "Syncfusion.Xamarin.SfAutoComplete": {
               "target": "Package",
-              "version": "[18.4.0.33, )"
+              "version": "[18.4.0.49, )"
             },
             "Syncfusion.Xamarin.SfProgressBar": {
               "target": "Package",
-              "version": "[18.4.0.34, )"
+              "version": "[18.4.0.49, )"
             },
             "Syncfusion.Xamarin.SfTreeView": {
               "target": "Package",
-              "version": "[18.4.0.32, )"
+              "version": "[18.4.0.49, )"
             },
             "Xam.Plugin.Media": {
               "target": "Package",
@@ -113,7 +113,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "UAP,Version=v10.0.16299": {
-      "Acr.UserDialogs/7.1.0.470": {
+      "Acr.UserDialogs/7.1.0.483": {
         "type": "package",
         "dependencies": {
           "Coding4Fun.Toolkit.Controls": "2.1.8"
@@ -274,7 +274,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/12.0.3": {
+      "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -541,7 +541,7 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/18.4.0.34": {
+      "Syncfusion.Licensing/18.4.0.49": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -550,11 +550,11 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.SfInput.UWP/18.4.0.33": {
+      "Syncfusion.SfInput.UWP/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.33",
-          "Syncfusion.SfShared.UWP": "18.4.0.33"
+          "Syncfusion.Licensing": "18.4.0.49",
+          "Syncfusion.SfShared.UWP": "18.4.0.49"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
@@ -563,10 +563,10 @@
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
         }
       },
-      "Syncfusion.SfShared.UWP/18.4.0.33": {
+      "Syncfusion.SfShared.UWP/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.33"
+          "Syncfusion.Licensing": "18.4.0.49"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
@@ -575,10 +575,10 @@
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/18.4.0.34": {
+      "Syncfusion.Xamarin.Core/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.34",
+          "Syncfusion.Licensing": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -590,7 +590,7 @@
           "lib/uap10.0/Syncfusion.Core.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.GridCommon/18.4.0.32": {
+      "Syncfusion.Xamarin.GridCommon/18.4.0.49": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.GridCommon.Portable.dll": {}
@@ -599,11 +599,11 @@
           "lib/uap10.0/Syncfusion.GridCommon.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfAutoComplete/18.4.0.33": {
+      "Syncfusion.Xamarin.SfAutoComplete/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.SfInput.UWP": "18.4.0.33",
-          "Syncfusion.Xamarin.Core": "18.4.0.33",
+          "Syncfusion.SfInput.UWP": "18.4.0.49",
+          "Syncfusion.Xamarin.Core": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -615,10 +615,10 @@
           "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfProgressBar/18.4.0.34": {
+      "Syncfusion.Xamarin.SfProgressBar/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.4.0.34",
+          "Syncfusion.Xamarin.Core": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -630,11 +630,11 @@
           "lib/uap10.0/Syncfusion.SfProgressBar.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfTreeView/18.4.0.32": {
+      "Syncfusion.Xamarin.SfTreeView/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.4.0.32",
-          "Syncfusion.Xamarin.GridCommon": "18.4.0.32",
+          "Syncfusion.Xamarin.Core": "18.4.0.49",
+          "Syncfusion.Xamarin.GridCommon": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -891,13 +891,13 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Acr.UserDialogs": "7.1.0.470",
-          "Newtonsoft.Json": "12.0.3",
+          "Acr.UserDialogs": "7.1.0.483",
+          "Newtonsoft.Json": "13.0.1",
           "Prism.DryIoc.Forms": "8.0.0.1909",
           "RestSharp": "106.11.7",
-          "Syncfusion.Xamarin.SfAutoComplete": "18.4.0.33",
-          "Syncfusion.Xamarin.SfProgressBar": "18.4.0.34",
-          "Syncfusion.Xamarin.SfTreeView": "18.4.0.32",
+          "Syncfusion.Xamarin.SfAutoComplete": "18.4.0.49",
+          "Syncfusion.Xamarin.SfProgressBar": "18.4.0.49",
+          "Syncfusion.Xamarin.SfTreeView": "18.4.0.49",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.0",
           "Xamarin.Essentials.Interfaces": "1.6.0",
@@ -914,7 +914,7 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-arm": {
-      "Acr.UserDialogs/7.1.0.470": {
+      "Acr.UserDialogs/7.1.0.483": {
         "type": "package",
         "dependencies": {
           "Coding4Fun.Toolkit.Controls": "2.1.8"
@@ -1187,7 +1187,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/12.0.3": {
+      "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -1635,7 +1635,7 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/18.4.0.34": {
+      "Syncfusion.Licensing/18.4.0.49": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -1644,11 +1644,11 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.SfInput.UWP/18.4.0.33": {
+      "Syncfusion.SfInput.UWP/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.33",
-          "Syncfusion.SfShared.UWP": "18.4.0.33"
+          "Syncfusion.Licensing": "18.4.0.49",
+          "Syncfusion.SfShared.UWP": "18.4.0.49"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
@@ -1657,10 +1657,10 @@
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
         }
       },
-      "Syncfusion.SfShared.UWP/18.4.0.33": {
+      "Syncfusion.SfShared.UWP/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.33"
+          "Syncfusion.Licensing": "18.4.0.49"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
@@ -1669,10 +1669,10 @@
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/18.4.0.34": {
+      "Syncfusion.Xamarin.Core/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.34",
+          "Syncfusion.Licensing": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1684,7 +1684,7 @@
           "lib/uap10.0/Syncfusion.Core.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.GridCommon/18.4.0.32": {
+      "Syncfusion.Xamarin.GridCommon/18.4.0.49": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.GridCommon.Portable.dll": {}
@@ -1693,11 +1693,11 @@
           "lib/uap10.0/Syncfusion.GridCommon.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfAutoComplete/18.4.0.33": {
+      "Syncfusion.Xamarin.SfAutoComplete/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.SfInput.UWP": "18.4.0.33",
-          "Syncfusion.Xamarin.Core": "18.4.0.33",
+          "Syncfusion.SfInput.UWP": "18.4.0.49",
+          "Syncfusion.Xamarin.Core": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1709,10 +1709,10 @@
           "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfProgressBar/18.4.0.34": {
+      "Syncfusion.Xamarin.SfProgressBar/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.4.0.34",
+          "Syncfusion.Xamarin.Core": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1724,11 +1724,11 @@
           "lib/uap10.0/Syncfusion.SfProgressBar.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfTreeView/18.4.0.32": {
+      "Syncfusion.Xamarin.SfTreeView/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.4.0.32",
-          "Syncfusion.Xamarin.GridCommon": "18.4.0.32",
+          "Syncfusion.Xamarin.Core": "18.4.0.49",
+          "Syncfusion.Xamarin.GridCommon": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1979,13 +1979,13 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Acr.UserDialogs": "7.1.0.470",
-          "Newtonsoft.Json": "12.0.3",
+          "Acr.UserDialogs": "7.1.0.483",
+          "Newtonsoft.Json": "13.0.1",
           "Prism.DryIoc.Forms": "8.0.0.1909",
           "RestSharp": "106.11.7",
-          "Syncfusion.Xamarin.SfAutoComplete": "18.4.0.33",
-          "Syncfusion.Xamarin.SfProgressBar": "18.4.0.34",
-          "Syncfusion.Xamarin.SfTreeView": "18.4.0.32",
+          "Syncfusion.Xamarin.SfAutoComplete": "18.4.0.49",
+          "Syncfusion.Xamarin.SfProgressBar": "18.4.0.49",
+          "Syncfusion.Xamarin.SfTreeView": "18.4.0.49",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.0",
           "Xamarin.Essentials.Interfaces": "1.6.0",
@@ -2002,7 +2002,7 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-arm-aot": {
-      "Acr.UserDialogs/7.1.0.470": {
+      "Acr.UserDialogs/7.1.0.483": {
         "type": "package",
         "dependencies": {
           "Coding4Fun.Toolkit.Controls": "2.1.8"
@@ -2275,7 +2275,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/12.0.3": {
+      "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -2754,7 +2754,7 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/18.4.0.34": {
+      "Syncfusion.Licensing/18.4.0.49": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -2763,11 +2763,11 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.SfInput.UWP/18.4.0.33": {
+      "Syncfusion.SfInput.UWP/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.33",
-          "Syncfusion.SfShared.UWP": "18.4.0.33"
+          "Syncfusion.Licensing": "18.4.0.49",
+          "Syncfusion.SfShared.UWP": "18.4.0.49"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
@@ -2776,10 +2776,10 @@
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
         }
       },
-      "Syncfusion.SfShared.UWP/18.4.0.33": {
+      "Syncfusion.SfShared.UWP/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.33"
+          "Syncfusion.Licensing": "18.4.0.49"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
@@ -2788,10 +2788,10 @@
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/18.4.0.34": {
+      "Syncfusion.Xamarin.Core/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.34",
+          "Syncfusion.Licensing": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -2803,7 +2803,7 @@
           "lib/uap10.0/Syncfusion.Core.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.GridCommon/18.4.0.32": {
+      "Syncfusion.Xamarin.GridCommon/18.4.0.49": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.GridCommon.Portable.dll": {}
@@ -2812,11 +2812,11 @@
           "lib/uap10.0/Syncfusion.GridCommon.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfAutoComplete/18.4.0.33": {
+      "Syncfusion.Xamarin.SfAutoComplete/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.SfInput.UWP": "18.4.0.33",
-          "Syncfusion.Xamarin.Core": "18.4.0.33",
+          "Syncfusion.SfInput.UWP": "18.4.0.49",
+          "Syncfusion.Xamarin.Core": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -2828,10 +2828,10 @@
           "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfProgressBar/18.4.0.34": {
+      "Syncfusion.Xamarin.SfProgressBar/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.4.0.34",
+          "Syncfusion.Xamarin.Core": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -2843,11 +2843,11 @@
           "lib/uap10.0/Syncfusion.SfProgressBar.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfTreeView/18.4.0.32": {
+      "Syncfusion.Xamarin.SfTreeView/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.4.0.32",
-          "Syncfusion.Xamarin.GridCommon": "18.4.0.32",
+          "Syncfusion.Xamarin.Core": "18.4.0.49",
+          "Syncfusion.Xamarin.GridCommon": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -3142,13 +3142,13 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Acr.UserDialogs": "7.1.0.470",
-          "Newtonsoft.Json": "12.0.3",
+          "Acr.UserDialogs": "7.1.0.483",
+          "Newtonsoft.Json": "13.0.1",
           "Prism.DryIoc.Forms": "8.0.0.1909",
           "RestSharp": "106.11.7",
-          "Syncfusion.Xamarin.SfAutoComplete": "18.4.0.33",
-          "Syncfusion.Xamarin.SfProgressBar": "18.4.0.34",
-          "Syncfusion.Xamarin.SfTreeView": "18.4.0.32",
+          "Syncfusion.Xamarin.SfAutoComplete": "18.4.0.49",
+          "Syncfusion.Xamarin.SfProgressBar": "18.4.0.49",
+          "Syncfusion.Xamarin.SfTreeView": "18.4.0.49",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.0",
           "Xamarin.Essentials.Interfaces": "1.6.0",
@@ -3165,7 +3165,7 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-arm64-aot": {
-      "Acr.UserDialogs/7.1.0.470": {
+      "Acr.UserDialogs/7.1.0.483": {
         "type": "package",
         "dependencies": {
           "Coding4Fun.Toolkit.Controls": "2.1.8"
@@ -3438,7 +3438,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/12.0.3": {
+      "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -3917,7 +3917,7 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/18.4.0.34": {
+      "Syncfusion.Licensing/18.4.0.49": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -3926,11 +3926,11 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.SfInput.UWP/18.4.0.33": {
+      "Syncfusion.SfInput.UWP/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.33",
-          "Syncfusion.SfShared.UWP": "18.4.0.33"
+          "Syncfusion.Licensing": "18.4.0.49",
+          "Syncfusion.SfShared.UWP": "18.4.0.49"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
@@ -3939,10 +3939,10 @@
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
         }
       },
-      "Syncfusion.SfShared.UWP/18.4.0.33": {
+      "Syncfusion.SfShared.UWP/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.33"
+          "Syncfusion.Licensing": "18.4.0.49"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
@@ -3951,10 +3951,10 @@
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/18.4.0.34": {
+      "Syncfusion.Xamarin.Core/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.34",
+          "Syncfusion.Licensing": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -3966,7 +3966,7 @@
           "lib/uap10.0/Syncfusion.Core.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.GridCommon/18.4.0.32": {
+      "Syncfusion.Xamarin.GridCommon/18.4.0.49": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.GridCommon.Portable.dll": {}
@@ -3975,11 +3975,11 @@
           "lib/uap10.0/Syncfusion.GridCommon.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfAutoComplete/18.4.0.33": {
+      "Syncfusion.Xamarin.SfAutoComplete/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.SfInput.UWP": "18.4.0.33",
-          "Syncfusion.Xamarin.Core": "18.4.0.33",
+          "Syncfusion.SfInput.UWP": "18.4.0.49",
+          "Syncfusion.Xamarin.Core": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -3991,10 +3991,10 @@
           "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfProgressBar/18.4.0.34": {
+      "Syncfusion.Xamarin.SfProgressBar/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.4.0.34",
+          "Syncfusion.Xamarin.Core": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -4006,11 +4006,11 @@
           "lib/uap10.0/Syncfusion.SfProgressBar.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfTreeView/18.4.0.32": {
+      "Syncfusion.Xamarin.SfTreeView/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.4.0.32",
-          "Syncfusion.Xamarin.GridCommon": "18.4.0.32",
+          "Syncfusion.Xamarin.Core": "18.4.0.49",
+          "Syncfusion.Xamarin.GridCommon": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -4302,13 +4302,13 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Acr.UserDialogs": "7.1.0.470",
-          "Newtonsoft.Json": "12.0.3",
+          "Acr.UserDialogs": "7.1.0.483",
+          "Newtonsoft.Json": "13.0.1",
           "Prism.DryIoc.Forms": "8.0.0.1909",
           "RestSharp": "106.11.7",
-          "Syncfusion.Xamarin.SfAutoComplete": "18.4.0.33",
-          "Syncfusion.Xamarin.SfProgressBar": "18.4.0.34",
-          "Syncfusion.Xamarin.SfTreeView": "18.4.0.32",
+          "Syncfusion.Xamarin.SfAutoComplete": "18.4.0.49",
+          "Syncfusion.Xamarin.SfProgressBar": "18.4.0.49",
+          "Syncfusion.Xamarin.SfTreeView": "18.4.0.49",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.0",
           "Xamarin.Essentials.Interfaces": "1.6.0",
@@ -4325,7 +4325,7 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x64": {
-      "Acr.UserDialogs/7.1.0.470": {
+      "Acr.UserDialogs/7.1.0.483": {
         "type": "package",
         "dependencies": {
           "Coding4Fun.Toolkit.Controls": "2.1.8"
@@ -4598,7 +4598,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/12.0.3": {
+      "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -5046,7 +5046,7 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/18.4.0.34": {
+      "Syncfusion.Licensing/18.4.0.49": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -5055,11 +5055,11 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.SfInput.UWP/18.4.0.33": {
+      "Syncfusion.SfInput.UWP/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.33",
-          "Syncfusion.SfShared.UWP": "18.4.0.33"
+          "Syncfusion.Licensing": "18.4.0.49",
+          "Syncfusion.SfShared.UWP": "18.4.0.49"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
@@ -5068,10 +5068,10 @@
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
         }
       },
-      "Syncfusion.SfShared.UWP/18.4.0.33": {
+      "Syncfusion.SfShared.UWP/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.33"
+          "Syncfusion.Licensing": "18.4.0.49"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
@@ -5080,10 +5080,10 @@
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/18.4.0.34": {
+      "Syncfusion.Xamarin.Core/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.34",
+          "Syncfusion.Licensing": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -5095,7 +5095,7 @@
           "lib/uap10.0/Syncfusion.Core.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.GridCommon/18.4.0.32": {
+      "Syncfusion.Xamarin.GridCommon/18.4.0.49": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.GridCommon.Portable.dll": {}
@@ -5104,11 +5104,11 @@
           "lib/uap10.0/Syncfusion.GridCommon.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfAutoComplete/18.4.0.33": {
+      "Syncfusion.Xamarin.SfAutoComplete/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.SfInput.UWP": "18.4.0.33",
-          "Syncfusion.Xamarin.Core": "18.4.0.33",
+          "Syncfusion.SfInput.UWP": "18.4.0.49",
+          "Syncfusion.Xamarin.Core": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -5120,10 +5120,10 @@
           "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfProgressBar/18.4.0.34": {
+      "Syncfusion.Xamarin.SfProgressBar/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.4.0.34",
+          "Syncfusion.Xamarin.Core": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -5135,11 +5135,11 @@
           "lib/uap10.0/Syncfusion.SfProgressBar.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfTreeView/18.4.0.32": {
+      "Syncfusion.Xamarin.SfTreeView/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.4.0.32",
-          "Syncfusion.Xamarin.GridCommon": "18.4.0.32",
+          "Syncfusion.Xamarin.Core": "18.4.0.49",
+          "Syncfusion.Xamarin.GridCommon": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -5390,13 +5390,13 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Acr.UserDialogs": "7.1.0.470",
-          "Newtonsoft.Json": "12.0.3",
+          "Acr.UserDialogs": "7.1.0.483",
+          "Newtonsoft.Json": "13.0.1",
           "Prism.DryIoc.Forms": "8.0.0.1909",
           "RestSharp": "106.11.7",
-          "Syncfusion.Xamarin.SfAutoComplete": "18.4.0.33",
-          "Syncfusion.Xamarin.SfProgressBar": "18.4.0.34",
-          "Syncfusion.Xamarin.SfTreeView": "18.4.0.32",
+          "Syncfusion.Xamarin.SfAutoComplete": "18.4.0.49",
+          "Syncfusion.Xamarin.SfProgressBar": "18.4.0.49",
+          "Syncfusion.Xamarin.SfTreeView": "18.4.0.49",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.0",
           "Xamarin.Essentials.Interfaces": "1.6.0",
@@ -5413,7 +5413,7 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x64-aot": {
-      "Acr.UserDialogs/7.1.0.470": {
+      "Acr.UserDialogs/7.1.0.483": {
         "type": "package",
         "dependencies": {
           "Coding4Fun.Toolkit.Controls": "2.1.8"
@@ -5686,7 +5686,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/12.0.3": {
+      "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -6165,7 +6165,7 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/18.4.0.34": {
+      "Syncfusion.Licensing/18.4.0.49": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -6174,11 +6174,11 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.SfInput.UWP/18.4.0.33": {
+      "Syncfusion.SfInput.UWP/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.33",
-          "Syncfusion.SfShared.UWP": "18.4.0.33"
+          "Syncfusion.Licensing": "18.4.0.49",
+          "Syncfusion.SfShared.UWP": "18.4.0.49"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
@@ -6187,10 +6187,10 @@
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
         }
       },
-      "Syncfusion.SfShared.UWP/18.4.0.33": {
+      "Syncfusion.SfShared.UWP/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.33"
+          "Syncfusion.Licensing": "18.4.0.49"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
@@ -6199,10 +6199,10 @@
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/18.4.0.34": {
+      "Syncfusion.Xamarin.Core/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.34",
+          "Syncfusion.Licensing": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -6214,7 +6214,7 @@
           "lib/uap10.0/Syncfusion.Core.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.GridCommon/18.4.0.32": {
+      "Syncfusion.Xamarin.GridCommon/18.4.0.49": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.GridCommon.Portable.dll": {}
@@ -6223,11 +6223,11 @@
           "lib/uap10.0/Syncfusion.GridCommon.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfAutoComplete/18.4.0.33": {
+      "Syncfusion.Xamarin.SfAutoComplete/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.SfInput.UWP": "18.4.0.33",
-          "Syncfusion.Xamarin.Core": "18.4.0.33",
+          "Syncfusion.SfInput.UWP": "18.4.0.49",
+          "Syncfusion.Xamarin.Core": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -6239,10 +6239,10 @@
           "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfProgressBar/18.4.0.34": {
+      "Syncfusion.Xamarin.SfProgressBar/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.4.0.34",
+          "Syncfusion.Xamarin.Core": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -6254,11 +6254,11 @@
           "lib/uap10.0/Syncfusion.SfProgressBar.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfTreeView/18.4.0.32": {
+      "Syncfusion.Xamarin.SfTreeView/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.4.0.32",
-          "Syncfusion.Xamarin.GridCommon": "18.4.0.32",
+          "Syncfusion.Xamarin.Core": "18.4.0.49",
+          "Syncfusion.Xamarin.GridCommon": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -6553,13 +6553,13 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Acr.UserDialogs": "7.1.0.470",
-          "Newtonsoft.Json": "12.0.3",
+          "Acr.UserDialogs": "7.1.0.483",
+          "Newtonsoft.Json": "13.0.1",
           "Prism.DryIoc.Forms": "8.0.0.1909",
           "RestSharp": "106.11.7",
-          "Syncfusion.Xamarin.SfAutoComplete": "18.4.0.33",
-          "Syncfusion.Xamarin.SfProgressBar": "18.4.0.34",
-          "Syncfusion.Xamarin.SfTreeView": "18.4.0.32",
+          "Syncfusion.Xamarin.SfAutoComplete": "18.4.0.49",
+          "Syncfusion.Xamarin.SfProgressBar": "18.4.0.49",
+          "Syncfusion.Xamarin.SfTreeView": "18.4.0.49",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.0",
           "Xamarin.Essentials.Interfaces": "1.6.0",
@@ -6576,7 +6576,7 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x86": {
-      "Acr.UserDialogs/7.1.0.470": {
+      "Acr.UserDialogs/7.1.0.483": {
         "type": "package",
         "dependencies": {
           "Coding4Fun.Toolkit.Controls": "2.1.8"
@@ -6849,7 +6849,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/12.0.3": {
+      "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -7297,7 +7297,7 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/18.4.0.34": {
+      "Syncfusion.Licensing/18.4.0.49": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -7306,11 +7306,11 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.SfInput.UWP/18.4.0.33": {
+      "Syncfusion.SfInput.UWP/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.33",
-          "Syncfusion.SfShared.UWP": "18.4.0.33"
+          "Syncfusion.Licensing": "18.4.0.49",
+          "Syncfusion.SfShared.UWP": "18.4.0.49"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
@@ -7319,10 +7319,10 @@
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
         }
       },
-      "Syncfusion.SfShared.UWP/18.4.0.33": {
+      "Syncfusion.SfShared.UWP/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.33"
+          "Syncfusion.Licensing": "18.4.0.49"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
@@ -7331,10 +7331,10 @@
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/18.4.0.34": {
+      "Syncfusion.Xamarin.Core/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.34",
+          "Syncfusion.Licensing": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -7346,7 +7346,7 @@
           "lib/uap10.0/Syncfusion.Core.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.GridCommon/18.4.0.32": {
+      "Syncfusion.Xamarin.GridCommon/18.4.0.49": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.GridCommon.Portable.dll": {}
@@ -7355,11 +7355,11 @@
           "lib/uap10.0/Syncfusion.GridCommon.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfAutoComplete/18.4.0.33": {
+      "Syncfusion.Xamarin.SfAutoComplete/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.SfInput.UWP": "18.4.0.33",
-          "Syncfusion.Xamarin.Core": "18.4.0.33",
+          "Syncfusion.SfInput.UWP": "18.4.0.49",
+          "Syncfusion.Xamarin.Core": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -7371,10 +7371,10 @@
           "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfProgressBar/18.4.0.34": {
+      "Syncfusion.Xamarin.SfProgressBar/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.4.0.34",
+          "Syncfusion.Xamarin.Core": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -7386,11 +7386,11 @@
           "lib/uap10.0/Syncfusion.SfProgressBar.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfTreeView/18.4.0.32": {
+      "Syncfusion.Xamarin.SfTreeView/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.4.0.32",
-          "Syncfusion.Xamarin.GridCommon": "18.4.0.32",
+          "Syncfusion.Xamarin.Core": "18.4.0.49",
+          "Syncfusion.Xamarin.GridCommon": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -7641,13 +7641,13 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Acr.UserDialogs": "7.1.0.470",
-          "Newtonsoft.Json": "12.0.3",
+          "Acr.UserDialogs": "7.1.0.483",
+          "Newtonsoft.Json": "13.0.1",
           "Prism.DryIoc.Forms": "8.0.0.1909",
           "RestSharp": "106.11.7",
-          "Syncfusion.Xamarin.SfAutoComplete": "18.4.0.33",
-          "Syncfusion.Xamarin.SfProgressBar": "18.4.0.34",
-          "Syncfusion.Xamarin.SfTreeView": "18.4.0.32",
+          "Syncfusion.Xamarin.SfAutoComplete": "18.4.0.49",
+          "Syncfusion.Xamarin.SfProgressBar": "18.4.0.49",
+          "Syncfusion.Xamarin.SfTreeView": "18.4.0.49",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.0",
           "Xamarin.Essentials.Interfaces": "1.6.0",
@@ -7664,7 +7664,7 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x86-aot": {
-      "Acr.UserDialogs/7.1.0.470": {
+      "Acr.UserDialogs/7.1.0.483": {
         "type": "package",
         "dependencies": {
           "Coding4Fun.Toolkit.Controls": "2.1.8"
@@ -7937,7 +7937,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/12.0.3": {
+      "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -8416,7 +8416,7 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/18.4.0.34": {
+      "Syncfusion.Licensing/18.4.0.49": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -8425,11 +8425,11 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.SfInput.UWP/18.4.0.33": {
+      "Syncfusion.SfInput.UWP/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.33",
-          "Syncfusion.SfShared.UWP": "18.4.0.33"
+          "Syncfusion.Licensing": "18.4.0.49",
+          "Syncfusion.SfShared.UWP": "18.4.0.49"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
@@ -8438,10 +8438,10 @@
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {}
         }
       },
-      "Syncfusion.SfShared.UWP/18.4.0.33": {
+      "Syncfusion.SfShared.UWP/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.33"
+          "Syncfusion.Licensing": "18.4.0.49"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
@@ -8450,10 +8450,10 @@
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/18.4.0.34": {
+      "Syncfusion.Xamarin.Core/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.34",
+          "Syncfusion.Licensing": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -8465,7 +8465,7 @@
           "lib/uap10.0/Syncfusion.Core.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.GridCommon/18.4.0.32": {
+      "Syncfusion.Xamarin.GridCommon/18.4.0.49": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.GridCommon.Portable.dll": {}
@@ -8474,11 +8474,11 @@
           "lib/uap10.0/Syncfusion.GridCommon.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfAutoComplete/18.4.0.33": {
+      "Syncfusion.Xamarin.SfAutoComplete/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.SfInput.UWP": "18.4.0.33",
-          "Syncfusion.Xamarin.Core": "18.4.0.33",
+          "Syncfusion.SfInput.UWP": "18.4.0.49",
+          "Syncfusion.Xamarin.Core": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -8490,10 +8490,10 @@
           "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfProgressBar/18.4.0.34": {
+      "Syncfusion.Xamarin.SfProgressBar/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.4.0.34",
+          "Syncfusion.Xamarin.Core": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -8505,11 +8505,11 @@
           "lib/uap10.0/Syncfusion.SfProgressBar.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfTreeView/18.4.0.32": {
+      "Syncfusion.Xamarin.SfTreeView/18.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.4.0.32",
-          "Syncfusion.Xamarin.GridCommon": "18.4.0.32",
+          "Syncfusion.Xamarin.Core": "18.4.0.49",
+          "Syncfusion.Xamarin.GridCommon": "18.4.0.49",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -8804,13 +8804,13 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Acr.UserDialogs": "7.1.0.470",
-          "Newtonsoft.Json": "12.0.3",
+          "Acr.UserDialogs": "7.1.0.483",
+          "Newtonsoft.Json": "13.0.1",
           "Prism.DryIoc.Forms": "8.0.0.1909",
           "RestSharp": "106.11.7",
-          "Syncfusion.Xamarin.SfAutoComplete": "18.4.0.33",
-          "Syncfusion.Xamarin.SfProgressBar": "18.4.0.34",
-          "Syncfusion.Xamarin.SfTreeView": "18.4.0.32",
+          "Syncfusion.Xamarin.SfAutoComplete": "18.4.0.49",
+          "Syncfusion.Xamarin.SfProgressBar": "18.4.0.49",
+          "Syncfusion.Xamarin.SfTreeView": "18.4.0.49",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.0",
           "Xamarin.Essentials.Interfaces": "1.6.0",
@@ -8828,14 +8828,14 @@
     }
   },
   "libraries": {
-    "Acr.UserDialogs/7.1.0.470": {
-      "sha512": "SJUfml6uyBScadNtyVvGy8YKbzb6p5uMLqPJNmWtTgVqAD2fFYr9Z94m1QNEE8PHKN+36u3tcfnxYegAxw5KBA==",
+    "Acr.UserDialogs/7.1.0.483": {
+      "sha512": "Uoo7ZcrHl9SN3M05A5/e3qwUcR7lFhgsSI+7HaVSPnIQcectHNrERJbLoV8HLjDJc+0/3t3tfinxDHu/e2fiMw==",
       "type": "package",
-      "path": "acr.userdialogs/7.1.0.470",
+      "path": "acr.userdialogs/7.1.0.483",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "acr.userdialogs.7.1.0.470.nupkg.sha512",
+        "acr.userdialogs.7.1.0.483.nupkg.sha512",
         "acr.userdialogs.nuspec",
         "lib/monoandroid10.0/Acr.UserDialogs.dll",
         "lib/monoandroid10.0/Acr.UserDialogs.pdb",
@@ -9009,7 +9009,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/2.1.0": {
-      "sha512": "GmkKfoyerqmsHMn7OZj0AKpcBabD+GaafqphvX2Mw406IwiJRy1pKcKqdCfKJfYmkRyJ6+e+RaUylgdJoDa1jQ==",
+      "sha512": "ok+RPAtESz/9MUXeIEz6Lv5XAGQsaNmEYXMsgVALj4D7kqC8gveKWXWXbufLySR2fWrwZf8smyN5RmHu0e4BHA==",
       "type": "package",
       "path": "microsoft.netcore.platforms/2.1.0",
       "files": [
@@ -9491,10 +9491,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/12.0.3": {
-      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
       "type": "package",
-      "path": "newtonsoft.json/12.0.3",
+      "path": "newtonsoft.json/13.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -9513,11 +9513,7 @@
         "lib/netstandard1.3/Newtonsoft.Json.xml",
         "lib/netstandard2.0/Newtonsoft.Json.dll",
         "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
@@ -13917,10 +13913,10 @@
         "sqlitepclraw.provider.e_sqlite3.nuspec"
       ]
     },
-    "Syncfusion.Licensing/18.4.0.34": {
-      "sha512": "a8BuTU3KGTAMs2h0j3TCTazYLh9tWLfiFH0BWOmtqnJSwIJu1hR9yhNtblT9/4QgWFFTzyJ/yp4udWVtj/QL+g==",
+    "Syncfusion.Licensing/18.4.0.49": {
+      "sha512": "jyCApzsanhPcReiYKVTnS89D4Js4GhBN5coEuP/a2hhpYnMg3RdpyBUCA84pCl/04LN1O0ttGdRHxmcX5AIWYA==",
       "type": "package",
-      "path": "syncfusion.licensing/18.4.0.34",
+      "path": "syncfusion.licensing/18.4.0.49",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -13942,14 +13938,14 @@
         "lib/netstandard2.0/Syncfusion.Licensing.dll",
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
         "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.18.4.0.34.nupkg.sha512",
+        "syncfusion.licensing.18.4.0.49.nupkg.sha512",
         "syncfusion.licensing.nuspec"
       ]
     },
-    "Syncfusion.SfInput.UWP/18.4.0.33": {
-      "sha512": "kZouHLdbfadtXQDdZbsCki0raw1upwWSNhwwqN6GNLRWWLxP85DzmdVZS8c5XuPHuXNVERwplBtASKhNG9w+fg==",
+    "Syncfusion.SfInput.UWP/18.4.0.49": {
+      "sha512": "823mA967JW6jXZAQbQBC6Z4IxcpnmAuwuXidvH7qbY434m/Y0txHzEtOufhCkMfmtbvHKl671juvsiKYE5eNcg==",
       "type": "package",
-      "path": "syncfusion.sfinput.uwp/18.4.0.33",
+      "path": "syncfusion.sfinput.uwp/18.4.0.49",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -13969,15 +13965,15 @@
         "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/InputStyles.xbf",
         "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/generic.xaml",
         "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/generic.xbf",
-        "syncfusion.sfinput.uwp.18.4.0.33.nupkg.sha512",
+        "syncfusion.sfinput.uwp.18.4.0.49.nupkg.sha512",
         "syncfusion.sfinput.uwp.nuspec",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "Syncfusion.SfShared.UWP/18.4.0.33": {
-      "sha512": "M8k614/Qckl+YJZCT92qeuJAXUb01wNcKwakxi0Fs8PPA6kTAUVwAbzcuTk2lYG75qtvUn8TGHHcTxoaXBryjg==",
+    "Syncfusion.SfShared.UWP/18.4.0.49": {
+      "sha512": "lHbtxq3uWXrBOlbFPpXGLk6buBttvL4mEtB/292kk/DKmVYOQHa0CFvZguAqdtvidUc3JTz7WJ92PYrMhLT4XA==",
       "type": "package",
-      "path": "syncfusion.sfshared.uwp/18.4.0.33",
+      "path": "syncfusion.sfshared.uwp/18.4.0.49",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -13989,14 +13985,14 @@
         "lib/uap10.0/Syncfusion.SfShared.UWP/Syncfusion.SfShared.UWP.xr.xml",
         "lib/uap10.0/Syncfusion.SfShared.UWP/Themes/generic.xaml",
         "lib/uap10.0/Syncfusion.SfShared.UWP/Themes/generic.xbf",
-        "syncfusion.sfshared.uwp.18.4.0.33.nupkg.sha512",
+        "syncfusion.sfshared.uwp.18.4.0.49.nupkg.sha512",
         "syncfusion.sfshared.uwp.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.Core/18.4.0.34": {
-      "sha512": "m28tcQ2MiFnGOFrwEHxkCey48CC4ZrZN/hMfsFAdPSeS1ynloouSJUhjqbrL9mjbObl+hU7fqWD+oq9x2M7bSA==",
+    "Syncfusion.Xamarin.Core/18.4.0.49": {
+      "sha512": "+34zcXH2SR12gccy3RfBHgZfeyOBC2ic93E5ZnOnvvBoA0JRZZfkD8mBznb3Ex/mbVquaLS+7dHJ0T+VrXpcjQ==",
       "type": "package",
-      "path": "syncfusion.xamarin.core/18.4.0.34",
+      "path": "syncfusion.xamarin.core/18.4.0.49",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -14024,14 +14020,14 @@
         "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleVisibleIcon.xaml",
         "lib/uap10.0/Syncfusion.Core.XForms.dll",
         "lib/uap10.0/Syncfusion.Core.XForms.xml",
-        "syncfusion.xamarin.core.18.4.0.34.nupkg.sha512",
+        "syncfusion.xamarin.core.18.4.0.49.nupkg.sha512",
         "syncfusion.xamarin.core.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.GridCommon/18.4.0.32": {
-      "sha512": "Kxrk4SW+Mh6cGYEFgFOD8x/glF/f5TCXv3beg17V8euU04FqNjUqMS0VwqI9jRYX2QMuvprJ+MXy/ttlTKAAmw==",
+    "Syncfusion.Xamarin.GridCommon/18.4.0.49": {
+      "sha512": "dZ4a/VVCeUgs19tE6Glvr5uFnz9bB3ZX5UEo4o82CzfxZkj/X9f4pIKrkWBp0m9E7I0Uhx9AOxZdpxHS6D5V5A==",
       "type": "package",
-      "path": "syncfusion.xamarin.gridcommon/18.4.0.32",
+      "path": "syncfusion.xamarin.gridcommon/18.4.0.49",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -14049,14 +14045,14 @@
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.GridCommon.Portable.dll",
         "lib/uap10.0/Syncfusion.GridCommon.Portable.XML",
         "lib/uap10.0/Syncfusion.GridCommon.Portable.dll",
-        "syncfusion.xamarin.gridcommon.18.4.0.32.nupkg.sha512",
+        "syncfusion.xamarin.gridcommon.18.4.0.49.nupkg.sha512",
         "syncfusion.xamarin.gridcommon.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfAutoComplete/18.4.0.33": {
-      "sha512": "Zzjsdi2FOcJTNOKNPO4djs3irK5ZSeOypBiP8p1/QWGYimwSPJOx5hisIWnI33HAT+rKBfKPpXTnDduoDHS25Q==",
+    "Syncfusion.Xamarin.SfAutoComplete/18.4.0.49": {
+      "sha512": "dUomIipqCP4NpRVSTMg/H8CdmXgGIwuw8WqdfPWT/XGUK2W0IDEtoEfDc8kPoxSfD+Rm0Icog1kMHEiul8mwjA==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfautocomplete/18.4.0.33",
+      "path": "syncfusion.xamarin.sfautocomplete/18.4.0.49",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -14077,14 +14073,14 @@
         "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.UWP.dll",
         "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.XML",
         "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.dll",
-        "syncfusion.xamarin.sfautocomplete.18.4.0.33.nupkg.sha512",
+        "syncfusion.xamarin.sfautocomplete.18.4.0.49.nupkg.sha512",
         "syncfusion.xamarin.sfautocomplete.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfProgressBar/18.4.0.34": {
-      "sha512": "dM4aQDhwbOXQVqyA6W1WCvHGNXyF/reowdaOxGkvC/YTFlPks+u3MWSejU/ayqeTYMUEOgA+IOKWktBXaUPn+Q==",
+    "Syncfusion.Xamarin.SfProgressBar/18.4.0.49": {
+      "sha512": "SldBNYsiqs0RYKtxe4j6fkgfB1UUVcrhU4CHdIUmKihw1oNHfv7OVPgsErLYrf+Pm6cqzZXIAXSYbm7Np71+oQ==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfprogressbar/18.4.0.34",
+      "path": "syncfusion.xamarin.sfprogressbar/18.4.0.49",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -14107,14 +14103,14 @@
         "lib/uap10.0/Syncfusion.SfProgressBar.XForms.UWP/Font Stepprogress icon.ttf",
         "lib/uap10.0/Syncfusion.SfProgressBar.XForms.dll",
         "lib/uap10.0/Syncfusion.SfProgressBar.XForms.xml",
-        "syncfusion.xamarin.sfprogressbar.18.4.0.34.nupkg.sha512",
+        "syncfusion.xamarin.sfprogressbar.18.4.0.49.nupkg.sha512",
         "syncfusion.xamarin.sfprogressbar.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfTreeView/18.4.0.32": {
-      "sha512": "Q3VTDX5nvDibfbCfhBUXAH+lqVeK3+7KLOlIlj1+3StRQ96rUE6ZkvQN8235JddtzDhvJgJpThW4r+E2WPUM4w==",
+    "Syncfusion.Xamarin.SfTreeView/18.4.0.49": {
+      "sha512": "YI0nlil3gR7Cz4O0yjJtx5bnP/tFNT5y2ZW3LtGU0JND0BVuZGZBMavvyOF+wE8zCcqCTAi0jJ24126l5CXV6Q==",
       "type": "package",
-      "path": "syncfusion.xamarin.sftreeview/18.4.0.32",
+      "path": "syncfusion.xamarin.sftreeview/18.4.0.49",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -14142,7 +14138,7 @@
         "lib/uap10.0/Syncfusion.SfTreeView.XForms.UWP/Themes/Generic.xbf",
         "lib/uap10.0/Syncfusion.SfTreeView.XForms.dll",
         "lib/uap10.0/Syncfusion.SfTreeView.XForms.xml",
-        "syncfusion.xamarin.sftreeview.18.4.0.32.nupkg.sha512",
+        "syncfusion.xamarin.sftreeview.18.4.0.49.nupkg.sha512",
         "syncfusion.xamarin.sftreeview.nuspec"
       ]
     },
@@ -15422,14 +15418,14 @@
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.16299": [
-      "Acr.UserDialogs >= 7.1.0.470",
+      "Acr.UserDialogs >= 7.1.0.483",
       "CourierBA >= 1.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.11",
-      "Newtonsoft.Json >= 12.0.3",
+      "Newtonsoft.Json >= 13.0.1",
       "Prism.DryIoc.Forms >= 8.0.0.1909",
-      "Syncfusion.Xamarin.SfAutoComplete >= 18.4.0.33",
-      "Syncfusion.Xamarin.SfProgressBar >= 18.4.0.34",
-      "Syncfusion.Xamarin.SfTreeView >= 18.4.0.32",
+      "Syncfusion.Xamarin.SfAutoComplete >= 18.4.0.49",
+      "Syncfusion.Xamarin.SfProgressBar >= 18.4.0.49",
+      "Syncfusion.Xamarin.SfTreeView >= 18.4.0.49",
       "Xam.Plugin.Media >= 5.0.1",
       "Xamarin.Essentials >= 1.6.0",
       "Xamarin.Essentials.Interfaces >= 1.6.0",
@@ -15439,18 +15435,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Andres\\.nuget\\packages\\": {},
+    "C:\\Users\\dsdev\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andres\\Desktop\\DEMOSOFT\\Proyectos\\CourierBA_app\\CourierBA\\CourierBA.UWP\\CourierBA.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\dsdev\\OneDrive\\Escritorio\\currie\\CourierBA\\CourierBA.UWP\\CourierBA.UWP.csproj",
       "projectName": "CourierBA.UWP",
-      "projectPath": "C:\\Users\\Andres\\Desktop\\DEMOSOFT\\Proyectos\\CourierBA_app\\CourierBA\\CourierBA.UWP\\CourierBA.UWP.csproj",
-      "packagesPath": "C:\\Users\\Andres\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andres\\Desktop\\DEMOSOFT\\Proyectos\\CourierBA_app\\CourierBA\\CourierBA.UWP\\obj\\",
+      "projectPath": "C:\\Users\\dsdev\\OneDrive\\Escritorio\\currie\\CourierBA\\CourierBA.UWP\\CourierBA.UWP.csproj",
+      "packagesPath": "C:\\Users\\dsdev\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dsdev\\OneDrive\\Escritorio\\currie\\CourierBA\\CourierBA.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -15458,7 +15454,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Andres\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dsdev\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -15472,8 +15468,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\Andres\\Desktop\\DEMOSOFT\\Proyectos\\CourierBA_app\\CourierBA\\CourierBA\\CourierBA.csproj": {
-              "projectPath": "C:\\Users\\Andres\\Desktop\\DEMOSOFT\\Proyectos\\CourierBA_app\\CourierBA\\CourierBA\\CourierBA.csproj"
+            "C:\\Users\\dsdev\\OneDrive\\Escritorio\\currie\\CourierBA\\CourierBA\\CourierBA.csproj": {
+              "projectPath": "C:\\Users\\dsdev\\OneDrive\\Escritorio\\currie\\CourierBA\\CourierBA\\CourierBA.csproj"
             }
           }
         }
@@ -15484,7 +15480,7 @@
         "dependencies": {
           "Acr.UserDialogs": {
             "target": "Package",
-            "version": "[7.1.0.470, )"
+            "version": "[7.1.0.483, )"
           },
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
@@ -15492,7 +15488,7 @@
           },
           "Newtonsoft.Json": {
             "target": "Package",
-            "version": "[12.0.3, )"
+            "version": "[13.0.1, )"
           },
           "Prism.DryIoc.Forms": {
             "target": "Package",
@@ -15500,15 +15496,15 @@
           },
           "Syncfusion.Xamarin.SfAutoComplete": {
             "target": "Package",
-            "version": "[18.4.0.33, )"
+            "version": "[18.4.0.49, )"
           },
           "Syncfusion.Xamarin.SfProgressBar": {
             "target": "Package",
-            "version": "[18.4.0.34, )"
+            "version": "[18.4.0.49, )"
           },
           "Syncfusion.Xamarin.SfTreeView": {
             "target": "Package",
-            "version": "[18.4.0.32, )"
+            "version": "[18.4.0.49, )"
           },
           "Xam.Plugin.Media": {
             "target": "Package",
